@@ -1,0 +1,856 @@
+Station Name,City,State,Latitude,Longitude,Operator,Usage Type,Connector Type,Power (kW)
+Tata.ev Luxon Motors - Tata Power,Edappally ,Kerala,10.01148474,76.3113875,Tata Power,Public - Membership Required,CCS (Type 2),60
+TML Sree Gokulam Motors - Tata Power,Edappally,Kerala,10.03915497,76.31555881,Tata Power,Public - Membership Required,CCS (Type 2),30
+Tata.ev Gokulam Motors - Tata Power,Choornikkara,Kerala,10.08130279,76.33946199,Tata Power,Public - Membership Required,CCS (Type 2),60
+Taj Cochin Internation Airport Hotel - Tata Power,Nedumbassery ,Kerala,10.15999504,76.39015422,Tata Power,Public - Membership Required,CCS (Type 2),30
+SAJ Earth Resort - Tata Power,Nedumbassery,Kerala,10.16222425,76.3846535,Tata Power,Public - Membership Required,CCS (Type 2),30
+Luxon Motors - Tata Power,Kariyad,Kerala,10.16204205,76.36735603,Tata Power,Public - Membership Required,CCS (Type 2),30
+Sree Gokulam Motors - Tata Power,Angamaly,Kerala,10.22106036,76.37675213,Tata Power,Public - Membership Required,CCS (Type 2),30
+Centro Mall Charging Station - Tata Power,Kodungallur,Kerala,10.23248948,76.19594022,Tata Power,Public - Membership Required,CCS (Type 2),30
+IOCL Thiruvonam Fuels - Tata Power,Palakkad,Kerala,10.76983098,76.6680965,Tata Power,Public - Membership Required,CCS (Type 2),30
+IOCL Thiruvonam Fuels - Tata Power,Palakkad,Kerala,10.76983098,76.6680965,Tata Power,Public - Membership Required,CHAdeMO,30
+KVR Automotive - Tata Power,Koppam,Kerala,10.7822582,76.65824511,Tata Power,Public - Membership Required,CCS (Type 2),30
+Gokulam Residency - Tata Power,Amballur,Kerala,10.4361871,76.26520583,Tata Power,Public - Membership Required,CCS (Type 2),25
+Tata.ev Hyson Motors - Tata Power,Thrissur,Kerala,10.49672847,76.25836131,Tata Power,Public - Membership Required,CCS (Type 2),60
+PCK Centenary,Thrissur,Kerala,10.52294042,76.20624767,Tata Power,Public - Membership Required,CCS (Type 2),30
+TML Hyson Motors - Tata Power,Thrissur,Kerala,10.54042299,76.18967782,Tata Power,Public - Membership Required,CCS (Type 2),25
+TML Hyson Motors - Tata Power,Thrissur,Kerala,10.54042299,76.18967782,Tata Power,Public - Membership Required,CCS (Type 2),25
+Hotel Gokulam Sabari - Tata Power,Guruvayur,Kerala,10.59635698,76.04293443,Tata Power,Public - Membership Required,CCS (Type 2),25
+Hotel Gokulam Sabari - Tata Power,Guruvayur,Kerala,10.59635698,76.04293443,Tata Power,Public - Membership Required,Type 2 (Tethered Connector) ,7.4
+Shirdi,Shirdi ,Maharashtra,19.75759399,74.47634733,(Unknown Operator),Public - Pay At Location,CCS (Type 2),30
+InFour Wheel Care And Tyres - Tata Power,Perinthalmanna,Kerala,10.96023797,76.23467881,Tata Power,Public - Membership Required,CCS (Type 2),25
+TML KVR Automotive - Tata Power,Perinthalmanna,Kerala,10.98450272,76.18784701,Tata Power,Public - Membership Required,CCS (Type 2),30
+IOCL Sigma Enterprises Charging Station - Tata Power,Valanchery,Kerala,10.89791419,76.06100967,Tata Power,Public - Membership Required,CCS (Type 2),30
+AAK Mall,Tirur,Kerala,10.91858061,75.91779833,Tata Power,Public - Membership Required,CCS (Type 2),30
+Tata.ev Store Malappuram,Malappuram,Kerala,11.05251525,76.07764045,Tata Power,Public - Membership Required,CCS (Type 2),60
+A M Tyres Malappuram - Tata Power,Malappuram,Kerala,11.06040253,76.08084416,Tata Power,Public - Membership Required,CCS (Type 2),30
+Hotel Gokulam Relax Park,Manjeri,Kerala,11.11890611,76.11847374,Tata Power,Public - Membership Required,CCS (Type 2),25
+Hotel Gokulam Relax Park,Manjeri,Kerala,11.11890611,76.11847374,Tata Power,Public - Membership Required,Type 2 (Tethered Connector) ,7.4
+One Stop Automotive Cahrging Station - Tata Power,Edavanna,Kerala,11.2041462,76.13673353,Tata Power,Public - Membership Required,CCS (Type 2),60
+Moto Town Auto Hub - Tata Power,Wandoor,Kerala,11.2232496,76.21691525,Tata Power,Public - Membership Required,CCS (Type 2),30
+IOCL Aaditya Petroleum Naduvath Charging Station - Tata Power,Wandoor,Kerala,11.21105437,76.22468507,Tata Power,Public - Membership Required,CCS (Type 2),30
+Calicut Airport Charging Station - Tata Power,Kondotty,Kerala,11.14029227,75.94831371,Tata Power,Public - Membership Required,CCS (Type 2),60
+TML Marina Motors - Tata Power,Kozhikode,Kerala,11.21696527,75.85795106,Tata Power,Public - Membership Required,CCS (Type 2),25
+TML Marina Motors - Tata Power,Kozhikode,Kerala,11.21696527,75.85795106,Tata Power,Public - Membership Required,CCS (Type 2),25
+Rotana Motors Meenchanda - Tata Power,Meenchanda,Kerala,11.21390853,75.80263211,Tata Power,Public - Membership Required,CCS (Type 2),30
+IOCL Lakshmi Sales & Service - Tata Power,Kozhikode,Kerala,11.23362686,75.80323853,Tata Power,Public - Membership Required,CCS (Type 2),30
+Gokulam Galleria Mall - Tata Power,Kozhikode,Kerala,11.25846513,75.79290612,Tata Power,Public - Membership Required,CCS (Type 2),25
+Gokulam Galleria Mall - Tata Power,Kozhikode,Kerala,11.25846513,75.79290612,Tata Power,Public - Membership Required,GB-T DC - GB/T 20234.3,3.3
+Gokulam Galleria Mall - Tata Power,Kozhikode,Kerala,11.25846513,75.79290612,Tata Power,Public - Membership Required,Type 2 (Tethered Connector) ,7.4
+Hotel Hyson Heritage - Tata Power,Kozhikode,Kerala,11.2592145,75.77933452,Tata Power,Public - Membership Required,CCS (Type 2),25
+Hotel Hyson Heritage - Tata Power,Kozhikode,Kerala,11.2592145,75.77933452,Tata Power,Public - Membership Required,Type 2 (Tethered Connector) ,7.4
+Taj The Gateway Hotel - Tata Power,Kozhikode,Kerala,11.25868982,75.77397871,Tata Power,Public - Membership Required,CCS (Type 2),30
+Taj The Gateway Hotel - Tata Power,Kozhikode,Kerala,11.25902905,75.77370839,Tata Power,"Private - For Staff, Visitors or Customers",Type 2 (Tethered Connector) ,7.4
+IOCL Engapuzha Fuel - Tata Power,Engapuzha,Kerala,11.46505013,75.9701747,Tata Power,Public - Membership Required,CCS (Type 2),25
+IOCl Balaji Petroleum - Tata Power,Sulthan Bathery,Kerala,11.66094302,76.24002282,Tata Power,Public - Membership Required,CCS (Type 2),30
+Hotel Saugandhika Charging Station - Tata Power,Meenangadi,Kerala,11.65932826,76.20718523,Tata Power,Public - Membership Required,CCS (Type 2),60
+TML Marina Motors Pvt. Ltd. Kalpetta - Tata Power,Kalpetta,Kerala,11.63735277,76.09468538,Tata Power,Public - Membership Required,CCS (Type 2),30
+Taj Wayanad Resort and Spa- Tata Power,Padinjarathara,Kerala,11.65763336,75.96043178,Tata Power,"Private - For Staff, Visitors or Customers",CCS (Type 2),30
+Taj Wayanad Resort and Spa- Tata Power,Padinjarathara,Kerala,11.65763336,75.96043178,Tata Power,"Private - For Staff, Visitors or Customers",Type 2 (Tethered Connector) ,7.4
+KVR Dream Vehicles Thalassery - Tata Power,Thalassery,Kerala,11.76173425,75.50906838,Tata Power,Public - Membership Required,CCS (Type 2),30
+IOCL - MK Petroleum - Tata Power,Thazhe Chovva,Kerala,11.86015018,75.41434122,Tata Power,Public - Membership Required,CCS (Type 2),30
+KVR Dream Vehicles Service Centre - Tata Power,Iritty,Kerala,11.99068592,75.65802183,Tata Power,Public - Membership Required,CCS (Type 2),30
+KVR Dream Vehicle - Tata Power,Nadal,Kerala,11.83285672,75.4264417,Tata Power,Public - Membership Required,CCS (Type 2),25
+KVR Dream Vehicle - Tata Power,Nadal,Kerala,11.83285672,75.4264417,Tata Power,Public - Membership Required,CHAdeMO,25
+Tata.ev KVR Dreams Kannur - Tata Power,Kannur ,Kerala,11.86083034,75.41186778,Tata Power,Public - Membership Required,CCS (Type 2),30
+KVR Dream Vehicles Service Center - Tata Power,Payyanur,Kerala,12.12000326,75.21755451,Tata Power,Public - Membership Required,CCS (Type 2),30
+V-Net Shopping Complex - Tata Power,Payyannur,Kerala,12.17504848,75.19343333,Tata Power,Public - Membership Required,CCS (Type 2),30
+Taj Bekkal - Tata Power,Bekkal,Kerala,12.42338328,75.0147548,Tata Power,"Private - For Staff, Visitors or Customers",Type 2 (Tethered Connector) ,7.4
+TML KVR Dream Vehicles EVCS - Tata Power,Kasaragod,Kerala,12.51345441,75.02712294,Tata Power,Public - Membership Required,CCS (Type 2),30
+IOCL Top Fuels Karanthakkad Charging Station - Tata Power,Kasaragod,Kerala,12.5094079,74.98611114,Tata Power,Public - Membership Required,CCS (Type 2),30
+Eco Charge Hub - GO EC,Thiruvananthapuram ,Kerala,8.353208648,77.05379012,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+Eco Charge Hub - GO EC,Thiruvananthapuram ,Kerala,8.353208648,77.05379012,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Rajco EVCS - GO EC,Neyyattinkara,Kerala,8.394252775,77.08872897,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Rajco EVCS - GO EC,Neyyattinkara,Kerala,8.394252775,77.08872897,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Appolo Dimora Hotel EVCS - GO EC,Thiruvananthapuram ,Kerala,8.488661007,76.95075167,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Lulu International Mall EVCS - GO EC,Thiruvananthapuram ,Kerala,8.515262882,76.89815844,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+Lulu International Mall EVCS - GO EC,Thiruvananthapuram ,Kerala,8.515262882,76.89815844,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+Lulu International Mall EVCS - GO EC,Thiruvananthapuram ,Kerala,8.515262882,76.89815844,GO EC (IN),Public - Membership Required,Type 2 (Tethered Connector) ,7.4
+Lulu International Mall EVCS - GO EC,Thiruvananthapuram ,Kerala,8.515262882,76.89815844,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Trivandrum UST Campus EVCS - GO EC,Thiruvananthapuram ,Kerala,8.539993048,76.884425,GO EC (IN),"Private - For Staff, Visitors or Customers",Type 2 (Tethered Connector) ,7.4
+Trivandrum UST Campus EVCS - GO EC,Thiruvananthapuram ,Kerala,8.539993048,76.884425,GO EC (IN),"Private - For Staff, Visitors or Customers",CEE 3 Pin,3.3
+Karthika Residency Hotel EVCS - GO EC,Karette,Kerala,8.728845866,76.89844751,GO EC (IN),Public - Membership Required,CCS (Type 2),80
+KKP Renewables EVCS - GO EC,Karette,Kerala,8.734523378,76.89801647,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Aeron EVCS - GO EC,Attingal,Kerala,8.686808046,76.82402233,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Aeron EVCS - GO EC,Attingal,Kerala,8.686808046,76.82402233,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Zenith EVCS - GO EC,Attingal,Kerala,8.733067659,76.81064655,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Orion Plaza EVCS - GO EC,Chadayamangalam,Kerala,8.86342699,76.87120784,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+Orion Plaza EVCS - GO EC,Chadayamangalam,Kerala,8.86342699,76.87120784,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Power Up EVCS - GO EC,Varkala,Kerala,8.74908605,76.70581859,GO EC (IN),Public - Membership Required,CCS (Type 2),25
+Power Up EVCS - GO EC,Varkala,Kerala,8.74908605,76.70581859,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Green Planet EVCS - GO EC,Kottarakkara,Kerala,8.982143341,76.80932966,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Green Planet EVCS - GO EC,Kottarakkara,Kerala,8.982143341,76.80932966,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+RK EVCS - GO EC,Kundara,Kerala,8.948246626,76.64624714,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+RK EVCS - GO EC,Kundara,Kerala,8.948246626,76.64624714,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+SK EVCS - GO EC,Pathanapuram,Kerala,9.070991646,76.85631123,GO EC (IN),Public - Membership Required,CCS (Type 2),25
+SK EVCS - GO EC,Pathanapuram,Kerala,9.070991646,76.85631123,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Erathu Motors EVCS - GO EC,Puthoor,Kerala,9.051367403,76.70324696,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Erathu Motors EVCS - GO EC,Puthoor,Kerala,9.051367403,76.70324696,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Vrindavan EVCS - GO EC,Inchakkad,Kerala,9.045128433,76.77360004,GO EC (IN),Public - Membership Required,CCS (Type 2),25
+Vrindavan EVCS - GO EC,Inchakkad,Kerala,9.045128433,76.77360004,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+Vrindavan EVCS - GO EC,Inchakkad,Kerala,9.045128433,76.77360004,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+JB Power EVCS - GO EC,Adoor,Kerala,9.116847049,76.74511188,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+JB Power EVCS - GO EC,Adoor,Kerala,9.116847049,76.74511188,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Peninsula Park Residency EVCS - GO EC,Adoor,Kerala,9.145305964,76.76585839,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Green Earth - GO EC,Adoor,Kerala,9.153564154,76.73554436,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+Green Earth - GO EC,Adoor,Kerala,9.153564154,76.73554436,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Sparkzone EVCS - GO EC,Kayamkulam,Kerala,9.145794596,76.45936322,GO EC (IN),Public - Membership Required,CCS (Type 2),25
+Sparkzone EVCS - GO EC,Kayamkulam,Kerala,9.145794596,76.45936322,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Zufo EVCS,Karunagappalli,Kerala,9.132307411,76.51385829,GO EC (IN),Public - Membership Required,CCS (Type 2),25
+Cartist - GO EC,Kayamkulam,Kerala,9.184739729,76.49029684,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+Cartist - GO EC,Kayamkulam,Kerala,9.184739729,76.49029684,GO EC (IN),Public - Membership Required,Type 2 (Tethered Connector) ,7.4
+Cartist - GO EC,Kayamkulam,Kerala,9.184739729,76.49029684,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+V Volte EVCS - GO EC,Haripad,Kerala,9.289000834,76.45653569,GO EC (IN),Public - Membership Required,CCS (Type 2),25
+V Volte EVCS - GO EC,Haripad,Kerala,9.289000834,76.45653569,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Anjaly EVCS - GO EC,Omallor,Kerala,9.246935402,76.75730779,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Anjaly EVCS - GO EC,Omallor,Kerala,9.246935402,76.75730779,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Evergreen Continental EVCS - GO EC,Pathanamthitta,Kerala,9.263776809,76.7854353,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Quik Energy EVCS - GO EC,Chengannur,Kerala,9.311533027,76.62272053,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+Quik Energy EVCS - GO EC,Chengannur,Kerala,9.311533027,76.62272053,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Quik Energy EVCS - GO EC,Chengannur,Kerala,9.311533027,76.62272053,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Amrutham Auto Care EVCS - GO EC,Chengannur,Kerala,9.342144723,76.59848784,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Amrutham Auto Care EVCS - GO EC,Chengannur,Kerala,9.342144723,76.59848784,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Changanassery Immaculate Mary EVCS,Changanassery,Kerala,9.459860218,76.55518359,GO EC (IN),Public - Membership Required,CCS (Type 2),25
+Changanassery Immaculate Mary EVCS,Changanassery,Kerala,9.459860218,76.55518359,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Calvarymount Jerry Plaza,Alliyar,Kerala,9.806942489,77.04794026,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Westgate Inn EVCS - GO EC,Kattappana,Kerala,9.747617293,77.1054177,GO EC (IN),Public - Membership Required,CCS (Type 2),25
+GO EC Charging Station,Idukki,Kerala,9.66539882,77.16084695,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+GO EC Charging Station,Idukki,Kerala,9.66539882,77.16084695,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Sora EVCS - GO EC,Kumali,Kerala,9.614445835,77.15390991,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Sora EVCS - GO EC,Kumali,Kerala,9.614445835,77.15390991,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Open Kitchen EVCS - GO EC,Kuttikkanam,Kerala,9.580204298,76.97061173,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+Open Kitchen EVCS - GO EC,Kuttikkanam,Kerala,9.580204298,76.97061173,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Nandanam EVCS - GO EC,Kodungoor,Kerala,9.567074729,76.70609404,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Clay Art Cafe - GO EC,Ponkunnam,Kerala,9.566378512,76.74160751,GO EC (IN),Public - Membership Required,CCS (Type 2),25
+Clay Art Cafe - GO EC,Ponkunnam,Kerala,9.566378512,76.74160751,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+GO Green EVCS - GO EC,Anthikkad,Kerala,9.753999722,76.70127896,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Nila's Magestic Arcade,Kidangoor,Kerala,9.683248151,76.60975357,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Ettumanur Skylight EVCS - GO EC,Ettumanoor,Kerala,9.668171829,76.57537882,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+Ettumanur Skylight EVCS - GO EC,Ettumanoor,Kerala,9.668171829,76.57537882,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Chaithanya Hospital EVCS - GO EC,Kuravilangad,Kerala,9.761923841,76.56472253,GO EC (IN),Public - Membership Required,CCS (Type 2),25
+Chaithanya Hospital EVCS - GO EC,Kuravilangad,Kerala,9.761923841,76.56472253,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Manjoor Beeza Clubhouse EVCS - GO EC,Manjoor,Kerala,9.727579426,76.52038777,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Kalladanthiyil EVCS - GO EC,Neendoor,Kerala,9.68333688,76.50559381,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Kalladanthiyil EVCS - GO EC,Neendoor,Kerala,9.68333688,76.50559381,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+The Grand Ambassador EVCS,Kottayam ,Kerala,9.589399336,76.52633053,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Hotel Athira Residency EVCS - GO EC,Kottayam,Kerala,9.578258768,76.51947056,GO EC (IN),Public - Membership Required,CCS (Type 2),80
+Cassia Regency EVCS - GO EC,Alappuzha,Kerala,9.490169817,76.32073716,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Cassia Regency EVCS - GO EC,Alappuzha,Kerala,9.490169817,76.32073716,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Neo Charge EVCS - GO EC,Alappuzha,Kerala,9.559497169,76.32821359,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Jason Orchard Inn EVCS - GO EC,Alappuzha,Kerala,9.562575062,76.32758403,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Huts Restaurant EVCS - GO EC,Cherthala,Kerala,9.683890802,76.33358219,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+Huts Restaurant EVCS - GO EC,Cherthala,Kerala,9.683890802,76.33358219,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Vijaya EVCS - GO EC,Kanjiramattom,Kerala,9.851840438,76.38938787,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+MPA Tyres EVCS - GO EC,Thrippunithura,Kerala,9.962610268,76.35800116,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Central Talkies EVCS - GO EC,Thrippunithura,Kerala,9.948953178,76.34771092,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+Central Talkies EVCS - GO EC,Thrippunithura,Kerala,9.948953178,76.34771092,GO EC (IN),Public - Membership Required,CCS (Type 2),25
+Central Talkies EVCS - GO EC,Thrippunithura,Kerala,9.948953178,76.34771092,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Tribute Royale EVCS - GO EC,Maradu,Kerala,9.94775836,76.31854611,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+Prithvi EVCS - GO EC,Kadavanthra,Kerala,9.947451633,76.30341556,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+Prithvi EVCS - GO EC,Kadavanthra,Kerala,9.947451633,76.30341556,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+EC City Centre EVCS - GO EC,Ernakulam,Kerala,9.965194492,76.29662321,GO EC (IN),Public - Membership Required,CCS (Type 2),25
+EC City Centre EVCS - GO EC,Ernakulam,Kerala,9.965194492,76.29662321,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Monsoon Empress Hotel EVCS,Palarivattom,Kerala,9.995959579,76.31410218,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+Max EVCS - GO EC,Palarivattom,Kerala,9.998499334,76.31386096,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+Park Residency EVCS - GO EC,Kakkanad,Kerala,10.01465881,76.3424006,GO EC (IN),Public - Membership Required,CCS (Type 2),25
+Park Residency EVCS - GO EC,Kakkanad,Kerala,10.01465881,76.3424006,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+EVGO Hub - GO EC,Thrikkakkara,Kerala,10.03567399,76.33644845,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Daffodils EVCS - GO EC,Edapally,Kerala,10.03211451,76.32296046,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Daffodils EVCS - GO EC,Edapally,Kerala,10.03211451,76.32296046,GO EC (IN),Public - Membership Required,Type 2 (Tethered Connector) ,7.4
+Daffodils EVCS - GO EC,Edapally,Kerala,10.03211451,76.32296046,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Oberon Mall EVCS - GO EC,Edapally,Kerala,10.01437332,76.31253274,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+Lulu International Shopping Mall EVCS - GO EC,Edapally,Kerala,10.025853,76.30847988,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+Lulu International Shopping Mall EVCS - GO EC,Edapally,Kerala,10.025853,76.30847988,GO EC (IN),Public - Membership Required,CCS (Type 2),25
+Lulu International Shopping Mall EVCS - GO EC,Edapally,Kerala,10.025853,76.30847988,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+EcoPlug EVCS - GO EC,Neriyamangalam,Kerala,10.05657909,76.77664747,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Future Clock EVCS - GO EC,Perumbavoor ,Kerala,10.08987328,76.49767034,GO EC (IN),Public - Membership Required,CCS (Type 2),80
+Future Clock EVCS - GO EC,Perumbavoor ,Kerala,10.08987328,76.49767034,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+Future Clock EVCS - GO EC,Perumbavoor ,Kerala,10.08987328,76.49767034,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Prestige EV Super Charging Station - GO EC,Perumbavoor,Kerala,10.11659967,76.44569941,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+Prestige EV Super Charging Station - GO EC,Perumbavoor,Kerala,10.11659967,76.44569941,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Innate Convention Centre ,Aluva,Kerala,10.13484738,76.35454904,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Athani Energize EVCS,Athani,Kerala,10.14144398,76.35293383,GO EC (IN),Public - Membership Required,CCS (Type 2),80
+Hotel Airlink Castle - GO EC,Athani,Kerala,10.15505346,76.35471453,GO EC (IN),Public - Membership Required,CCS (Type 2),24
+V-Green EVCS - GO EC,Angamaly,Kerala,10.20178009,76.40966162,GO EC (IN),Public - Membership Required,CCS (Type 2),80
+Gopika EV Charging Station - GO EC,Varappuzha,Kerala,10.0872915,76.26789063,GO EC (IN),Public - Membership Required,CCS (Type 2),25
+Power Zone EV Charging Station - GO EC,North Paravur,Kerala,10.14967303,76.21756419,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Koratty Chennai Anandabhavan EVCS - GO EC,Koratty,Kerala,10.27724459,76.34452808,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+Parekkat's EVCS - GO EC,Mala,Kerala,10.24066912,76.27252885,GO EC (IN),Public - Membership Required,CCS (Type 2),25
+Kodungallur SVS - GO EC,Kodungallur,Kerala,10.21129205,76.19898867,GO EC (IN),Public - Membership Required,CCS (Type 2),25
+Kodungallur SVS - GO EC,Kodungallur,Kerala,10.21129205,76.19898867,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+FUZO EV Super Charging Station,Kodungallur,Kerala,10.37813516,76.12254539,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+FUZO EV Super Charging Station,Kodungallur,Kerala,10.37813516,76.12254539,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Sree Rama EVCS - GO EC,Thrissur,Kerala,10.43559497,76.26587468,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+Sree Rama EVCS - GO EC,Thrissur,Kerala,10.43559497,76.26587468,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Sree Rama EVCS - GO EC,Thrissur,Kerala,10.43559497,76.26587468,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Daiz and Co. EVCS - GO EC,Thrissur,Kerala,10.52614957,76.18795462,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Shobha City Mall EVCS - GO EC,Thrissur,Kerala,10.54894656,76.18304111,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+Shobha City Mall EVCS - GO EC,Thrissur,Kerala,10.54894656,76.18304111,GO EC (IN),Public - Membership Required,CCS (Type 2),25
+Shobha City Mall EVCS - GO EC,Thrissur,Kerala,10.54894656,76.18304111,GO EC (IN),Public - Membership Required,Type 2 (Tethered Connector) ,7.4
+Amala Smart EVCS - GO EC,Peramangalam,Kerala,10.56496749,76.16598426,GO EC (IN),Public - Membership Required,CCS (Type 2),80
+Amala Smart EVCS - GO EC,Peramangalam,Kerala,10.56496749,76.16598426,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Sree Sankara EVCS - GO EC,Vadanappalli,Kerala,10.4872912,76.07083612,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+Green Drive EV Super Charging Station,Vadanappilly,Kerala,10.49454247,76.06584744,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+Sree Krishna Hotel - GO EC,Guruvayoor,Kerala,10.59844782,76.03636789,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Palakkad Ahalia Women and Childern Hospital EVCS - GO EC,Elappully,Kerala,10.79730859,76.82754081,GO EC (IN),Public - Membership Required,Type 2 (Tethered Connector) ,7.4
+Palakkad Ahalia Women and Childern Hospital EVCS - GO EC,Elappully,Kerala,10.79730859,76.82754081,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Palakkad Ahalia Eye Hospital EVCS - GO EC,Elappully,Kerala,10.79348727,76.82652951,GO EC (IN),Public - Membership Required,Type 2 (Tethered Connector) ,7.4
+Palakkad Ahalia Eye Hospital EVCS - GO EC,Elappully,Kerala,10.79348727,76.82652951,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Palakkad Ahalia Food Point EVCS - GO EC,Elappully,Kerala,10.79203226,76.82834712,GO EC (IN),Public - Membership Required,Type 2 (Tethered Connector) ,7.4
+Palakkad Ahalia Food Point EVCS - GO EC,Elappully,Kerala,10.79203226,76.82834712,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Ahalia Walayar - GO EC,Walayar,Kerala,10.82659305,76.82605307,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+Ahalia Walayar - GO EC,Walayar,Kerala,10.82659305,76.82605307,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Le Sky Dine EVCS - GO EC,Palakkad,Kerala,10.77395725,76.69819741,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+Le Sky Dine EVCS - GO EC,Palakkad,Kerala,10.77395725,76.69819741,GO EC (IN),Public - Membership Required,Type 2 (Tethered Connector) ,7
+Doctor Green EVCS - GO EC,Alathur,Kerala,10.64616636,76.55140239,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+Doctor Green EVCS - GO EC,Alathur,Kerala,10.64616636,76.55140239,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+SJ Eco Power Charge - GO EC,Alathur,Kerala,10.63830442,76.52393014,GO EC (IN),Public - Membership Required,Type 2 (Tethered Connector) ,7.4
+SJ Eco Power Charge - GO EC,Alathur,Kerala,10.63830442,76.52393014,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Jeevz - GO EC,Vadakkencherry,Kerala,10.59323903,76.48253527,GO EC (IN),Public - Membership Required,CCS (Type 2),25
+Sanjeevani Green - GO EC,Thiruvilwamala,Kerala,10.71002171,76.42879294,GO EC (IN),Public - Membership Required,CCS (Type 2),25
+Sanjeevani Green - GO EC,Thiruvilwamala,Kerala,10.71002171,76.42879294,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Green Valley - GO EC,Thirissur,Kerala,10.69271606,76.26858375,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+Green Valley - GO EC,Thirissur,Kerala,10.69271606,76.26858375,GO EC (IN),Public - Membership Required,Type 2 (Tethered Connector) ,7.4
+Green Valley - GO EC,Thirissur,Kerala,10.69271606,76.26858375,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+AR Dine - GO EC,Cheruthuruthi,Kerala,10.75038197,76.2747566,GO EC (IN),Public - Membership Required,CCS (Type 2),25
+EV Super Charging Station,Pattambi,Kerala,10.80479517,76.20815708,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Pattambi Power Bank - GO EC,Pattambi,Kerala,10.81106853,76.1864437,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Pattambi Power Bank - GO EC,Pattambi,Kerala,10.81106853,76.1864437,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+New Kerala Hotel EVCS - GO EC,Nhangattiri,Kerala,10.78488099,76.17067627,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Oasis EV Super Charging Station,Mannarkkad,Kerala,10.93355662,76.5272171,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+Oasis EV Super Charging Station,Mannarkkad,Kerala,10.93355662,76.5272171,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Shalimar EVCS - GO EC,Perinthalmanna,Kerala,10.96529678,76.28389833,GO EC (IN),Public - Membership Required,CCS (Type 2),25
+Shalimar EVCS - GO EC,Perinthalmanna,Kerala,10.96529678,76.28389833,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Green Zone EVCS - GO EC,Valanchery,Kerala,10.87341308,76.06245823,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+Green Zone EVCS - GO EC,Valanchery,Kerala,10.87341308,76.06245823,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Unicorn Power EVCS - GO EC,Edappal,Kerala,10.80994664,76.00873437,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+CG Cafe EVCS - GO EC,Pandikkad,Kerala,11.13959615,76.23611346,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+Karulai Malayora Express EVCS - GO EC,Karulai,Kerala,11.28804948,76.29798171,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Jam Joom Super Market - GO EC,Nilambur,Kerala,11.28668073,76.23926379,GO EC (IN),Public - Membership Required,CCS (Type 2),25
+ABS Motors - GO EC,Nilambur,Kerala,11.25364726,76.2019012,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+VP Mall EVCS - GO EC,Manjeri,Kerala,11.12891582,76.11539461,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+VP Mall EVCS - GO EC,Manjeri,Kerala,11.12891582,76.11539461,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Jam Joom EV Charging Station - GO EC,Malappuram,Kerala,11.04318059,76.08430156,GO EC (IN),Public - Membership Required,CCS (Type 2),25
+HIQ Highway Market - GO EC,Venniyour,Kerala,11.02117549,75.94812609,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Chargify EV Super Charging Station ,Malappuram,Kerala,11.07841705,75.90276392,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Reliance Fresh EVCS - GO EC,Kozhikode,Keral,11.23473742,75.84670659,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+Top Dines Hotel - GO EC,Muthanga,Kerala,11.67080199,76.36101966,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Cafe Manoila - GO EC,Kalpetta,Kerala,11.59777661,76.08013837,GO EC (IN),Public - Membership Required,CCS (Type 2),25
+CGH Wayanad Wild EV Charging Station - GO EC,Lakkidi,Kerala,11.51834425,76.0212557,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Mall of Mukkom EVCS - GO EC,Mukkom,Kerala,11.31972723,75.99551711,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+HOTAG EV Charging Station - GO EC,Thamarassery,Kerala,11.40469328,75.92956806,GO EC (IN),Public - Membership Required,CCS (Type 2),25
+Green Amp EVCS - GO EC,Kozhikode,Kerala,11.25880102,75.80890435,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Green Amp EVCS - GO EC,Kozhikode,Kerala,11.25880102,75.80890435,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Calicut Malabar Gold - GO EC,Kozhikode,Kerala,11.2578618,75.7802306,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Calicut Malabar Gold - GO EC,Kozhikode,Kerala,11.2578618,75.7802306,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Calicut Malabar Gold - GO EC,Kozhikode,Kerala,11.2578618,75.7802306,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Mandrin Sky - GO EC,Kannur,Kerala,11.92755972,75.50047315,GO EC (IN),Public - Membership Required,CEE 3 Pin,7
+JSR EVCS - GO EC,Mambaram,Kerala,11.82580205,75.50895671,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+JSR EVCS - GO EC,Mambaram,Kerala,11.82580205,75.50895671,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Kannur H&H,Melechowa,Kerala,11.8716637,75.39598586,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+G Mall - GO EC,Kannur,Kerala,11.88020075,75.37466479,GO EC (IN),Public - Membership Required,CCS (Type 2),60
+Exit 17 - GO EC,Payyannur,Kerala,12.08863773,75.25264585,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Exit 17 - GO EC,Payyannur,Kerala,12.08863773,75.25264585,GO EC (IN),Public - Membership Required,CEE 3 Pin,3.3
+Periya A Star - GO EC,Hosdurg,Kerala,12.40580531,75.09629761,GO EC (IN),Public - Membership Required,CCS (Type 2),30
+Roshi EVCS (EVOK) - ChargeMOD,Kasaragod,Kerala,12.50597417,74.98678089,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Kanhangad KSEB EVCS - ChangeMOD,Kanhangad,Kerala,12.34250549,75.11266367,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Kanhangad KSEB EVCS - ChangeMOD,Kanhangad,Kerala,12.34250549,75.11266367,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Kanhangad KSEB EVCS - ChangeMOD,Kanhangad,Kerala,12.34250549,75.11266367,ChargeMod (IN),Public - Membership Required,GB-T DC - GB/T 20234.3,30
+Kanhangad KSEB EVCS - ChangeMOD,Kanhangad,Kerala,12.34250549,75.11266367,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Ammas Fast - ChargeMOD,Cheruvathur,Kerala,12.22720023,75.15911994,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Ammas Fast - ChargeMOD,Cheruvathur,Kerala,12.22720023,75.15911994,ChargeMod (IN),Public - Membership Required,Type 2 (Tethered Connector) ,7.4
+Mathil Service Co-Operative Bank EVCS - ChargeMOD,Mathil,Kerala,12.17697015,75.2467558,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Mathil Service Co-Operative Bank EVCS - ChargeMOD,Mathil,Kerala,12.17697015,75.2467558,ChargeMod (IN),Public - Membership Required,Type 2 (Tethered Connector) ,7.4
+Mathil Service Co-Operative Bank EVCS - ChargeMOD,Mathil,Kerala,12.17697015,75.2467558,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+EQ Point EVCS - ChargeMOD,Payyannur,Kerala,12.20776624,75.27945213,ChargeMod (IN),Public - Membership Required,CCS (Type 2),25
+EQ Point EVCS - ChargeMOD,Payyannur,Kerala,12.20776624,75.27945213,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+PCR Bank EVCS - ChargeMOD,Bakkalam,Kerala,11.99744945,75.37090753,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+PCR Bank EVCS - ChargeMOD,Bakkalam,Kerala,11.99744945,75.37090753,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Manjapalam KSEB EVCS - ChargeMOD,Kannur,Kerala,11.87836828,75.35952615,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Manjapalam KSEB EVCS - ChargeMOD,Kannur,Kerala,11.87836828,75.35952615,ChargeMod (IN),Public - Membership Required,CHAdeMO,30
+Manjapalam KSEB EVCS - ChargeMOD,Kannur,Kerala,11.87836828,75.35952615,ChargeMod (IN),Public - Membership Required,GB-T DC - GB/T 20234.3,30
+Manjapalam KSEB EVCS - ChargeMOD,Kannur,Kerala,11.87836828,75.35952615,ChargeMod (IN),Public - Membership Required,Type 2 (Tethered Connector) ,15
+Eastend Hotel and Resorts - ChargeMOD,Munnar,Kerala,10.0873794,77.06169963,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Eastend Hotel and Resorts - ChargeMOD,Munnar,Kerala,10.0873794,77.06169963,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Eastend Hotel and Resorts - ChargeMOD,Munnar,Kerala,10.0873794,77.06169963,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Sky Penta EVCS - ChargeMOD,Iritty,Kerala,11.98556153,75.67618166,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Reboost EVCS - ChargeMOD,"Panoor, Kannur",Kerala,11.75486663,75.57806506,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Mindful EVCS - ChargeMOD,Payyoli,Kerala,11.52044492,75.61798774,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Mindful EVCS - ChargeMOD,Payyoli,Kerala,11.52044492,75.61798774,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Mindful EVCS - ChargeMOD,Payyoli,Kerala,11.52044492,75.61798774,ChargeMod (IN),Public - Membership Required,Type 2 (Tethered Connector) ,22
+Mindful EVCS - ChargeMOD,Payyoli,Kerala,11.52044492,75.61798774,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+EVOK Charger - ChargeMOD,Kuttiyady,Kerala,11.64890104,75.75593648,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Banasura Sagar KSEB EVCS - ChargeMOD,Padinjarathara,Kerala,11.67292398,75.95730581,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Banasura Sagar KSEB EVCS - ChargeMOD,Padinjarathara,Kerala,11.67292398,75.95730581,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Banasura Sagar KSEB EVCS - ChargeMOD,Padinjarathara,Kerala,11.67292398,75.95730581,ChargeMod (IN),Public - Membership Required,GB-T DC - GB/T 20234.3,30
+Banasura Sagar KSEB EVCS - ChargeMOD,Padinjarathara,Kerala,11.67292398,75.95730581,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Empire Restaurant - ChargeMOD,Tharuvana,Kerala,11.73640531,75.98674423,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Hotel Wayanad Square - ChargeMOD,Mananthavady,Kerala,11.79697764,76.00660113,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Adhithya (EVOK) - ChargeMOD,Sulthan Bathery,Kerala,11.66208634,76.26492171,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Adhithya (EVOK) - ChargeMOD,Sulthan Bathery,Kerala,11.66208634,76.26492171,ChargeMod (IN),Public - Membership Required,CCS (Type 2),24
+Adhithya (EVOK) - ChargeMOD,Sulthan Bathery,Kerala,11.66208634,76.26492171,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Meenangadi EVCS - ChargeMOD,Meenangadi,Kerala,11.6540457,76.15358524,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Konfudha Resort - ChargeMOD,Kalpetta,Kerala,11.59145545,76.07090978,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Konfudha Resort - ChargeMOD,Kalpetta,Kerala,11.59145545,76.07090978,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Konfudha Resort - ChargeMOD,Kalpetta,Kerala,11.59145545,76.07090978,ChargeMod (IN),Public - Membership Required,Type 2 (Tethered Connector) ,22
+Konfudha Resort - ChargeMOD,Kalpetta,Kerala,11.59145545,76.07090978,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Vythiri KSEB EVCS - ChargeMOD,Vythiri,Kerala,11.54575372,76.03937193,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Vythiri KSEB EVCS - ChargeMOD,Vythiri,Kerala,11.54575372,76.03937193,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Vythiri KSEB EVCS - ChargeMOD,Vythiri,Kerala,11.54575372,76.03937193,ChargeMod (IN),Public - Membership Required,GB-T DC - GB/T 20234.3,30
+Vythiri KSEB EVCS - ChargeMOD,Vythiri,Kerala,11.54575372,76.03937193,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Thamarassery KESEB EVCS - ChargeMOD,Thamarassery,Kerala,11.44408743,75.95587691,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Thamarassery KESEB EVCS - ChargeMOD,Thamarassery,Kerala,11.44408743,75.95587691,ChargeMod (IN),Public - Membership Required,CHAdeMO,30
+Thamarassery KESEB EVCS - ChargeMOD,Thamarassery,Kerala,11.44408743,75.95587691,ChargeMod (IN),Public - Membership Required,Type 2 (Tethered Connector) ,22
+Thamarassery KESEB EVCS - ChargeMOD,Thamarassery,Kerala,11.44408743,75.95587691,ChargeMod (IN),Public - Membership Required,GB-T DC - GB/T 20234.3,15
+Locus EVCS - ChargeMOD,Koduvally,Kerala,11.33968384,75.89871569,ChargeMod (IN),Public - Membership Required,CCS (Type 2),120
+Locus EVCS - ChargeMOD,Koduvally,Kerala,11.33968384,75.89871569,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Locus EVCS - ChargeMOD,Koduvally,Kerala,11.33968384,75.89871569,ChargeMod (IN),Public - Membership Required,Type 2 (Tethered Connector) ,22
+Yadav EV Charging Station - ChargeMOD,Kunnamangalam,Kerala,11.31169215,75.8825934,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Kuttoth Enterprises EVCS - ChargeMOD,Kozhikode,Kerala,11.28067356,75.82463167,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+RG Nallanna EVCS (EVOK) - ChargeMOD,Kozhikode,Kerala,11.28081467,75.82434977,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Solar Sparks EVCS - ChargeMOD,Koyilandi,Kerala,11.42767541,75.70299624,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Solar Sparks EVCS - ChargeMOD,Koyilandi,Kerala,11.42767541,75.70299624,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Solar Sparks EVCS - ChargeMOD,Koyilandi,Kerala,11.42767541,75.70299624,ChargeMod (IN),Public - Membership Required,Type 2 (Tethered Connector) ,22
+Solar Sparks EVCS - ChargeMOD,Koyilandi,Kerala,11.42767541,75.70299624,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Hotel Arcore,Mysuru,Karnataka,12.3526874,76.6292033,Zeon Charging,Public,CCS (Type 2),60
+Hotel Arcore,Mysuru,Karnataka,12.3526874,76.6292033,Zeon Charging,Public,CCS (Type 2),60
+Manipal Hospital Mysore,Mysuru,Karnataka ,12.35014588,76.66019891,Zeon Charging,Public,CCS (Type 2),60
+Pavangad KSEB EVCS - ChargeMOD,Pavangad,Kerala,11.31241162,75.75859063,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Pavangad KSEB EVCS - ChargeMOD,Pavangad,Kerala,11.31241162,75.75859063,ChargeMod (IN),Public - Membership Required,CHAdeMO,30
+Pavangad KSEB EVCS - ChargeMOD,Pavangad,Kerala,11.31241162,75.75859063,ChargeMod (IN),Public - Membership Required,Type 2 (Tethered Connector) ,22
+Pavangad KSEB EVCS - ChargeMOD,Pavangad,Kerala,11.31241162,75.75859063,ChargeMod (IN),Public - Membership Required,GB-T DC - GB/T 20234.3,15
+Gandhi Road KSEB EVCS - ChargeMOD,Kozhikode,Kerala,11.26278446,75.76824105,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Gandhi Road KSEB EVCS - ChargeMOD,Kozhikode,Kerala,11.26278446,75.76824105,ChargeMod (IN),Public - Membership Required,CHAdeMO,30
+Gandhi Road KSEB EVCS - ChargeMOD,Kozhikode,Kerala,11.26278446,75.76824105,ChargeMod (IN),Public - Membership Required,Type 2 (Tethered Connector) ,22
+Gandhi Road KSEB EVCS - ChargeMOD,Kozhikode,Kerala,11.26278446,75.76824105,ChargeMod (IN),Public - Membership Required,GB-T DC - GB/T 20234.3,15
+Mountainpass Residency - ChargeMOD,Vazhikadavu,Kerala,11.38662806,76.35472249,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Trends Edavannappara EVCS - ChargeMOD,Edavannappara,Kerala,11.24532315,75.97749175,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Indus Motors - ChargeMOD,Feroke,Kerala,11.18074376,75.85119864,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Kay Pees Electricals (EVOK) - ChargeMOD,Pulikkal,Kerala,11.16886778,75.92676863,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+RG Nallanna EVCS (EVOK) - ChargeMOD,Aikkarapadi,Kerala,11.17327991,75.9021518,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+NOS2 Varalakshmi Motors EVCS - ChargeMOD,Pingottormad,Kerala,11.14491898,75.89616976,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Tirur KSEB EVCS - ChargeMOD,Tirur,Kerala,10.91624728,75.91828654,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Tirur KSEB EVCS - ChargeMOD,Tirur,Kerala,10.91624728,75.91828654,ChargeMod (IN),Public - Membership Required,GB-T DC - GB/T 20234.3,15
+Tirur KSEB EVCS - ChargeMOD,Tirur,Kerala,10.91624728,75.91828654,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Relax Point Restaurant,Karippol,Kerala,10.92282041,76.03291841,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Relax Point Restaurant,Karippol,Kerala,10.92282041,76.03291841,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Thirunilath ECVS Charging Station - ChargeMOD,Kottakkal,Kerala,11.00172659,75.98044942,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Malappuram KSEB EVCS - ChargeMOD,Munduparamba,Kerala,11.05422453,76.09214302,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Malappuram KSEB EVCS - ChargeMOD,Munduparamba,Kerala,11.05422453,76.09214302,ChargeMod (IN),Public - Membership Required,CHAdeMO,30
+Malappuram KSEB EVCS - ChargeMOD,Munduparamba,Kerala,11.05422453,76.09214302,ChargeMod (IN),Public - Membership Required,Type 2 (Tethered Connector) ,22
+Malappuram KSEB EVCS - ChargeMOD,Munduparamba,Kerala,11.05422453,76.09214302,ChargeMod (IN),Public - Membership Required,GB-T DC - GB/T 20234.3,15
+Krishna Enterprises - ChargeMOD,Manjeri,Kerala,11.12303335,76.11586843,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Golden Baked EVCS - ChargeMOD,Manjeri,Kerala,11.12341107,76.12418516,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+EcoCharge EVCS - ChargeMOD,Pandikkad,Kerala,11.09639986,76.21070705,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+EcoCharge EVCS - ChargeMOD,Pandikkad,Kerala,11.09639986,76.21070705,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+MKM Melattur (EVOK) - ChargeMOD,Melattur,Kerala,11.05620809,76.27851203,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+MKM Melattur (EVOK) - ChargeMOD,Melattur,Kerala,11.05620809,76.27851203,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Green Drive EVCS - ChargeMOD,Vengoor,Kerala,11.03450239,76.26188661,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Hotel Mughal Park - ChargeMOD,Perinthalmanna,Kerala,10.97719389,76.22165089,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Avenue Plaza - ChargeMOD,Mannarkkad,Kerala,10.98886452,76.43668851,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Velanthavalam,Vellamthavalam,Kerala,10.80936299,76.84632159,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Velanthavalam,Vellamthavalam,Kerala,10.80936299,76.84632159,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Velanthavalam,Vellamthavalam,Kerala,10.80936299,76.84632159,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Velanthavalam,Vellamthavalam,Kerala,10.80936299,76.84632159,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Flash Charge EVCS - ChargeMOD,Kanjikkode,Kerala,10.80227998,76.78520299,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Flash Charge EVCS - ChargeMOD,Kanjikkode,Kerala,10.80227998,76.78520299,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Electrica EVCS - ChargeMOD,Palakkad,Kerala,10.78535486,76.60395568,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Electrica EVCS - ChargeMOD,Palakkad,Kerala,10.78535486,76.60395568,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Sihla Energy - ChargeMOD,Mundur,Kerala,10.83949185,76.57999971,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Lakshmi KRS EVCS - ChargeMOD,Sreekrishnapuram,Kerala,10.89808011,76.39529565,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Evee Buddy - ChargeMOD,Lakkidi,Kerala,10.77814249,76.43743038,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Kulappully KSEB EVCS - ChargeMOD,Kulappully,Kerala,10.77974601,76.28528086,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Kulappully KSEB EVCS - ChargeMOD,Kulappully,Kerala,10.77974601,76.28528086,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Kulappully KSEB EVCS - ChargeMOD,Kulappully,Kerala,10.77974601,76.28528086,ChargeMod (IN),Public - Membership Required,GB-T DC - GB/T 20234.3,15
+Kulappully KSEB EVCS - ChargeMOD,Kulappully,Kerala,10.77974601,76.28528086,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Syndicate Mall and Cinemas,Koppam,Kerala,10.87826592,76.18760662,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Medi Mall EVCS - ChargeMOD,Pattambi,Kerala,10.80158611,76.17840843,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Koottanad KSEB EVCS - ChargeMOD,Kootanad,Kerala,10.7582932,76.13036645,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Koottanad KSEB EVCS - ChargeMOD,Kootanad,Kerala,10.7582932,76.13036645,ChargeMod (IN),Public - Membership Required,GB-T DC - GB/T 20234.3,22
+Koottanad KSEB EVCS - ChargeMOD,Kootanad,Kerala,10.7582932,76.13036645,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Sihla Energy EVCS - ChargeMOD,Changaramkulam,Kerala,10.73455196,76.04864669,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Kadharkkante Chayakkada - ChargeMOD,Changaramkulam,Kerala,10.73260554,76.03743007,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Maranchery Bank EVCS - ChargeMOD,Maranchery,Kerala,10.73382407,75.97481312,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Maranchery Bank EVCS - ChargeMOD,Maranchery,Kerala,10.73382407,75.97481312,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Sihla Energy CV Junction,Ponnanu,Kerala,10.78474624,75.94715236,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Ponnani KSEB EVCS - ChargeMOD,Ponnani,Kerala,10.77270263,75.9471515,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Ponnani KSEB EVCS - ChargeMOD,Ponnani,Kerala,10.77270263,75.9471515,ChargeMod (IN),Public - Membership Required,CHAdeMO,30
+Ponnani KSEB EVCS - ChargeMOD,Ponnani,Kerala,10.77270263,75.9471515,ChargeMod (IN),Public - Membership Required,GB-T DC - GB/T 20234.3,15
+Ponnani KSEB EVCS - ChargeMOD,Ponnani,Kerala,10.77270263,75.9471515,ChargeMod (IN),Public - Membership Required,Type 2 (Tethered Connector) ,22
+Flash Charge EVCS - ChargeMOD,Erumappetti,Kerala,10.68134082,76.16966999,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Flash Charge EVCS - ChargeMOD,Erumappetti,Kerala,10.68134082,76.16966999,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+SR Power Hub - ChargeMOD,Wadakkanchery,Kerala,10.64441131,76.23665238,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+SR Power Hub - ChargeMOD,Wadakkanchery,Kerala,10.64441131,76.23665238,ChargeMod (IN),Public - Membership Required,Type 2 (Tethered Connector) ,7.4
+SR Power Hub - ChargeMOD,Wadakkanchery,Kerala,10.64441131,76.23665238,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Executive EVCS - ChargeMOD,Kechery,Kerala,10.61662659,76.12578392,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Executive EVCS - ChargeMOD,Kechery,Kerala,10.61662659,76.12578392,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Core Multicusine Restaurant - ChargeMOD,Killannur,Kerala,10.60582367,76.21178763,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Plug and Share Charge EVCS - ChargeMOD,Thrissur,Kerala,10.54056179,76.21568678,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Plug and Share Charge EVCS - ChargeMOD,Thrissur,Kerala,10.54056179,76.21568678,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Vydyuthi Bhavan KSEB EVCS - ChargeMOD,Thrissur,Kerala,10.52779471,76.20534385,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Vydyuthi Bhavan KSEB EVCS - ChargeMOD,Thrissur,Kerala,10.52779471,76.20534385,ChargeMod (IN),Public - Membership Required,CHAdeMO,30
+Vydyuthi Bhavan KSEB EVCS - ChargeMOD,Thrissur,Kerala,10.52779471,76.20534385,ChargeMod (IN),Public - Membership Required,GB-T DC - GB/T 20234.3,15
+Vydyuthi Bhavan KSEB EVCS - ChargeMOD,Thrissur,Kerala,10.52779471,76.20534385,ChargeMod (IN),Public - Membership Required,Type 2 (Tethered Connector) ,22
+V8 Car Spa (EVOK) - ChargeMOD,Thrissur,Kerala,10.5213323,76.23075685,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+V8 Car Spa (EVOK) - ChargeMOD,Thrissur,Kerala,10.5213323,76.23075685,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Guardian EV Charging Station by Imminent Future - ChargeMOD,Thrissur,Kerala,10.52203616,76.2275689,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Anchorage AC - ChargeMOD,Mundupalam,Kerala,10.51150301,76.22112426,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Flash Hub EVCS - ChargeMOD,Thrissur,Kerala,10.50445167,76.22534147,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Flash Hub EVCS - ChargeMOD,Thrissur,Kerala,10.50445167,76.22534147,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Flash Hub EVCS - ChargeMOD,Thrissur,Kerala,10.50445167,76.22534147,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Hotel Bhavan EVCS (EVOK) - ChargeMOD,Engandiyoor,Kerala,10.49768853,76.06464226,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Surya Hotel (EVOK) - ChargeMOD,Chazhoor,Kerala,10.43156926,76.14255951,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Surya Hotel (EVOK) - ChargeMOD,Chazhoor,Kerala,10.43156926,76.14255951,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Valappad KSEB EVCS - ChargeMOD,Valappad,Kerala,10.40173221,76.11933512,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Valappad KSEB EVCS - ChargeMOD,Valappad,Kerala,10.40173221,76.11933512,ChargeMod (IN),Public - Membership Required,CHAdeMO,30
+Valappad KSEB EVCS - ChargeMOD,Valappad,Kerala,10.40173221,76.11933512,ChargeMod (IN),Public - Membership Required,Type 2 (Tethered Connector) ,22
+Valappad KSEB EVCS - ChargeMOD,Valappad,Kerala,10.40173221,76.11933512,ChargeMod (IN),Public - Membership Required,GB-T DC - GB/T 20234.3,22
+Nattika FIRKA Service Co-Operative Bank - ChargeMOD,Nattika,Kerala,10.40243778,76.11263308,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Sihla Energy EVCS - ChargeMOD,Karuvannur,Kerala,10.40894658,76.21401109,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Irinjalakkuda KSEB EVCS - ChargeMOD,Irinjalakkuda,Kerala,10.3314231,76.21526077,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Irinjalakkuda KSEB EVCS - ChargeMOD,Irinjalakkuda,Kerala,10.3314231,76.21526077,ChargeMod (IN),Public - Membership Required,CHAdeMO,30
+Irinjalakkuda KSEB EVCS - ChargeMOD,Irinjalakkuda,Kerala,10.3314231,76.21526077,ChargeMod (IN),Public - Membership Required,GB-T DC - GB/T 20234.3,15
+Irinjalakkuda KSEB EVCS - ChargeMOD,Irinjalakkuda,Kerala,10.3314231,76.21526077,ChargeMod (IN),Public - Membership Required,Type 2 (Tethered Connector) ,22
+Changathikoottam EVCS - ChargeMOD,Nenmara,Kerala,10.59340334,76.5835252,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Vadakkenchery KSEB EVCS - ChargeMOD,Vadakkenchery,Kerala,10.59723817,76.47984937,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Vadakkenchery KSEB EVCS - ChargeMOD,Vadakkenchery,Kerala,10.59723817,76.47984937,ChargeMod (IN),Public - Membership Required,CHAdeMO,30
+Vadakkenchery KSEB EVCS - ChargeMOD,Vadakkenchery,Kerala,10.59723817,76.47984937,ChargeMod (IN),Public - Membership Required,GB-T DC - GB/T 20234.3,15
+Vadakkenchery KSEB EVCS - ChargeMOD,Vadakkenchery,Kerala,10.59723817,76.47984937,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Evee Buddy - ChargeMOD,Vadakkencherry,Kerala,10.59195731,76.46571177,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Evee Buddy - ChargeMOD,Vadakkencherry,Kerala,10.59195731,76.46571177,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Plugin EVCS - ChargeMOD,Marathakkara,Kerala,10.47682692,76.25758185,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Plugin EVCS - ChargeMOD,Marathakkara,Kerala,10.47682692,76.25758185,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Topup Zone EVCS - ChargeMOD,Amballur,Kerala,10.43389238,76.26514872,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+EV Point EVCS - ChargeMOD,Kodakara,Kerala,10.38066087,76.29768618,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Korner EVCS - ChargeMOD,Thrissur,Kerala,10.36704848,76.31535658,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Flash Charge EVCS - ChargeMOD,Chalakudy,Kerala,10.33960893,76.32174631,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Edassery Samrudhi Hypermarket (EVOK) - ChargeMOD,Chalakudy,Kerala,10.30310177,76.33704224,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Indian Coffee House (EVOK) - ChargeMOD,Chalakkudy,Kerala,10.2893433,76.3370682,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Clay House Hotel,Chalakkudy,Kerala,10.28557423,76.34237765,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Hill View Resort (EVOK) - ChargeMOD,Athirappilly,Kerala,10.28603965,76.55851558,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Hill View Resort (EVOK) - ChargeMOD,Athirappilly,Kerala,10.28603965,76.55851558,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+EVOK Charging Station - ChargeMOD,Angamaly,Kerala,10.21406148,76.37936729,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Edassery Blue Bells EVCS - ChargeMOD,Angamaly,Kerala,10.19714412,76.38410959,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Edassery Blue Bells EVCS - ChargeMOD,Angamaly,Kerala,10.19714412,76.38410959,ChargeMod (IN),Public - Membership Required,Type 2 (Tethered Connector) ,7.2
+Hotel Elite Palazzo,Angamaly,Kerala,10.1897534,76.38664227,ChargeMod (IN),Public - Membership Required,CCS (Type 2),50
+ChargeMOD EVCS Hub,Nedumbassery ,Kerala,10.1695516,76.37225561,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+ChargeMOD EVCS Hub,Nedumbassery ,Kerala,10.1695516,76.37225561,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+ChargeMOD EVCS Hub,Nedumbassery ,Kerala,10.1695516,76.37225561,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+CIAL Terminal 3,Nedumbassery ,Kerala,10.15658638,76.39193156,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+CIAL Terminal 3,Nedumbassery ,Kerala,10.15658638,76.39193156,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+CIAL Terminal 1,Nedumbassery ,Kerala,10.15686756,76.3889799,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+CIAL Terminal 1,Nedumbassery ,Kerala,10.15686756,76.3889799,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Capgo EVCS - ChargeMOD,Nedumbassery ,Kerala,10.15991448,76.38915827,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Jippus Galaxy EVCS - ChargeMOD,Nedumbassery ,Kerala,10.16106206,76.38563078,ChargeMod (IN),Public - Membership Required,CCS (Type 2),25
+Airsuite Airport Hotel,Nedumbassery ,Kerala,10.15929513,76.37852288,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+North Paravoor KSEB EVCS - ChargeMOD,North Paravoor,Kerala,10.14563298,76.25690381,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+North Paravoor KSEB EVCS - ChargeMOD,North Paravoor,Kerala,10.14563298,76.25690381,ChargeMod (IN),Public - Membership Required,CHAdeMO,30
+North Paravoor KSEB EVCS - ChargeMOD,North Paravoor,Kerala,10.14563298,76.25690381,ChargeMod (IN),Public - Membership Required,GB-T DC - GB/T 20234.3,15
+Dhruv EVCS - ChargeMOD,Kunnukara,Kerala,10.15491305,76.28601445,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Dhruv EVCS - ChargeMOD,Kunnukara,Kerala,10.15491305,76.28601445,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Sulfex Mattress (EVOK) - ChargeMOD,Choornikkara,Kerala,10.08155965,76.33986742,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+EVM MG Motors Coastline Garage - ChargeMOD,Kochi,Kerala,10.07728448,76.33764123,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Steelane (EVOK) - ChargeMOD,Kalamassery,Kerala,10.04043387,76.33852407,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Kalamassery KSEB EVCS - ChargeMOD,Kalamassery,Kerala,10.05377003,76.33086763,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Kalamassery KSEB EVCS - ChargeMOD,Kalamassery,Kerala,10.05377003,76.33086763,ChargeMod (IN),Public - Membership Required,CHAdeMO,30
+Kalamassery KSEB EVCS - ChargeMOD,Kalamassery,Kerala,10.05377003,76.33086763,ChargeMod (IN),Public - Membership Required,Type 2 (Tethered Connector) ,22
+Kalamassery KSEB EVCS - ChargeMOD,Kalamassery,Kerala,10.05377003,76.33086763,ChargeMod (IN),Public - Membership Required,GB-T DC - GB/T 20234.3,15
+Rajagiri College EVCS - ChargeMOD,Kalamassery,Kerala,10.05245925,76.3146563,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Rajagiri College EVCS - ChargeMOD,Kalamassery,Kerala,10.05245925,76.3146563,ChargeMod (IN),Public - Membership Required,Type 2 (Tethered Connector) ,7.4
+Rajagiri College EVCS - ChargeMOD,Kalamassery,Kerala,10.05245925,76.3146563,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Flash Charge - ChargeMOD,Edappally,Keral,10.02776086,76.31117444,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Flash Charge - ChargeMOD,Edappally,Keral,10.02776086,76.31117444,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Kaloor KSEB EVCS - ChargeMOD,Kaloor,Kerala,10.00024104,76.29842982,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Kaloor KSEB EVCS - ChargeMOD,Kaloor,Kerala,10.00024104,76.29842982,ChargeMod (IN),Public - Membership Required,CHAdeMO,30
+Kaloor KSEB EVCS - ChargeMOD,Kaloor,Kerala,10.00024104,76.29842982,ChargeMod (IN),Public - Membership Required,Type 2 (Tethered Connector) ,22
+Kaloor KSEB EVCS - ChargeMOD,Kaloor,Kerala,10.00024104,76.29842982,ChargeMod (IN),Public - Membership Required,GB-T DC - GB/T 20234.3,15
+Gandhinagar KSEB EVCS - ChargeMOD,Kochi,Kerala,9.97419253,76.2936817,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Gandhinagar KSEB EVCS - ChargeMOD,Kochi,Kerala,9.97419253,76.2936817,ChargeMod (IN),Public - Membership Required,CHAdeMO,30
+Gandhinagar KSEB EVCS - ChargeMOD,Kochi,Kerala,9.97419253,76.2936817,ChargeMod (IN),Public - Membership Required,Type 2 (Tethered Connector) ,22
+Gandhinagar KSEB EVCS - ChargeMOD,Kochi,Kerala,9.97419253,76.2936817,ChargeMod (IN),Public - Membership Required,GB-T DC - GB/T 20234.3,22
+Chillax EVCS (EVOK) - ChargeMOD,Thammanam,Kerala,9.985005178,76.31606543,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Evee Buddy - Memaid EVCS - ChargeMOD,Vyttila,Kerala,9.971684804,76.32415963,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Broad Bean Hotel (EVOK) - ChargeMOD,Vyttila,Kerala,9.962667763,76.31821354,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Vyttila KSEB EVCS - ChargeMOD,Vyttila,Keral,9.962901963,76.31922071,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Vyttila KSEB EVCS - ChargeMOD,Vyttila,Keral,9.962901963,76.31922071,ChargeMod (IN),Public - Membership Required,CHAdeMO,30
+Vyttila KSEB EVCS - ChargeMOD,Vyttila,Keral,9.962901963,76.31922071,ChargeMod (IN),Public - Membership Required,Type 2 (Tethered Connector) ,22
+Vyttila KSEB EVCS - ChargeMOD,Vyttila,Keral,9.962901963,76.31922071,ChargeMod (IN),Public - Membership Required,GB-T DC - GB/T 20234.3,15
+BYD EVM Southcoast Service Centre - ChargeMOD,Maradu,Kerala,9.948134986,76.31850176,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+EVM La Maison Citroen Kochi - ChargeMOD,Maradu,Kerala,9.940155101,76.31841841,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+EVM La Maison Citroen Kochi - ChargeMOD,Maradu,Kerala,9.940155101,76.31841841,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+LiON EVCS - ChargeMOD,Maradu,Kerala,9.942225213,76.3338851,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+LiON EVCS - ChargeMOD,Maradu,Kerala,9.942225213,76.3338851,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Rajagiri Hospital EVCS - ChargeMOD,Aluva,Kerala,10.08803183,76.38904221,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Rajagiri Hospital EVCS - ChargeMOD,Aluva,Kerala,10.08803183,76.38904221,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Rajagiri Hospital EVCS - ChargeMOD,Aluva,Kerala,10.08803183,76.38904221,ChargeMod (IN),Public - Membership Required,Type 2 (Tethered Connector) ,22
+Raos EVCS - ChargeMOD,Thrippunithara,Kerala,9.932546342,76.38829398,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+PPG Home EVCS - ChargeMOD,Thrippunithara,Kerala,9.932987602,76.38873573,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+PPG Home EVCS - ChargeMOD,Thrippunithara,Kerala,9.932987602,76.38873573,ChargeMod (IN),Public - Membership Required,Type 2 (Tethered Connector) ,7.5
+PPG Home EVCS - ChargeMOD,Thrippunithara,Kerala,9.932987602,76.38873573,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+We Connect EVCS - ChargeMOD,Kakkanad,Kerala,10.00180181,76.36151799,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Wonderla - Statiq,Pallikkara,Kerala,10.02602207,76.39199597,Statiq (IN),Public - Membership Required,CCS (Type 2),60
+Wonderla - Statiq,Pallikkara,Kerala,10.02602207,76.39199597,Statiq (IN),Public - Membership Required,Type 2 (Tethered Connector) ,7.4
+Wonderla - Statiq,Pallikkara,Kerala,10.02602207,76.39199597,Statiq (IN),Public - Membership Required,Type 2 (Tethered Connector) ,7.4
+Matha DC EVCS - ChargeMOD,Kizhakkambalam,Kerala,10.03193693,76.40749252,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Matha DC EVCS - ChargeMOD,Kizhakkambalam,Kerala,10.03193693,76.40749252,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Hotel Oottupura (EVOK) - ChargeMOD,Perumbavoor ,Kerala,10.13017087,76.47072021,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Renvolt (EVOK) - ChargeMOD,Kothamangalam,Kerala,10.06947007,76.60263007,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Kothamangalam KSEB EVCS - ChargeMOD,Kothamangalam,Kerala,10.05398054,76.6153842,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Kothamangalam KSEB EVCS - ChargeMOD,Kothamangalam,Kerala,10.05398054,76.6153842,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Kothamangalam KSEB EVCS - ChargeMOD,Kothamangalam,Kerala,10.05398054,76.6153842,ChargeMod (IN),Public - Membership Required,GB-T DC - GB/T 20234.3,22
+Kothamangalam KSEB EVCS - ChargeMOD,Kothamangalam,Kerala,10.05398054,76.6153842,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+GATR PowerFin EVCS - ChargeMOD,Muvattupuzha,Kerala,9.979468553,76.55067813,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+PlugMap EVCS by Evan and Eyan - ChargeMOD,Moovattupuzha,Kerala,9.978862994,76.58443995,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+PlugMap EVCS by Evan and Eyan - ChargeMOD,Moovattupuzha,Kerala,9.978862994,76.58443995,ChargeMod (IN),Public - Membership Required,Type 2 (Tethered Connector) ,7.4
+Kabani International (EVOK) - ChargeMOD,Moovattupuzha,Kerala,9.979118268,76.58664023,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Kabani International (EVOK) - ChargeMOD,Moovattupuzha,Kerala,9.979118268,76.58664023,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Pineapple City EVCS - ChargeMOD,Thodupuzha,Kerala,9.94615736,76.635631,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Hotel Woodlands - ChargeMOD,Thodupuzha,Kerala,9.917340697,76.68758141,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Hotel Woodlands - ChargeMOD,Thodupuzha,Kerala,9.917340697,76.68758141,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Thodupuzha KSEB EVCS - ChargeMOD,Thodupuzha,Kerala,9.892123472,76.70853053,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Thodupuzha KSEB EVCS - ChargeMOD,Thodupuzha,Kerala,9.892123472,76.70853053,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Thodupuzha KSEB EVCS - ChargeMOD,Thodupuzha,Kerala,9.892123472,76.70853053,ChargeMod (IN),Public - Membership Required,GB-T DC - GB/T 20234.3,15
+Thodupuzha KSEB EVCS - ChargeMOD,Thodupuzha,Kerala,9.892123472,76.70853053,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+EQ EV Nest - ChargeMOD,Karimkunnam,Kerala,9.863113531,76.69709052,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+EQ EV Nest - ChargeMOD,Karimkunnam,Kerala,9.863113531,76.69709052,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Royal EV Charging - ChargeMOD,Koothattukulam,Keraka,9.856562504,76.5965698,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Royal EV Charging - ChargeMOD,Koothattukulam,Keraka,9.856562504,76.5965698,ChargeMod (IN),Public - Membership Required,Type 2 (Tethered Connector) ,7.4
+Royal EV Charging - ChargeMOD,Koothattukulam,Keraka,9.856562504,76.5965698,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+EQ ChargeMate - ChargeMOD,Thalayolaparambu,Kerala,9.798850817,76.45988738,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+EQ ChargeMate - ChargeMOD,Thalayolaparambu,Kerala,9.798850817,76.45988738,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Sihla Energy - ChargeMOD,Kumarakom,Kerala,9.594581375,76.42606942,ChargeMod (IN),"Private - For Staff, Visitors or Customers",CCS (Type 2),30
+Sihla Energy - ChargeMOD,Kumarakom,Kerala,9.594581375,76.42606942,ChargeMod (IN),"Private - For Staff, Visitors or Customers",Type 2 (Tethered Connector) ,7.4
+BMW EVM Autokraft Service Center - ChargeMOD,Kochuveli,Kerala,8.502329328,76.89772557,ChargeMod (IN),Public - Membership Required,CCS (Type 2),24
+ChargeMOD EVCS,Thiruvananthapuram ,Kerala,8.357873853,77.07294498,ChargeMod (IN),Public - Membership Required,CCS (Type 2),40
+Emily By JDaniels,Poojappura,Kerala,8.494974778,76.97756798,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Nuke EVCS - ChargeMOD,Sreekaryam,Kerala,8.548542375,76.91829328,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Nuke EVCS - ChargeMOD,Sreekaryam,Kerala,8.548542375,76.91829328,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Electro Zone EV Fast Charging Station - ChargeMOD,Karyavattom,Kerala,8.560820152,76.89816464,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Akshaya EV Fast Charging Station - ChargeMOD,Kazhakuttom,Kerala,8.565300166,76.87444738,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Akshaya EV Fast Charging Station - ChargeMOD,Kazhakuttom,Kerala,8.565300166,76.87444738,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Hybrid Cars Kazkakuttom - ChargeMOD,Kazhakuttom,Kerala,8.552449589,76.87447236,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Moolamattom KSEB EVCS - ChargeMOD,Moolamattom,Kerala,9.789170222,76.85385689,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Moolamattom KSEB EVCS - ChargeMOD,Moolamattom,Kerala,9.789170222,76.85385689,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Moolamattom KSEB EVCS - ChargeMOD,Moolamattom,Kerala,9.789170222,76.85385689,ChargeMod (IN),Public - Membership Required,GB-T DC - GB/T 20234.3,15
+Moolamattom KSEB EVCS - ChargeMOD,Moolamattom,Kerala,9.789170222,76.85385689,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+EQ Vagamon EV Port - ChargeMOD,Vagamon,Kerala,9.684303987,76.89548264,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+EQ Vagamon EV Port - ChargeMOD,Vagamon,Kerala,9.684303987,76.89548264,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+EQ Vagamon EV Port - ChargeMOD,Vagamon,Kerala,9.684303987,76.89548264,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Palm Peats (EVOK) - ChargeMOD,Erattupetta,Kerala,9.690678968,76.77458973,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Flour Mill (EVOK) - ChargeMOD,Pala,Kerala,9.711918348,76.6932445,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Jim and Jims EVCS - ChargeMOD,Pala,Kerala,9.691623798,76.64031695,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Jim and Jims EVCS - ChargeMOD,Pala,Kerala,9.691623798,76.64031695,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Alpha Hangout Play World,Ettumanoor,Kerala,9.661163852,76.55132833,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Gandhi Nagar KSEB EVCS - ChargeMOD,Arpookara,Kerala,9.632684209,76.5244017,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Gandhi Nagar KSEB EVCS - ChargeMOD,Arpookara,Kerala,9.632684209,76.5244017,ChargeMod (IN),Public - Membership Required,GB-T DC - GB/T 20234.3,
+Gandhi Nagar KSEB EVCS - ChargeMOD,Arpookara,Kerala,9.632684209,76.5244017,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Indraprastha Hotel (EVOK) - ChargeMOD,Kottayam,Kerala,9.601836959,76.53215901,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Charge n Fresh EVCS - ChargeMOD,Kottayam,Kerala,9.586257488,76.58841522,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Charge n Fresh EVCS - ChargeMOD,Kottayam,Kerala,9.586257488,76.58841522,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Pallam KSEB EVCS - ChargeMOD,Pallom,Kerala,9.543064907,76.51423133,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Pallam KSEB EVCS - ChargeMOD,Pallom,Kerala,9.543064907,76.51423133,ChargeMod (IN),Public - Membership Required,CHAdeMO,30
+Pallam KSEB EVCS - ChargeMOD,Pallom,Kerala,9.543064907,76.51423133,ChargeMod (IN),Public - Membership Required,GB-T DC - GB/T 20234.3,15
+Pallam KSEB EVCS - ChargeMOD,Pallom,Kerala,9.543064907,76.51423133,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Amma Restaurant,Alappuzha,Kerala,9.519932045,76.32752164,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Thankamanys EV Fast Charging Station - ChargeMOD,Alappuzha,Kerala,9.505147465,76.32832598,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Punnapra KSEB EVCS - ChargeMOD,Punnapra,Kerala,9.425616903,76.34677264,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Punnapra KSEB EVCS - ChargeMOD,Punnapra,Kerala,9.425616903,76.34677264,ChargeMod (IN),Public - Membership Required,GB-T DC - GB/T 20234.3,30
+Punnapra KSEB EVCS - ChargeMOD,Punnapra,Kerala,9.425616903,76.34677264,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Pathalil EVCS - Charge MOD,Nedumkunnam,Kerala,9.506164436,76.65233361,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+JJ E Fills - ChargeMOD,Changanassery,Kerala,9.452250326,76.5472389,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+JJ E Fills - ChargeMOD,Changanassery,Kerala,9.452250326,76.5472389,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Wealfro EV Hub,Thiruvalla,Kerala,9.421076267,76.54613417,ChargeMod (IN),Public - Membership Required,CCS (Type 2),40
+Anand Hypermarket - ChargeMOD,Thiruvalla,Kerala,9.373321982,76.56481065,ChargeMod (IN),Public - Membership Required,CCS (Type 2),25
+Iongrid EV Spark - ChargeMOD,Edathwa,Kerala,9.36752588,76.49951806,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Iongrid EV Spark - ChargeMOD,Edathwa,Kerala,9.36752588,76.49951806,ChargeMod (IN),Public - Membership Required,Type 2 (Tethered Connector) ,7.4
+Iongrid EV Spark - ChargeMOD,Edathwa,Kerala,9.36752588,76.49951806,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+V Charge Hub - ChargeMOD,Karuvatta,Kerala,9.314250283,76.42910773,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+V Charge Hub - ChargeMOD,Karuvatta,Kerala,9.314250283,76.42910773,ChargeMod (IN),Public - Membership Required,Type 2 (Tethered Connector) ,7.4
+V Charge Hub - ChargeMOD,Karuvatta,Kerala,9.314250283,76.42910773,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Quick Charge EVCS - ChargeMOD,Karuvatta,Kerala,9.315750049,76.4012212,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Quick Charge EVCS - ChargeMOD,Karuvatta,Kerala,9.315750049,76.4012212,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Quick Charge EVCS - ChargeMOD,Karuvatta,Kerala,9.315750049,76.4012212,ChargeMod (IN),Public - Membership Required,Type 2 (Tethered Connector) ,22
+Quick Charge EVCS - ChargeMOD,Karuvatta,Kerala,9.315750049,76.4012212,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Phills Hub EVCS - ChargeMOD,Pathanamthitta,Kerala,9.316652369,76.80090227,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Pamba KSEB EVCS - ChargeMOD,Pamba,Kerala,9.412378119,77.06996856,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Pamba KSEB EVCS - ChargeMOD,Pamba,Kerala,9.412378119,77.06996856,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Pamba KSEB EVCS - ChargeMOD,Pamba,Kerala,9.412378119,77.06996856,ChargeMod (IN),Public - Membership Required,GB-T DC - GB/T 20234.3,15
+Pamba KSEB EVCS - ChargeMOD,Pamba,Kerala,9.412378119,77.06996856,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+EVOK Pathanamthitta - ChargeMOD,Pathanamthitta,Kerala,9.306222052,76.80366578,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Green Plug EVCS - ChargeMOD,Chengannur,Kerala,9.271844657,76.65508789,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+PTC Arcade - ChargeMOD,Chengannur,Kerala,9.301293402,76.63077878,ChargeMod (IN),Public - Membership Required,CCS (Type 2),90
+PTC Arcade - ChargeMOD,Chengannur,Kerala,9.301293402,76.63077878,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Muzhangodayil EVCS - ChargeMOD,Harippad,,9.251673853,76.48723264,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Askar EV - ChargeMOD,Mavelikkara,Kerala,9.23250558,76.53790278,ChargeMod (IN),Public - Membership Required,CCS (Type 2),25
+Anaswara Jewellers EVCS - ChargeMOD,Konni,Kerala,9.229128424,76.84839128,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+EQ Power Buzz EVCS - ChargeMOD,Paranthal,Kerala,9.187183741,76.7092955,ChargeMod (IN),Public - Membership Required,CCS (Type 2),25
+EQ Power Buzz EVCS - ChargeMOD,Paranthal,Kerala,9.187183741,76.7092955,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Adhithya Green Power - ChargeMOD,Paranthal,Kerala,9.180307946,76.70896676,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+SR Auto Zone - ChargeMOD,Adoor,Kerala,9.162499405,76.71051678,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Artemis EV Super Charger - ChargeMOD,Mavelikkara,Kerala,9.198881109,76.6001765,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Artemis EV Super Charger - ChargeMOD,Mavelikkara,Kerala,9.198881109,76.6001765,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Royale Regency (EVOK) - ChargeMOD,Ochira,Kerala,9.130625595,76.51429714,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Delight Launch Cafe - ChargeMOD,Kottarakkara,Kerala,9.059350297,76.76600397,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Delight Launch Cafe - ChargeMOD,Kottarakkara,Kerala,9.059350297,76.76600397,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Ente Veedu Interior (EVOK) - ChargeMOD,Kottarakkara,Kerala,9.03035187,76.78219777,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Thenmala EVOK - ChargeMOD,Thenmala,Kerala,8.966824196,77.05562963,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Plug N Pay EVCS - ChargeMOD,Odanavattom,Kerala,8.93504521,76.77241548,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Kundara KSEB - ChargeMOD,Kundara,Kerala,8.957185858,76.67133653,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Kundara KSEB - ChargeMOD,Kundara,Kerala,8.957185858,76.67133653,ChargeMod (IN),Public - Membership Required,CHAdeMO,30
+Kundara KSEB - ChargeMOD,Kundara,Kerala,8.957185858,76.67133653,ChargeMod (IN),Public - Membership Required,Type 2 (Tethered Connector) ,22
+Kundara KSEB - ChargeMOD,Kundara,Kerala,8.957185858,76.67133653,ChargeMod (IN),Public - Membership Required,GB-T DC - GB/T 20234.3,15
+Sree Suprabhatham - ChargeMOD,Kollam,Kerala,8.926969524,76.55280315,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Bishop Jerome Nagar (EVOK) EVCS - ChargeMOD,Chinnakkada,Kerala,8.887577414,76.58843661,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Bishop Jerome Nagar (EVOK) EVCS - ChargeMOD,Chinnakkada,Kerala,8.887577414,76.58843661,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+VOX Xpress Wash (EVOK) - ChargeMOD,Kollam,Kerala,8.873868016,76.64100893,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+EVOK Charging Stattion - ChargeMOD,Parippalli,Kerala,8.819673868,76.75363731,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Plug N Pay EVCS,Kottarakkara,Kerala,8.935694035,76.85104921,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Plug N Pay EVCS,Kottarakkara,Kerala,8.935694035,76.85104921,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Kottiyam KSEB EVCS - ChargeMOD,Kottiyam,Kerala,8.866370095,76.66887781,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Kottiyam KSEB EVCS - ChargeMOD,Kottiyam,Kerala,8.866370095,76.66887781,ChargeMod (IN),Public - Membership Required,CHAdeMO,30
+Kottiyam KSEB EVCS - ChargeMOD,Kottiyam,Kerala,8.866370095,76.66887781,ChargeMod (IN),Public - Membership Required,Type 2 (Tethered Connector) ,22
+Kottiyam KSEB EVCS - ChargeMOD,Kottiyam,Kerala,8.866370095,76.66887781,ChargeMod (IN),Public - Membership Required,GB-T DC - GB/T 20234.3,15
+Avananchery KSEB EVCS - ChargeMOD,Attingal,Kerala,8.690987764,76.84839779,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Avananchery KSEB EVCS - ChargeMOD,Attingal,Kerala,8.690987764,76.84839779,ChargeMod (IN),Public - Membership Required,CHAdeMO,30
+Avananchery KSEB EVCS - ChargeMOD,Attingal,Kerala,8.690987764,76.84839779,ChargeMod (IN),Public - Membership Required,Type 2 (Tethered Connector) ,22
+Avananchery KSEB EVCS - ChargeMOD,Attingal,Kerala,8.690987764,76.84839779,ChargeMod (IN),Public - Membership Required,GB-T DC - GB/T 20234.3,15
+Paruthippara KSEB EVCS - ChargeMOD,Paruthippara,Kerala,8.534933841,76.94198426,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Paruthippara KSEB EVCS - ChargeMOD,Paruthippara,Kerala,8.534933841,76.94198426,ChargeMod (IN),Public - Membership Required,CHAdeMO,60
+Paruthippara KSEB EVCS - ChargeMOD,Paruthippara,Kerala,8.534933841,76.94198426,ChargeMod (IN),Public - Membership Required,Type 2 (Tethered Connector) ,3.3
+Pattom KSEB EVCS - ChargeMOD,Pattom,Kerala,8.516753527,76.93968818,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Pattom KSEB EVCS - ChargeMOD,Pattom,Kerala,8.516753527,76.93968818,ChargeMod (IN),Public - Membership Required,CHAdeMO,15
+Pattom KSEB EVCS - ChargeMOD,Pattom,Kerala,8.516753527,76.93968818,ChargeMod (IN),Public - Membership Required,Type 2 (Tethered Connector) ,3.3
+ANERT EESL - Pinarayi Park,Kannur,Kerala,11.7952321,75.4902189,EESL (IN),Public - Membership Required,CCS (Type 2),60
+ANERT EESL - Pinarayi Park,Kannur,Kerala,11.7952321,75.4902189,EESL (IN),Public - Membership Required,CHAdeMO,60
+ANERT EESL - Pinarayi Park,Kannur,Kerala,11.7952321,75.4902189,EESL (IN),Public - Membership Required,Type 2 (Tethered Connector) ,22
+ANERT EESL - Aahar Restaurant Vadakara,Vadakara,Kerala,11.58636489,75.59322034,EESL (IN),Public - Membership Required,CCS (Type 2),60
+ANERT EESL - Aahar Restaurant Vadakara,Vadakara,Kerala,11.58636489,75.59322034,EESL (IN),Public - Membership Required,CHAdeMO,60
+ANERT EESL - Aahar Restaurant Vadakara,Vadakara,Kerala,11.58636489,75.59322034,EESL (IN),Public - Membership Required,Type 2 (Tethered Connector) ,22
+ANERT EESL - Moosakkutti Memorial Bus Stand,Perinthalmanna,Kerala,10.97506931,76.22228328,EESL (IN),Public - Membership Required,CCS (Type 2),60
+ANERT EESL - Moosakkutti Memorial Bus Stand,Perinthalmanna,Kerala,10.97506931,76.22228328,EESL (IN),Public - Membership Required,CHAdeMO,60
+ANERT EESL - Moosakkutti Memorial Bus Stand,Perinthalmanna,Kerala,10.97506931,76.22228328,EESL (IN),Public - Membership Required,Type 2 (Tethered Connector) ,22
+ANERT EESL - Kanjirappuzha Garden,Mannarkkad,Keral,10.98925926,76.53701214,EESL (IN),Public - Membership Required,CCS (Type 2),60
+ANERT EESL - Kanjirappuzha Garden,Mannarkkad,Keral,10.98925926,76.53701214,EESL (IN),Public - Membership Required,CHAdeMO,60
+ANERT EESL - Kanjirappuzha Garden,Mannarkkad,Keral,10.98925926,76.53701214,EESL (IN),Public - Membership Required,Type 2 (Tethered Connector) ,22
+ANERT EESL - KTDC Aahar Restaurant ,Kayamkulam,Lerala,9.149021955,76.51291823,EESL (IN),Public - Membership Required,CCS (Type 2),60
+ANERT EESL - KTDC Aahar Restaurant ,Kayamkulam,Lerala,9.149021955,76.51291823,EESL (IN),Public - Membership Required,CHAdeMO,60
+ANERT EESL - KTDC Aahar Restaurant ,Kayamkulam,Lerala,9.149021955,76.51291823,EESL (IN),Public - Membership Required,Type 2 (Tethered Connector) ,22
+ANERT EESL - Kulappulli Bus Stand,Shornur,Kerala,10.78101644,76.27832766,EESL (IN),Public - Membership Required,CCS (Type 2),60
+ANERT EESL - Kulappulli Bus Stand,Shornur,Kerala,10.78101644,76.27832766,EESL (IN),Public - Membership Required,CHAdeMO,60
+ANERT EESL - Kulappulli Bus Stand,Shornur,Kerala,10.78101644,76.27832766,EESL (IN),Public - Membership Required,Type 2 (Tethered Connector) ,22
+ANERT EESL - KILA Thrissur,Thrissur,Kerala,10.60158189,76.21488231,EESL (IN),Public - Membership Required,CCS (Type 2),60
+ANERT EESL - KILA Thrissur,Thrissur,Kerala,10.60158189,76.21488231,EESL (IN),Public - Membership Required,CHAdeMO,60
+ANERT EESL - KILA Thrissur,Thrissur,Kerala,10.60158189,76.21488231,EESL (IN),Public - Membership Required,Type 2 (Tethered Connector) ,22
+ANERT EESL - Chittur Thathamangalam Minicipality,Palakkad,Kerala,10.69295155,76.72626208,EESL (IN),Public - Membership Required,CCS (Type 2),60
+ANERT EESL - Chittur Thathamangalam Minicipality,Palakkad,Kerala,10.69295155,76.72626208,EESL (IN),Public - Membership Required,CHAdeMO,60
+ANERT EESL - Chittur Thathamangalam Minicipality,Palakkad,Kerala,10.69295155,76.72626208,EESL (IN),Public - Membership Required,Type 2 (Tethered Connector) ,22
+ANERT EESL - DTPC Idukki Park,Idukki,Kerala,9.849056509,76.97740371,EESL (IN),Public - Membership Required,CCS (Type 2),60
+ANERT EESL - DTPC Idukki Park,Idukki,Kerala,9.849056509,76.97740371,EESL (IN),Public - Membership Required,CHAdeMO,60
+ANERT EESL - DTPC Idukki Park,Idukki,Kerala,9.849056509,76.97740371,EESL (IN),Public - Membership Required,Type 2 (Tethered Connector) ,22
+ANERT EESL - Ernakulam,Ernakulam,Kerala,9.976988501,76.27781052,EESL (IN),Public - Membership Required,CCS (Type 2),60
+ANERT EESL - Ernakulam,Ernakulam,Kerala,9.976988501,76.27781052,EESL (IN),Public - Membership Required,CHAdeMO,60
+ANERT EESL - Ernakulam,Ernakulam,Kerala,9.976988501,76.27781052,EESL (IN),Public - Membership Required,Type 2 (Tethered Connector) ,15
+ANERT EESL - Ernakulam,Ernakulam,Kerala,9.976988501,76.27781052,EESL (IN),Public - Membership Required,Type 2 (Tethered Connector) ,22
+ANERT EESL - Autokast ,Cherthala,Kerala,9.632149085,76.33300324,EESL (IN),Public - Membership Required,CCS (Type 2),60
+ANERT EESL - Autokast ,Cherthala,Kerala,9.632149085,76.33300324,EESL (IN),Public - Membership Required,CHAdeMO,60
+ANERT EESL - Autokast ,Cherthala,Kerala,9.632149085,76.33300324,EESL (IN),Public - Membership Required,Type 2 (Tethered Connector) ,22
+ANERT EESL Milma Diary Plant - EESL,Pathanamthitta ,Kerala,9.218788692,76.74875398,EESL (IN),Public - Membership Required,CCS (Type 2),60
+ANERT EESL Milma Diary Plant - EESL,Pathanamthitta ,Kerala,9.218788692,76.74875398,EESL (IN),Public - Membership Required,CHAdeMO,60
+ANERT EESL Milma Diary Plant - EESL,Pathanamthitta ,Kerala,9.218788692,76.74875398,EESL (IN),Public - Membership Required,Type 2 (Tethered Connector) ,20
+ANERT - EESL Sangamukham - EESL,Thiruvananthapuram ,Kerala,8.481014702,76.91264314,EESL (IN),Public - Membership Required,CCS (Type 2),60
+ANERT - EESL Sangamukham - EESL,Thiruvananthapuram ,Kerala,8.481014702,76.91264314,EESL (IN),Public - Membership Required,CHAdeMO,60
+ANERT - EESL Sangamukham - EESL,Thiruvananthapuram ,Kerala,8.481014702,76.91264314,EESL (IN),Public - Membership Required,Type 2 (Tethered Connector) ,15
+ANERT - EESL Sangamukham - EESL,Thiruvananthapuram ,Kerala,8.481014702,76.91264314,EESL (IN),Public - Membership Required,Type 2 (Tethered Connector) ,22
+Apco Hyundai - ChargeZone,Chengala,Kerala,12.50891488,75.04478426,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+Apco Hyundai - ChargeZone,Chengala,Kerala,12.50891488,75.04478426,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+Thiruvangoor EV Fast Charging Station - ChargeMOD,Kozhikode,Kerala,11.38282724,75.7359365,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+MB#Bridgeway Motors - ChargeZone,Kozhikode,Kerala,11.28249895,75.7695995,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+MB#Bridgeway Motors - ChargeZone,Kozhikode,Kerala,11.28249895,75.7695995,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+KVR Hyundai - ChargeZone,Kozhikode,Kerala,11.27997831,75.7704806,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+KVR Hyundai - ChargeZone,Kozhikode,Kerala,11.27997831,75.7704806,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+Grand Hyundai - ChargeZone,Palakkad,Kerala,10.79047661,76.65111939,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+Grand Hyundai - ChargeZone,Palakkad,Kerala,10.79047661,76.65111939,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+MB#Bridgeway Motors - ChargeZone,Thrissur,Kerala,10.47104712,76.25745903,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+MB#Bridgeway Motors - ChargeZone,Thrissur,Kerala,10.47104712,76.25745903,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+Kochi Marriot Hotel,Kochi,Kerala,10.02982815,76.30813431,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+Kochi Marriot Hotel,Kochi,Kerala,10.02982815,76.30813431,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+Le Meridien - ChargeZone,Ernakulam,Kerala,9.933863177,76.31687406,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+Le Meridien - ChargeZone,Ernakulam,Kerala,9.933863177,76.31687406,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+MB#Coastal Star - ChargeZone,Ernakulam,Kerala,9.92299022,76.31768925,Chargezone (India),Public - Membership Required,CCS (Type 2),90
+MB#Coastal Star - ChargeZone,Ernakulam,Kerala,9.92299022,76.31768925,Chargezone (India),Public - Membership Required,CCS (Type 2),90
+GreenVeel - ChargeZone,Muvattupuzha,Kerala,9.973783778,76.60069409,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+GreenVeel - ChargeZone,Idukki,Kerala,9.89254828,76.71189442,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+GreenVeel - ChargeZone,Idukki,Kerala,9.89254828,76.71189442,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+Athirampuzha - ChargeZone,Kottayam,Kerala,9.661688306,76.55113746,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+Athirampuzha - ChargeZone,Kottayam,Kerala,9.661688306,76.55113746,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+SS Hyundai - ChargeZone,Pathanamthitta,Kerala,9.277744925,76.75468311,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+SS Hyundai - ChargeZone,Pathanamthitta,Kerala,9.277744925,76.75468311,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+GDM Auditorium - ChargeZone,Kayamkulam,Kerala,9.169962389,76.49808792,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+GDM Auditorium - ChargeZone,Kayamkulam,Kerala,9.169962389,76.49808792,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+Hotel Indraprastha - ChargeZone,Karunagappalli,Kerala,9.052355042,76.53546081,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+Hotel Indraprastha - ChargeZone,Karunagappalli,Kerala,9.052355042,76.53546081,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+Best EVCS - ChargeMOD,Karunagappalli,Kerala,9.046053009,76.53663078,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+Instacharge EV Fast Charging and Cafe - ChargeZone,Kollam,Kerala,8.915427161,76.61486887,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+Instacharge EV Fast Charging and Cafe - ChargeZone,Kollam,Kerala,8.915427161,76.61486887,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+Instacharge EV Fast Charging and Cafe - ChargeZone,Kollam,Kerala,8.915427161,76.61486887,Chargezone (India),Public - Membership Required,CEE 3 Pin,3.3
+Chungath Sprise Hyundai - ChargeZone,Kollam,Kerala,8.911104862,76.62735316,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+Chungath Sprise Hyundai - ChargeZone,Kollam,Kerala,8.911104862,76.62735316,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+KVE Charge - Charge-Zone,Varkkala,Kerala,8.737548356,76.70789801,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+KVE Charge - Charge-Zone,Varkkala,Kerala,8.737548356,76.70789801,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+Marvel Paints - ChargeZone,Thiruvananthapuram ,Kerala,8.535706208,76.96526204,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+Marvel Paints - ChargeZone,Thiruvananthapuram ,Kerala,8.535706208,76.96526204,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+Raj Residency - Zeon,Kanhangad,Kerala,12.30424174,75.09704178,Zeon Charging,Public - Membership Required,CCS (Type 2),50
+Koodali SCB,Kannur,Kerala,11.9270166,75.50042206,Zeon Charging,Public - Membership Required,CCS (Type 2),30
+Co-Operqative Bank - Zeon,Kathirur,Kerala,11.78788559,75.53302105,Zeon Charging,Public - Membership Required,CCS (Type 2),30
+Co-Operqative Bank - Zeon,Kathirur,Kerala,11.78788559,75.53302105,Zeon Charging,Public - Membership Required,Type 2 (Tethered Connector) ,7.4
+Co-Operqative Bank - Zeon,Kathirur,Kerala,11.78788559,75.53302105,Zeon Charging,Public - Membership Required,CEE 3 Pin,3.3
+Down Town Mall - Zeon,Thalasseri,Kerala,11.74512339,75.49541917,Zeon Charging,Public - Membership Required,CCS (Type 2),60
+Issacs Centre Square - Zeon,Sulthan Batheri,Kerala,11.66124226,76.25568142,(Unknown Operator),Public - Membership Required,CCS (Type 2),24
+Great Trails Wayanad by GRT Hotels,Kalpetta,Kerala,11.63045584,76.01814584,Zeon Charging,"Private - For Staff, Visitors or Customers",Type 2 (Tethered Connector) ,22
+Nesto Hypermarket - Zeon,Kalpetta,Kerala,11.60311373,76.08314904,Zeon Charging,Public - Membership Required,CCS (Type 2),24
+HiLite Mall - Zeon,Kozhikode,Kerala,11.24810247,75.83413592,Zeon Charging,Public - Membership Required,CCS (Type 2),120
+HiLite Mall - Zeon,Kozhikode,Kerala,11.24810247,75.83413592,Zeon Charging,Public - Membership Required,CCS (Type 2),60
+HiLite Business Park - Zeon,Kozhikode,Kerala,11.24701616,75.83467864,Zeon Charging,Public - Membership Required,CCS (Type 2),60
+HiLite Business Park - Zeon,Kozhikode,Kerala,11.24701616,75.83467864,Zeon Charging,Public - Membership Required,CCS (Type 2),24
+Nesto Hypermarket - Zeon,Kottakkal,Kerala,10.99573941,75.99210994,Zeon Charging,Public - Membership Required,CCS (Type 2),60
+Club Sulaimani - Zeon,Kottakkal,Kerala,10.98386743,75.9980295,Zeon Charging,Public - Membership Required,CCS (Type 2),24
+Nesto Hypermarket Zeon,Thirur,Kerala,10.90772625,75.92032568,Zeon Charging,Public - Membership Required,CCS (Type 2),60
+Emirates Mall - Zeon,Edappal,Kerala,10.78602051,76.00816182,Zeon Charging,Public - Membership Required,CCS (Type 2),24
+Hotel Devaragam,Guruvayur,Kerala,10.59562258,76.04459843,Zeon Charging,Public - Membership Required,CCS (Type 2),24
+Nesto Hypermarket,Thrissur,Kerala,10.53992625,76.19288758,Zeon Charging,Public - Membership Required,CCS (Type 2),60
+Dream City Convention Center,Pattikkad,Kerala,10.55587199,76.32282252,Zeon Charging,Public - Membership Required,CCS (Type 2),24
+Chennai Ananda Bhavan,Thrissur,Kerala,10.5127597,76.25891675,Zeon Charging,Public - Membership Required,CCS (Type 2),60
+Hilite Mall,Thrissur,Kerala,10.49548871,76.25680253,Zeon Charging,Public - Membership Required,CCS (Type 2),120
+Hilite Mall,Thrissur,Kerala,10.49548871,76.25680253,Zeon Charging,Public - Membership Required,CCS (Type 2),60
+Hilite Mall,Thrissur,Kerala,10.49548871,76.25680253,Zeon Charging,Public - Membership Required,CCS (Type 2),24
+Mughal Mall,Kodungallur,Kerala,10.23131902,76.1972431,Zeon Charging,Public - Membership Required,CCS (Type 2),60
+Maxx Inn M Star,Angamaly,Kerala,10.22272376,76.37569774,Zeon Charging,Public - Membership Required,CCS (Type 2),24
+Club Mahindra Resort - Cherai Beach,Cherai,Kerala,10.137094,76.18028953,Zeon Charging,"Private - For Staff, Visitors or Customers",Type 2 (Tethered Connector) ,22
+Club Mahindra Resort - Cherai Beach,Cherai,Kerala,10.137094,76.18028953,Zeon Charging,"Private - For Staff, Visitors or Customers",Type 2 (Tethered Connector) ,22
+Grand Mall,Edappalli,Kerala,10.02416042,76.30871193,Zeon Charging,Public - Membership Required,CCS (Type 2),60
+Grand Mall,Edappalli,Kerala,10.02416042,76.30871193,Zeon Charging,Public - Membership Required,CCS (Type 2),24
+Gokul Oottupura Restaurant,Edappalli,Kerala,10.01114482,76.31249741,Zeon Charging,Public - Membership Required,CCS (Type 2),50
+Brunton Boatyard,Cochin,Kerala,9.968304525,76.24570948,Zeon Charging,Public - Membership Required,CCS (Type 2),24
+Casino Hotel,Kochi,Kerala,9.961431244,76.26949095,Zeon Charging,Public - Membership Required,Type 2 (Tethered Connector) ,22
+Hotel Ganga Grand,Moovattupuzha,Kerala,9.981770566,76.57830423,Zeon Charging,Public - Membership Required,CCS (Type 2),60
+Eden Wood Resorts,Munnar,Kerala,10.02567632,77.05377106,Zeon Charging,"Private - For Staff, Visitors or Customers",Type 2 (Tethered Connector) ,22
+Club Mahindra Aleppey Resort,Arookutty,Kerala,9.859751104,76.33582417,Zeon Charging,"Private - For Staff, Visitors or Customers",Type 2 (Tethered Connector) ,22
+Club Mahindra Aleppey Resort,Arookutty,Kerala,9.859751104,76.33582417,Zeon Charging,"Private - For Staff, Visitors or Customers",Type 2 (Tethered Connector) ,22
+CGH Marari Beach,Mararikulam,Kerala,9.596033619,76.30277024,Zeon Charging,Public - Membership Required,Type 2 (Tethered Connector) ,22
+Cassia Restaurant,Alappuzha,Kerala,9.518713883,76.32748515,Zeon Charging,Public - Membership Required,CCS (Type 2),60
+Hotel Aida,Kottayam,Kerala,9.582880476,76.52168622,Zeon Charging,Public - Membership Required,CCS (Type 2),50
+The Windsor Castle Hotel,Kottayam,Kerala,9.5715482,76.51936941,Zeon Charging,Public - Membership Required,CCS (Type 2),24
+Club Mahindra Resort - Thekkadi,Kumali,Kerala,9.60343667,77.17154785,Zeon Charging,"Private - For Staff, Visitors or Customers",Type 2 (Tethered Connector) ,22
+Club Mahindra Resort - Thekkadi,Kumali,Kerala,9.60343667,77.17154785,Zeon Charging,"Private - For Staff, Visitors or Customers",Type 2 (Tethered Connector) ,22
+RD Cinemas,Mundakkayam,Kerala,9.544093022,76.87733542,Zeon Charging,Public - Membership Required,CCS (Type 2),24
+Kanthari Restaurants,Changanassery,Kerala,9.45516547,76.54242382,Zeon Charging,Public - Membership Required,CCS (Type 2),24
+Mannil Green Solutions,Mavelikkara,Kerala,9.283238234,76.53084011,Zeon Charging,Public - Membership Required,CCS (Type 2),60
+Phills Hub - Zeon,Pathanamthitta,Kerala,9.316719271,76.80097102,Zeon Charging,Public - Membership Required,CCS (Type 2),24
+Wyte Portico Hotel,Adoor,Kerala,9.161947572,76.72149631,Zeon Charging,Public - Membership Required,CCS (Type 2),24
+Pooyappalli Service Co-Operative Bank Ltd,Kollam,Kerala,8.898682096,76.74213825,Zeon Charging,Public - Membership Required,CCS (Type 2),30
+Pooyappalli Service Co-Operative Bank Ltd,Kollam,Kerala,8.898682096,76.74213825,Zeon Charging,Public - Membership Required,CCS (Type 2),30
+Pooyappalli Service Co-Operative Bank Ltd,Kollam,Kerala,8.898682096,76.74213825,Zeon Charging,Public - Membership Required,Type 2 (Tethered Connector) ,7.4
+Pooyappalli Service Co-Operative Bank Ltd,Kollam,Kerala,8.898682096,76.74213825,Zeon Charging,Public - Membership Required,CEE 3 Pin,3.3
+N and N Station,Kottiyam,Kerala,8.864731077,76.66048322,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+N and N Station,Kottiyam,Kerala,8.864731077,76.66048322,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Amma Veedu Restaurent,Ayoor,Kerala,8.930368465,76.85381998,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+DM Charging,Parippilli,Kerala,8.812579175,76.75675171,Zeon Charging,Public - Membership Required,CCS (Type 2),60
+New Indraprastha (EVOK) EVCS,Kallambalam,Kerala,8.792020363,76.770632,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Vazhiyorakkada Hotel,KIlimamoor,Kerala,8.785763002,76.88370044,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Astro Burgers,Attingal,Kerala,8.687607888,76.82992395,Zeon Charging,Public - Membership Required,CCS (Type 2),24
+Edackodu Bank EVCS,Thiruvananthapuram ,Kerala,8.671500192,76.83499833,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Edackodu Bank EVCS,Thiruvananthapuram ,Kerala,8.671500192,76.83499833,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Edackodu Bank EVCS,Thiruvananthapuram ,Kerala,8.671500192,76.83499833,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Kerala EV Vembayam,Thiruvananthapuram ,Kerala,8.651754842,76.9279797,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Kerala EV Vembayam,Thiruvananthapuram ,Kerala,8.651754842,76.9279797,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Ultralink EVCS Charging Station,Thiruvananthapuram ,Kerala,8.330756913,77.14237583,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Ultralink EVCS Charging Station,Thiruvananthapuram ,Kerala,8.330756913,77.14237583,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Club Mahindra Resort Poovar,Thiruvananthapuram ,Kerala,8.306583673,77.08608641,Zeon Charging,Public - Membership Required,Type 2 (Tethered Connector) ,22
+Club Mahindra Resort Poovar,Thiruvananthapuram ,Kerala,8.306583673,77.08608641,Zeon Charging,Public - Membership Required,Type 2 (Tethered Connector) ,22
+Powerhub EVCS Attukal,Thiruvananthapuram ,Kerala,8.466545109,76.96080801,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Powerhub EVCS Attukal,Thiruvananthapuram ,Kerala,8.466545109,76.96080801,ChargeMod (IN),Public - Membership Required,CEE 3 Pin,3.3
+Sleeba & Sons Station,Thiruvananthapuram ,Kerala,8.544983421,76.97229844,Statiq (IN),Public - Membership Required,CCS (Type 2),60
+JKV Power Hub ,Thiruvananthapuram ,Kerala,8.503667854,76.95391617,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Hilton Garden Inn Trivandrum,Thiruvananthapuram ,Kerala,8.499635232,76.95029906,Statiq (IN),Public - Membership Required,CCS (Type 2),60
+Hilton Garden Inn Trivandrum,Thiruvananthapuram ,Kerala,8.499635232,76.95029906,Statiq (IN),Public - Membership Required,CCS (Type 2),60
+CBC Motors Charging Station,Thiruvananthapuram ,Kerala,8.465871552,76.93909758,Statiq (IN),Public - Membership Required,CCS (Type 2),60
+Trivandrum Airport T1,Thiruvananthapuram ,Kerala,8.476057965,76.91830975,Adani Gas-EV (TR),Public - Membership Required,CCS (Type 2),30
+Trivandrum Airport T1,Thiruvananthapuram ,Kerala,8.476057965,76.91830975,Adani Gas-EV (TR),Public - Membership Required,GB-T DC - GB/T 20234.3,20
+Trivandrum Airport T2,Thiruvananthapuram ,Kerala,8.488386744,76.92245063,Adani Gas-EV (TR),Public - Membership Required,CCS (Type 2),30
+Trivandrum Airport T2,Thiruvananthapuram ,Kerala,8.488386744,76.92245063,Adani Gas-EV (TR),Public - Membership Required,GB-T DC - GB/T 20234.3,20
+V Kay Super Market,Thiruvananthapuram ,Kerala,8.575089637,76.86841739,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+ChargeMOD EVCS Hub,Thiruvananthapuram ,Kerala,8.550683857,76.87848778,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+ChargeMOD EVCS Hub,Thiruvananthapuram ,Kerala,8.550683857,76.87848778,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+ChargeMOD EVCS Hub,Thiruvananthapuram ,Kerala,8.550683857,76.87848778,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Delta Power Kulathoor,Thiruvananthapuram ,Kerala,8.542037313,76.87581948,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Delta Power Kulathoor,Thiruvananthapuram ,Kerala,8.542037313,76.87581948,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Delta Power Kulathoor,Thiruvananthapuram ,Kerala,8.542037313,76.87581948,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+KIMS Hospital Trivandrum (EVOK),Thiruvananthapuram ,Kerala,8.514470785,76.90784744,ChargeMod (IN),Public - Membership Required,CCS (Type 2),30
+Alpha EVCS Yahoo Super Bazar,Thiruvanthapuram,Kerala,8.510831845,76.90484032,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Alpha EVCS Yahoo Super Bazar,Thiruvanthapuram,Kerala,8.510831845,76.90484032,ChargeMod (IN),Public - Membership Required,CCS (Type 2),60
+Mansavi SuperCharge Point,G B Nagar,Uttar Pradesh,28.45518637,77.50358521,(Unknown Operator),Public,CCS (Type 2),30
+Sri Sai Kanchetty Family Restaurant,Dichpally,Telangana,18.63217084,78.20817023,Chargezone (India),Public - Membership Required,CCS (Type 2),60
+Hotel Topline,Dhule,Maharashtra,20.83696798,74.75561015,Chargezone (India),Public - Membership Required,CCS (Type 2),60
+Hotel Mayur Express,Sangamner,Maharashtra,19.52011448,74.20273682,Chargezone (India),Public - Membership Required,CCS (Type 2),30
+FC - JioBP - The Bengal Dhaba,Kalyani,West Bengal,22.9226685,88.45628434,JIO BP Pulse (India),Public,CCS (Type 2),60
+FC - JioBP - WBSDCL Athupur,Barrakpore,West Bengal,22.8394671,88.38586414,JIO BP Pulse (India),Public,CCS (Type 2),30
+FC - JioBP - WBSDCL Athupur,Barrakpore,West Bengal,22.8394671,88.38586414,JIO BP Pulse (India),Public,Unknown,3.2
+FC - Jio-BP - Khardaha,Khardaha,West Bengal,22.70657212,88.37434853,JIO BP Pulse (India),Public,CCS (Type 2),60
+FC - Tata Power - Taj Raajkutir,Kolkata,West Bengal,22.57350556,88.40230026,Tata Power,Public,CCS (Type 2),30
+Azadpur Metro Station,Delhi,Delhi,28.70661176,77.1821076,JIO BP Pulse (India),Public,CCS (Type 2),60
+Village Vatika Restaurant And Hotel,Danora,Madhya Pradesh,21.88567059,77.88399107,(Unknown Operator),Public,CCS (Type 2),60
+Vithal Kamats,Hinganghat,Maharashtra,20.57443904,78.88230402,(Unknown Operator),Public,CCS (Type 2),30
+Hotel Bluemoon,Miduthuru,Andhra Pradesh,15.02621864,77.62107334,(Unknown Operator),Public - Membership Required,CCS (Type 2),150
+Hotel Bluemoon,Miduthuru,Andhra Pradesh,15.02621864,77.62107334,(Unknown Operator),Public - Membership Required,CCS (Type 2),30
+Mahaveer Ventures Hotel and Resort - The Padival Grand,Puttur,Karnataka,12.76619,75.19666,Zeon Charging,Public,CCS (Type 2),24
+Mahaveer Ventures Hotel and Resort - The Padival Grand,Puttur,Karnataka,12.76619,75.19666,Zeon Charging,Public,Type 2 (Tethered Connector) ,22
+Silavattam Village,"Madurathakam, Chengalpattu Dt",Tamil Nadu,12.48148773,79.8625223,(Unknown Operator),"Private - For Staff, Visitors or Customers",Unknown,
+Mahalaxmi EV Charging STATION,Gautaum Buddha Nagar ,uttar pradesh ,28.54753,77.44491,(Unknown Operator),Public,Unknown,9
+Mahalaxmi EV Charging STATION,Gautaum Buddha Nagar ,uttar pradesh ,28.54753,77.44491,(Unknown Operator),Public,CCS (Type 2),7.4
+"Baboos Triangle, Zeon Charging Station",Kunnamkulam ,Kerala,10.71947926,76.07748035,Zeon Charging,Public,CCS (Type 2),60
+Etron Energies,Chennai,Tamil Nadu,13.07148,80.11256,Zeon Charging,Public,CCS (Type 2),30
+Regency Tiruttani by GRT Hotels,Thiruttani,Tamil Nadu,13.19516,79.64576,Zeon Charging,Public,CCS (Type 2),24
+RB Business Centre,Vellore,Tamil Nadu,12.86196,79.13251,Zeon Charging,Public,CCS (Type 2),30
+Regency Sameera Vellore by GRT Hotels,Vellore,Tamil Nadu,12.93209,79.13843,Zeon Charging,Public,CCS (Type 2),24
+7 Star Green Veg Restaurant,Vaniyambadi,Tamil Nadu,12.64682,78.58269,Zeon Charging,Public,CCS (Type 2),60
+7 Star Green Veg Restaurant,Vaniyambadi,Tamil Nadu,12.64682,78.58269,Zeon Charging,Public,CCS (Type 2),60
+"Cafe Udupi Ruchi, Ulundurpet",Ulundurpet,Tamil Nadu,11.71937,79.33668,Zeon Charging,Public,CCS (Type 2),30
+Hotel Sri Anandhas,Veppur,Tamil Nadu,11.59206,79.15621,Zeon Charging,Public,CCS (Type 2),50
+"Adyar Ananda Bhavan, Kallakurichi",Kallakurichi,Tamil Nadu,11.71086,78.94797,Zeon Charging,Public,CCS (Type 2),60
+"Adyar Ananda Bhavan, Attur",Attur,Tamil Nadu,11.592,78.62726,Zeon Charging,Public,CCS (Type 2),50
+"Adyar Ananda Bhavan, Attur",Attur,Tamil Nadu,11.592,78.62726,Zeon Charging,Public,CCS (Type 2),50
+Aswins Veg Restaurant,Perambalur,Tamil Nadu,11.209,78.8828,Zeon Charging,Public,CCS (Type 2),30
+Aswins Veg Restaurant,Perambalur,Tamil Nadu,11.209,78.8828,Zeon Charging,Public,CCS (Type 2),50
+AVS Imperiaa,Karaikal,Puducherry,10.93799,79.8224,Zeon Charging,Public,CCS (Type 2),24
+Golden Sand,Velankanni,Tamil Nadu,10.68292,79.8478,Zeon Charging,Public,Type 2 (Tethered Connector) ,22
+Golden Sand,Velankanni,Tamil Nadu,10.68292,79.8478,Zeon Charging,Public,CCS (Type 2),24
+"Jayaraj Karz, Vallam Pudur Sethi",Thanjavur,Tamil Nadu,10.728,79.04692,Zeon Charging,Public,CCS (Type 2),30
+"Kaveri Garage, Tiruchirapalli",Tiruchirappalli,Tamil Nadu,10.85843,78.71129,Zeon Charging,Public,CCS (Type 2),30
+"Kaveri Garage, Tiruchirapalli",Tiruchirappalli,Tamil Nadu,10.85843,78.71129,Zeon Charging,Public,CCS (Type 2),50
+Hotel Arun Cafe,Viralimalai,Tamil Nadu,10.6244,78.56317,Zeon Charging,Public,CCS (Type 2),24
+"Kaveri Garage, Piratiyur",Piratiyur,Tamil Nadu,10.79194,78.65714,Zeon Charging,Public,CCS (Type 2),24
+Hotel Malar,Karaikudi,Tamil Nadu,10.07009,78.76079,Zeon Charging,Public,CCS (Type 2),30
+Regency Tuticorin by GRT Hotels,Thoothukudi,Tamil Nadu,8.7816,78.10053,Zeon Charging,Public,Type 2 (Tethered Connector) ,22
+Regency Tuticorin by GRT Hotels,Thoothukudi,Tamil Nadu,8.7816,78.10053,Zeon Charging,Public,CCS (Type 2),30
+Pearl Garden Resort,Veerapandianpattinam,Tamil Nadu,8.53918,78.11771,Zeon Charging,Public,CCS (Type 2),24
+"Sree Saravana Bhavan, Sankagiri",Sangagiri,Tamil Nadu,11.4866,77.99226,Zeon Charging,Public,CCS (Type 2),30
+"Sree Saravana Bhavan, Sankagiri",Sangagiri,Tamil Nadu,11.4866,77.99226,Zeon Charging,Public,CCS (Type 2),30
+"Milky Mist Cafe, Erode Sathy Highway",Erode,Tamil Nadu ,11.3998,77.62536,Zeon Charging,Public,CCS (Type 2),50
+Texvalley,Erode,Tamil Nadu,11.37172,77.64731,Zeon Charging,Public,IEC 60309 3-pin,3.3
+Texvalley,Erode,Tamil Nadu,11.37172,77.64731,Zeon Charging,Public,CCS (Type 2),60
+Texvalley,Erode,Tamil Nadu,11.37172,77.64731,Zeon Charging,Public,Type 2 (Tethered Connector) ,22
+Texvalley,Erode,Tamil Nadu,11.37172,77.64731,Zeon Charging,Public,CCS (Type 2),30
+Victory Tata,Erode,Tamil Nadu,11.31239,77.66505,Zeon Charging,Public,CCS (Type 2),24
+Sri Kongu Bakes,Perundurai,Tamil Nadu,11.28353,77.55823,Zeon Charging,Public,CCS (Type 2),30
+Sri Kongu Bakes,Perundurai,Tamil Nadu,11.28353,77.55823,Zeon Charging,Public,IEC 60309 3-pin,3.3
+Junior Kuppanna,Avinashi,Tamil Nadu,11.17708,77.24713,Zeon Charging,Public,CCS (Type 2),30
+"Sree Annapoorna Hotel, Avinashi",Avinashi,Tamil Nadu,11.17513,77.26342,Zeon Charging,Public,CCS (Type 2),60
+Cafe Udupi Ruchi,Avinashi,Tamil Nadu,11.17719,77.28392,Zeon Charging,Public,CCS (Type 2),50
+Annapoorna - NH Avinashi,Avinashi,Tamil Nadu,11.1778,77.28318,Zeon Charging,Public,CCS (Type 2),30
+"Ibex River Resort, Pollachi",Pollachi,Tamil Nadu,10.64693,76.91992,Zeon Charging,Public,Type 2 (Tethered Connector) ,7.4
+Travlounge - Palakkad,Walayar,Kerala ,10.82633,76.82033,Zeon Charging,Public,CCS (Type 2),30
+ Adyar Ananda Bhavan Navakkarai,Navakkarai,Tamil Nadu,10.85592,76.86251,Zeon Charging,Public,CCS (Type 2),50
+ Adyar Ananda Bhavan Navakkarai,Navakkarai,Tamil Nadu,10.85592,76.86251,Zeon Charging,Public,CCS (Type 2),60
+"SR Jungle Resort, Anaikatti",Anaikatti,Tamil Nadu ,11.11848,76.75985,Zeon Charging,Public,Type 2 (Tethered Connector) ,22
+"SR Jungle Resort, Anaikatti",Anaikatti,Tamil Nadu ,11.11848,76.75985,Zeon Charging,Public,Type 2 (Tethered Connector) ,22
+Sundaram Motors Coimbatore,Coimbatore,Tamil Nadu,10.91863,76.98461,Chargezone (India),Public,CCS (Type 2),45
