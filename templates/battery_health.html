@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EV Range Anxiety Prediction</title>
+</head>
+
+<body>
+
+<h1>EV Range Anxiety Prediction</h1>
+
+<form action="/predict_anxiety" method="POST">
+
+    <!-- Vehicle Type -->
+    <label>Vehicle Type:</label>
+    <select name="vehicle_type" required>
+        <option value="" hidden >Select Vehicle Type</option>
+        <option value="0">2 Wheeler</option>
+        <option value="1">3 Wheeler</option>
+        <option value="2">4 Wheeler</option>
+    </select>
+
+    <br><br>
+
+    <!-- Battery Capacity -->
+    <label>Battery Capacity (kWh):</label>
+    <input type="number"
+           name="battery_capacity_kwh"
+           step="any"
+           required>
+
+    <br><br>
+
+
+    <!-- Distance -->
+    <label>Distance (km):</label>
+    <input type="number"
+           name="distance_km"
+           step="any"
+           required>
+
+    <br><br>
+
+    <!-- Daily Trip Count -->
+    <label>Daily Trip Count:</label>
+    <input type="number"
+           name="daily_trip_count"
+           step="any"
+           required>
+
+    <br><br>
+
+    <!-- Charging Frequency -->
+    <label>Charging Frequency Per Week:</label>
+    <input type="number"
+           name="charging_frequency_per_week"
+           step="any"
+           required>
+
+    <br><br>
+
+    <!-- Charging Type -->
+    <label>Charging Type:</label>
+    <select name="charging_type" required>
+        <option value="" hidden>Select Charging Type</option>
+        <option value="0">Home</option>
+        <option value="1">Public Fast</option>
+        <option value="2">Public Slow</option>
+    </select>
+
+    <br><br>
+
+    <!-- Charging Station Distance -->
+    <label>Charging Station Distance (km):</label>
+    <input type="number"
+           name="charging_station_distance_km"
+           step="any"
+           required>
+
+    <br><br>
+
+    <!-- Energy Consumed -->
+    <label>Energy Consumed (kWh):</label>
+    <input type="number"
+           name="energy_consumed_kwh"
+           step="any"
+           required>
+
+    <br><br>
+
+    <!-- Electricity Cost -->
+    <label>Electricity Cost Per kWh:</label>
+    <input type="number"
+           name="electricity_cost_per_kwh"
+           step="any"
+           required>
+
+    <br><br>
+
+    <!-- Weather Condition -->
+    <label>Weather Condition:</label>
+    <select name="weather_condition" required>
+        <option value="" hidden >Select Weather Condition</option>
+        <option value="0">Clear</option>
+        <option value="1">Extreme Heat</option>
+        <option value="2">Humid</option>
+        <option value="3">Rainy</option>
+    </select>
+
+    <br><br>
+
+    <!-- Traffic Density -->
+    <label>Traffic Density:</label>
+
+    <input type="range"
+        id="traffic_density"
+        name="traffic_density"
+        min="0.009"
+        max="1.000"
+        step="0.001"
+        value="0.450">
+
+    <br>
+
+    <output id="trafficValue">0.450</output>
+
+    <p id="trafficCategory">Traffic Category: Medium Traffic</p>
+
+    <script>
+        const trafficSlider = document.getElementById("traffic_density");
+        const trafficValue = document.getElementById("trafficValue");
+        const trafficCategory = document.getElementById("trafficCategory");
+
+        function updateTrafficCategory() {
+
+            const value = parseFloat(trafficSlider.value);
+
+            trafficValue.textContent = value.toFixed(3);
+
+            if (value <= 0.333) {
+                trafficCategory.textContent = "Traffic Category: Low Traffic";
+            }
+            else if (value <= 0.666) {
+                trafficCategory.textContent = "Traffic Category: Medium Traffic";
+            }
+            else {
+                trafficCategory.textContent = "Traffic Category: High Traffic";
+            }
+        }
+
+        trafficSlider.addEventListener("input", updateTrafficCategory);
+
+        updateTrafficCategory();
+    </script>
+
+    <br><br>
+
+    <!-- Income Level -->
+    <label>Income Level:</label>
+    <select name="user_income_level" required>
+        <option value="" hidden >Select Income Level</option>
+        <option value="0">High</option>
+        <option value="1">Low</option>
+        <option value="2">Medium</option>
+    </select>
+
+    <br><br>
+
+    <!-- Estimated Range -->
+    <label>Estimated Range (km):</label>
+    <input type="number"
+           name="range_km_estimated"
+           step="any"
+           required>
+
+    <br><br>
+
+        <!-- range anxiety -->
+    <label>Does your battery dies early ?</label>
+    <select name="user_income_level" required>
+        <option value="" hidden >Select Range Anxiety Risk</option>
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+    </select>
+
+    <br><br>
+
+    <!-- Effective Battery Capacity -->
+    <label>Effective Battery Capacity (kWh):</label>
+    <input type="number"
+           name="effective_battery_capacity"
+           step="any"
+           required>
+
+    <br><br>
+
+    <input type="submit" value="Predict">
+
+</form>
+
+</body>
+</html>

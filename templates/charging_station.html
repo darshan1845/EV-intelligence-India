@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charging Station Requirement Prediction</title>
+</head>
+
+<body>
+
+    <h1>Charging Station Requirement Prediction</h1>
+
+    <p>
+        Enter the required details to predict the number of
+        Public Charging Stations.
+    </p>
+
+    <form action="/predict-charging-station" method="POST">
+
+        <h2>State Information</h2>
+
+        <label for="state">State Name:</label>
+        <select name="State Name" id="state" required>
+
+            <option value="">Select State</option>
+
+            <option value="Andaman and Nicobar Island">Andaman and Nicobar Island</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Dadra and Nagar Haveli and Daman and Diu">
+                Dadra and Nagar Haveli and Daman and Diu
+            </option>
+            <option value="Delhi">Delhi</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Ladakh">Ladakh</option>
+            <option value="Lakshdweep">Lakshdweep</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Puducherry">Puducherry</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
+
+        </select>
+
+        <br><br>
+
+
+        <h2>Vehicle Information</h2>
+
+        <label for="two_wheeler">Two Wheeler:</label>
+        <input
+            type="number"
+            id="two_wheeler"
+            name="Two Wheeler"
+            min="0"
+            required
+        >
+
+        <br><br>
+
+        <label for="three_wheeler">Three Wheeler:</label>
+        <input
+            type="number"
+            id="three_wheeler"
+            name="Three Wheeler"
+            min="0"
+            required
+        >
+
+        <br><br>
+
+        <label for="four_wheeler">Four Wheeler:</label>
+        <input
+            type="number"
+            id="four_wheeler"
+            name="Four Wheeler"
+            min="0"
+            required
+        >
+
+        <br><br>
+
+        <label for="goods_vehicles">Goods Vehicles:</label>
+        <input
+            type="number"
+            id="goods_vehicles"
+            name="Goods Vehicles"
+            min="0"
+            required
+        >
+
+        <br><br>
+
+        <label for="public_service">Public Service Vehicle:</label>
+        <input
+            type="number"
+            id="public_service"
+            name="Public Service Vehicle"
+            min="0"
+            required
+        >
+
+        <br><br>
+
+        <label for="special_category">Special Category Vehicles:</label>
+        <input
+            type="number"
+            id="special_category"
+            name="Special Category Vehicles"
+            min="0"
+            required
+        >
+
+        <br><br>
+
+        <label for="construction">Construction Equipment Vehicle:</label>
+        <input
+            type="number"
+            id="construction"
+            name="Construction Equipment Vehicle"
+            min="0"
+            required
+        >
+
+        <br><br>
+
+        <label for="other">Other:</label>
+        <input
+            type="number"
+            id="other"
+            name="Other"
+            min="0"
+            required
+        >
+
+        <br><br>
+
+
+        <h2>Total Information</h2>
+
+        <label for="grand_total">Grand Total:</label>
+        <input
+            type="number"
+            id="grand_total"
+            name="Grand Total"
+            min="0"
+            required
+        >
+
+        <br><br>
+
+        <label for="population">Total Population:</label>
+        <input
+            type="number"
+            id="population"
+            name="Total Population"
+            min="0"
+            required
+        >
+
+        <br><br>
+
+        <button type="submit">
+            Predict Charging Station Requirement
+        </button>
+
+    </form>
+
+</body>
+</html>
