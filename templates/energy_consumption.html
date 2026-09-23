@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Energy Consumption Prediction</title>
+</head>
+
+<body>
+
+    <h1>EV Energy Consumption Prediction</h1>
+    <p>Enter the following details to predict the Energy Consumption</p>
+
+    <form action="/predict-energy" method="POST">
+
+        <label for="vehicle_type">Vehicle Type:</label>
+        <select id="vehicle_type" name="vehicle_type" required>
+            <option value="">Select vehicle type</option>
+            <option value="2W">2W</option>
+            <option value="3W">3W</option>
+            <option value="4W">4W</option>
+        </select>
+        <br><br>
+
+        <label for="battery_capacity_kwh">Battery Capacity (kWh):</label>
+        <input type="number" id="battery_capacity_kwh"
+               name="battery_capacity_kwh" step="any" required>
+        <br><br>
+
+        <label for="battery_health_pct">Battery Health (%):</label>
+        <input type="number" id="battery_health_pct"
+               name="battery_health_pct" min="0" max="100"
+               step="any" required>
+        <br><br>
+
+        <label for="distance_km">Distance (km):</label>
+        <input type="number" id="distance_km"
+               name="distance_km" step="any" required>
+        <br><br>
+
+        <label for="daily_trip_count">Daily Trip Count:</label>
+        <input type="number" id="daily_trip_count"
+               name="daily_trip_count" min="0" required>
+        <br><br>
+
+        <label for="charging_frequency_per_week">
+            Charging Frequency per Week:
+        </label>
+        <input type="number" id="charging_frequency_per_week"
+               name="charging_frequency_per_week" step="any" required>
+        <br><br>
+
+        <label for="charging_station_distance_km">
+            Charging Station Distance (km):
+        </label>
+        <input type="number" id="charging_station_distance_km"
+               name="charging_station_distance_km" step="any" required>
+        <br><br>
+
+        <label for="electricity_cost_per_kwh">
+            Electricity Cost per kWh:
+        </label>
+        <input type="number" id="electricity_cost_per_kwh"
+               name="electricity_cost_per_kwh" step="any" required>
+        <br><br>
+
+        <label for="weather_condition">Weather Condition:</label>
+        <select id="weather_condition" name="weather_condition" required>
+            <option value="">Select weather</option>
+            <option value="clear">Clear</option>
+            <option value="extreme_heat">Extreme Heat</option>
+            <option value="humid">Humid</option>
+            <option value="rainy">Rainy</option>
+        </select>
+        <br><br>
+
+        <label for="traffic_density">Traffic Density:</label>
+        <input type="number" id="traffic_density"
+               name="traffic_density" min="0" max="1"
+               step="any" required>
+        <br><br>
+
+        <label for="user_income_level">User Income Level:</label>
+        <select id="user_income_level" name="user_income_level" required>
+            <option value="">Select income level</option>
+            <option value="low">Low</option>
+            <option value="middle">Middle</option>
+            <option value="high">High</option>
+        </select>
+        <br><br>
+
+        <label for="range_km_estimated">
+            Estimated Range (km):
+        </label>
+        <input type="number" id="range_km_estimated"
+               name="range_km_estimated" step="any" required>
+        <br><br>
+
+        <label for="effective_battery_capacity">
+            Effective Battery Capacity:
+        </label>
+        <input type="number" id="effective_battery_capacity"
+               name="effective_battery_capacity" step="any" required>
+        <br><br>
+
+        <button type="submit">Predict Energy Consumption</button>
+
+    </form>
+
+</body>
+</html>
