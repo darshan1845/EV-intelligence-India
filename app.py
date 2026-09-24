@@ -1,7 +1,11 @@
+from ipaddress import v4_int_to_packed
+
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
 import pickle
+
+anxiety_model = pickle.load(open(r'C:\Project\EV station website\pickle files\anxiety.pkl', 'rb'))
 
 # Home Page
 @app.route('/')
@@ -48,9 +52,27 @@ def anxiety():
         return render_template('anxiety.html')
     elif request.method == 'POST':
         v1 = int(request.form['vehicle_type'])
-        v2 = int()
+        v2 = int(request.form['battery_capacity_kwh'])
+        v3 = int(request.form['battery_health_pct'])
+        v4 = int(request.form['distance_km'])
+        v5 = int(request.form['daily_trip_count'])
+        v6 = int(request.form['charging_frequency_per_week'])
+        v7 = int(request.form['charging_type'])
+        v8 = int(request.form['charging_station_distance_km'])
+        v9 = int(request.form['energy_consumed_kwh'])
+        v10 = int(request.form['electricity_cost_per_kwh'])
+        v11 = int(request.form['weather_condition'])
+        v12 = float(request.form['traffic_density'])
+        v13 = int(request.form['user_income_level'])
+        v14 = int(request.form['range_km_estimated'])
+        v15 = int(request.form['effective_battery_capacity'])
 
-
+        anxiety_pred = anxiety_model.predict([[v1,v2,v3,v4,v5,v6,v7,v8,v9,v10,v11,v12,v13,v14,v15]])
+        if anxiety_pred == 1:
+            anxiety_pred = "High Risk of Range Anxiety"
+        elif anxiety_pred == 0:
+            anxiety_pred = "Low Risk of Range Anxiety"
+    return render_template('result_anxiety.html', anxiety=anxiety_pred)
 
 @app.route('/battery_health')
 def battery_health():
