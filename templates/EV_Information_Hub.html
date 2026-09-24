@@ -1,0 +1,232 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EV AI Assistant</title>
+</head>
+
+<body>
+
+    <div class="chat-container">
+
+        <!-- Header -->
+        <div class="chat-header">
+
+            <h1>⚡ EV AI Assistant</h1>
+
+            <p>
+                Ask anything about Electric Vehicles, batteries,
+                charging & range.
+            </p>
+
+        </div>
+
+
+        <!-- Chat messages -->
+        <div class="chat-box" id="chatBox">
+
+            <div class="message bot-message">
+
+                👋 Hello! I'm your EV AI Assistant.
+
+                <br><br>
+
+                Ask me anything about electric vehicles,
+                charging stations, batteries, range,
+                energy consumption or EV costs.
+
+            </div>
+
+        </div>
+
+
+        <!-- Input -->
+        <div class="input-area">
+
+            <input
+                type="text"
+                name="userInput"
+                id="userInput"git pul
+                placeholder="Ask something about EVs..."
+                autocomplete="off"
+            >
+
+            <button onclick="sendMessage()" id="sendButton">
+                Send
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        function sendMessage() {
+
+            const input = document.getElementById("userInput");
+
+            const chatBox = document.getElementById("chatBox");
+
+            const sendButton = document.getElementById("sendButton");
+
+            const message = input.value.trim();
+
+
+            // Don't send empty messages
+            if (message === "") {
+                return;
+            }
+
+
+            // Display user's message
+            const userMessage = document.createElement("div");
+
+            userMessage.className = "message user-message";
+
+            userMessage.innerText = message;
+
+            chatBox.appendChild(userMessage);
+
+
+            // Clear input
+            input.value = "";
+
+
+            // Disable button while AI is processing
+            sendButton.disabled = true;
+
+
+            // Show processing message
+            const loadingMessage = document.createElement("div");
+
+            loadingMessage.className = "message bot-message";
+
+            loadingMessage.id = "loadingMessage";
+
+            loadingMessage.innerText =
+                "⏳ Thinking... Please wait while I generate your answer.";
+
+
+            chatBox.appendChild(loadingMessage);
+
+
+            // Scroll to latest message
+            chatBox.scrollTop = chatBox.scrollHeight;
+
+
+            // Send message to Flask
+            fetch("/ev-ai", {
+
+                method: "POST",
+
+                headers: {
+                    "Content-Type": "application/json"
+                },
+
+                body: JSON.stringify({
+                    message: message
+                })
+
+            })
+
+
+            // Receive response from Flask
+            .then(response => {
+
+                if (!response.ok) {
+                    throw new Error("Server error");
+                }
+
+                return response.json();
+
+            })
+
+
+            .then(data => {
+
+                // Remove loading message
+                const loadingMessage =
+                    document.getElementById("loadingMessage");
+
+                if (loadingMessage) {
+                    loadingMessage.remove();
+                }
+
+
+                // Display AI response
+                const botMessage = document.createElement("div");
+
+                botMessage.className = "message bot-message";
+
+                botMessage.innerText = data.response;
+
+                chatBox.appendChild(botMessage);
+
+
+                // Enable Send button
+                sendButton.disabled = false;
+
+
+                // Scroll to latest message
+                chatBox.scrollTop = chatBox.scrollHeight;
+
+            })
+
+
+            // Handle errors
+            .catch(error => {
+
+                console.error(error);
+
+
+                // Remove loading message
+                const loadingMessage =
+                    document.getElementById("loadingMessage");
+
+                if (loadingMessage) {
+                    loadingMessage.remove();
+                }
+
+
+                // Display error message
+                const errorMessage = document.createElement("div");
+
+                errorMessage.className = "message bot-message";
+
+                errorMessage.innerText =
+                    "⚠️ Something went wrong. Please try again.";
+
+                chatBox.appendChild(errorMessage);
+
+
+                // Enable Send button
+                sendButton.disabled = false;
+
+            });
+
+        }
+
+
+        // Press Enter to send message
+        document.getElementById("userInput")
+            .addEventListener("keypress", function(event) {
+
+                if (event.key === "Enter") {
+
+                    sendMessage();
+
+                }
+
+            });
+
+    </script>
+
+</body>
+
+</html>
+```
