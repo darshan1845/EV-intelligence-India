@@ -3,6 +3,7 @@ name = "ev-station-websiite"
 version = "0.1.0"
 requires-python = ">=3.14"
 dependencies = [
+    "flask>=3.1.3",
     "ipykernel>=7.3.0",
     "numpy>=2.5.3",
     "pandas>=3.0.5",
