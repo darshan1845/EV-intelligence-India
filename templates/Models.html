@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Charging Station Intelligence Platform</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>EV Charging Station Intelligence Platform</h1>
+        <p>Machine Learning Models</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Available Models</h2>
+
+            <article>
+                <h3>1. Energy Consumption Prediction</h3>
+                <p>
+                    Predict EV energy consumption using vehicle, battery,
+                    distance, charging and environmental information.
+                </p>
+                <a href="{{ url_for('energy_consumption') }}">
+                    Energy Consumption Model
+                </a>
+            </article>
+
+            <br>
+
+            <article>
+                <h3>2. Battery Health Prediction</h3>
+                <p>
+                    Predict the estimated battery health percentage using
+                    relevant EV usage and battery-related features.
+                </p>
+                <a href="{{ url_for('battery_health') }}">
+                    Battery Health Model
+                </a>
+            </article>
+
+            <br>
+
+            <article>
+                <h3>3. Range Anxiety Prediction</h3>
+                <p>
+                    Predict range anxiety risk using driving, battery,
+                    charging and EV usage characteristics.
+                </p>
+                <a href="{{ url_for('range_anxiety') }}">
+                    Range Anxiety Model
+                </a>
+            </article>
+
+            <br>
+
+            <article>
+                <h3>4. Charging Station Requirement</h3>
+                <p>
+                    Analyze charging infrastructure requirements and support
+                    EV charging station planning.
+                </p>
+                <a href="{{ url_for('charging_station_requirement') }}">
+                    Charging Station Model
+                </a>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>EV Charging Station Intelligence Platform</p>
+    </footer>
+
+</body>
+</html>
