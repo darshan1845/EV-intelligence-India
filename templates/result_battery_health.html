@@ -2,10 +2,122 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Battery_Health</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battery Health Prediction Result</title>
 </head>
+
 <body>
-      <h2>{{battery_health}}</h2>
+
+    <header>
+        <h1>EV Charging Station Intelligence Platform</h1>
+        <h2>Battery Health Prediction</h2>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Prediction Result</h2>
+
+            <p>
+                The predicted battery health of the electric vehicle is:
+            </p>
+
+            <h1>
+                {{ battery_health[0] }} %
+            </h1>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Battery Health Insight</h2>
+
+            <p>
+                Battery health represents the current condition and usable
+                capacity of an EV battery compared with its original condition.
+            </p>
+
+            <p>
+                A higher battery health percentage generally indicates that
+                the battery is retaining more of its original capacity.
+            </p>
+        </section>
+
+        <section>
+            <h2>Prediction Interpretation</h2>
+
+            {% if battery_health[0] >= 90 %}
+                <h3>Excellent Battery Health</h3>
+                <p>
+                    The predicted battery health is high. The battery is
+                    expected to retain most of its original capacity.
+                </p>
+
+            {% elif battery_health[0] >= 75 %}
+                <h3>Good Battery Health</h3>
+                <p>
+                    The battery shows a good level of health, although some
+                    capacity degradation may be present.
+                </p>
+
+            {% elif battery_health[0] >= 60 %}
+                <h3>Moderate Battery Health</h3>
+                <p>
+                    The battery has experienced noticeable degradation.
+                    Monitoring battery performance may be useful.
+                </p>
+
+            {% else %}
+                <h3>Low Battery Health</h3>
+                <p>
+                    The predicted battery health is relatively low. Further
+                    battery inspection and maintenance may be considered.
+                </p>
+            {% endif %}
+
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Why Battery Health Matters</h2>
+
+            <ul>
+                <li>Helps estimate remaining battery performance.</li>
+                <li>Can support EV maintenance planning.</li>
+                <li>Helps understand battery degradation.</li>
+                <li>Can influence estimated driving range.</li>
+                <li>Useful for long-term EV usage analysis.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Machine Learning Prediction</h2>
+
+            <p>
+                The result is generated using the trained Battery Health
+                Prediction Machine Learning model based on the input
+                characteristics of the electric vehicle.
+            </p>
+        </section>
+
+        <br>
+
+        <a href="/battery_health">
+            <button type="button">Make Another Prediction</button>
+        </a>
+
+        <a href="/">
+            <button type="button">Go to Home</button>
+        </a>
+
+    </main>
+
+    <footer>
+        <hr>
+        <p>EV Charging Station Intelligence Platform</p>
+        <p>Machine Learning Based Battery Health Prediction</p>
+    </footer>
 
 </body>
 </html>

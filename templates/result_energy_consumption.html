@@ -2,9 +2,89 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> Energy Consumption</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Consumption Prediction Result</title>
 </head>
+
 <body>
-      <h2>{{energy_consumption}}</h2>
+
+    <header>
+        <h1>EV Charging Station Intelligence Platform</h1>
+        <h2>Energy Consumption Prediction</h2>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Prediction Result</h2>
+
+            <p>
+                The predicted energy consumption for the given EV usage
+                conditions is:
+            </p>
+
+            <h1>
+                {{ energy_consumption[0] }} kWh
+            </h1>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>What does this mean?</h2>
+
+            <p>
+                This prediction represents the estimated amount of electrical
+                energy required by the electric vehicle based on the input
+                parameters provided.
+            </p>
+
+            <p>
+                The prediction can help users and charging station planners
+                understand expected energy demand and support better charging
+                infrastructure planning.
+            </p>
+        </section>
+
+        <section>
+            <h2>How this prediction is generated</h2>
+
+            <ul>
+                <li>Vehicle characteristics are considered.</li>
+                <li>Battery capacity and battery health are considered.</li>
+                <li>Travel distance and daily trips are considered.</li>
+                <li>Charging frequency and charging conditions are considered.</li>
+                <li>Weather and traffic conditions are considered.</li>
+                <li>The trained Machine Learning model generates the prediction.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Energy Demand Insight</h2>
+
+            <p>
+                Higher predicted energy consumption may indicate greater
+                charging demand. Such information can be useful for estimating
+                future electricity requirements at EV charging stations.
+            </p>
+        </section>
+
+        <br>
+
+        <a href="/energy-consumption">
+            <button type="button">Make Another Prediction</button>
+        </a>
+
+        <a href="/">
+            <button type="button">Go to Home</button>
+        </a>
+
+    </main>
+
+    <footer>
+        <p>EV Charging Station Intelligence Platform</p>
+        <p>Machine Learning Based Energy Consumption Prediction</p>
+    </footer>
+
 </body>
 </html>
