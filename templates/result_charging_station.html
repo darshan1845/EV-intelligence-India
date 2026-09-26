@@ -1,13 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Charging_Station</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Charging Station Prediction Result</title>
 </head>
+
 <body>
 
-   <h2>{{charging_station}}</h2>
+    <h1>Charging Station Requirement Result</h1>
 
+    <hr>
+
+    <h2>Predicted Public Charging Stations</h2>
+
+    <h1>{{ charging_station | round(0) | int }}</h1>
+
+    <p>
+        Based on the vehicle population, state, and other information
+        provided, the estimated requirement is
+        <strong>{{ charging_station | round(0) | int }}</strong>
+        public charging stations.
+    </p>
+
+    <hr>
+
+    <h2>What does this result mean?</h2>
+
+    <p>
+        This prediction represents the estimated number of public
+        charging stations required based on the input data provided
+        to the machine learning model.
+    </p>
+
+    <p>
+        The actual number of charging stations may vary depending on
+        factors such as charging demand, geographical distribution,
+        traffic patterns, infrastructure availability, and future
+        EV adoption.
+    </p>
+
+    <br>
+
+    <a href="/charging_station">
+        <button type="button">
+            Predict Again
+        </button>
+    </a>
+
+    <br><br>
+
+    <a href="/">
+        <button type="button">
+            Back to Home
+        </button>
+    </a>
 
 </body>
+
 </html>
