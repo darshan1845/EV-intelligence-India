@@ -3,78 +3,849 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EV Charging Station Intelligence Platform</title>
+
+    <title>AI Models | EV Intelligence</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #020b12;
+            --text: #f3f8fc;
+            --muted: #b4c8d8;
+            --green: #17f29a;
+            --cyan: #00d9ff;
+            --purple: #d14cff;
+            --yellow: #ffd52e;
+            --line: rgba(164, 224, 255, .20);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            min-height: 100vh;
+            color: var(--text);
+            background:
+                linear-gradient(rgba(2, 11, 18, .40), rgba(2, 11, 18, .94)),
+                url("/static/background.png") center top / cover fixed no-repeat,
+                var(--bg);
+            font-family: "Inter", sans-serif;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background:
+                radial-gradient(circle at 50% 25%, rgba(0, 217, 255, .08), transparent 30%),
+                linear-gradient(90deg, rgba(0, 255, 180, .025), transparent 30%, rgba(110, 70, 255, .025));
+            z-index: -1;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button {
+            font: inherit;
+        }
+
+        .page {
+            width: min(1440px, calc(100% - 56px));
+            margin: auto;
+        }
+
+        /* HEADER */
+        header {
+            min-height: 105px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 24px 18px 0;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 13px;
+        }
+
+        .brand-leaf {
+            width: 38px;
+            height: 50px;
+            color: var(--green);
+            filter: drop-shadow(0 0 10px rgba(23, 242, 154, .45));
+        }
+
+        .brand-name {
+            font-family: "Orbitron", sans-serif;
+            font-size: 23px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .brand-tagline {
+            margin-top: 5px;
+            color: #b7d9ec;
+            font-size: 12px;
+            letter-spacing: 1.6px;
+        }
+
+        .top-right {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+            color: #b7d5e6;
+            font-size: 12px;
+            letter-spacing: 1.4px;
+            text-transform: uppercase;
+        }
+
+        .top-right .leaf-mini {
+            color: var(--green);
+            font-size: 25px;
+        }
+
+        .divider {
+            width: 1px;
+            height: 25px;
+            background: rgba(150, 220, 240, .45);
+        }
+
+        /* LEFT RAIL */
+        .left-rail {
+            position: absolute;
+            left: 18px;
+            top: 255px;
+            width: 118px;
+            padding: 10px 0 10px 16px;
+            border-left: 1px solid rgba(23, 242, 154, .75);
+            display: grid;
+            gap: 13px;
+            color: #bcd7e9;
+            font-size: 11px;
+            line-height: 1.2;
+            letter-spacing: 1.6px;
+            z-index: 5;
+            background: linear-gradient(90deg, rgba(2, 16, 27, .42), transparent);
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2px);
+        }
+
+        .left-rail a {
+            display: block;
+            padding: 3px 0;
+            color: #c8e1ef;
+            text-decoration: none;
+            transition: color .2s ease, transform .2s ease;
+        }
+
+        .left-rail a:first-child {
+            color: #4af4b9;
+            font-weight: 700;
+        }
+
+        .left-rail a:hover {
+            color: #ffffff;
+            transform: translateX(4px);
+        }
+
+        .back {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            width: max-content;
+            margin-top: 12px;
+            padding: 10px 17px;
+            border: 1px solid var(--green);
+            border-radius: 9px;
+            color: white;
+            background: rgba(0, 18, 27, .55);
+            box-shadow: 0 0 18px rgba(23, 242, 154, .08);
+            transition: .25s ease;
+        }
+
+        .back:hover {
+            transform: translateX(-3px);
+            box-shadow: 0 0 28px rgba(23, 242, 154, .25);
+        }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            padding: 4px 100px 42px;
+        }
+
+        .eyebrow {
+            color: #41f3b5;
+            font-family: "Orbitron", sans-serif;
+            font-size: 15px;
+            letter-spacing: 9px;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            max-width: 900px;
+            margin: 23px auto 0;
+            font-family: "Orbitron", sans-serif;
+            font-size: clamp(34px, 4.1vw, 58px);
+            line-height: 1.08;
+            letter-spacing: 1px;
+            text-shadow: 0 5px 35px rgba(0, 0, 0, .6);
+        }
+
+        .hero h1 span {
+            color: #16f1a0;
+            background: linear-gradient(90deg, #1df29d, #08d7ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .hero p {
+            margin: 20px auto 0;
+            max-width: 760px;
+            color: #c8e1ef;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        /* MODEL GRID */
+        .models-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 22px;
+            align-items: stretch;
+        }
+
+        .model-card {
+            position: relative;
+            min-height: 535px;
+            padding: 25px 22px 18px;
+            border-radius: 19px;
+            overflow: hidden;
+            background: linear-gradient(160deg, rgba(7, 28, 39, .83), rgba(1, 12, 19, .88));
+            border: 1px solid var(--card-color);
+            box-shadow:
+                inset 0 0 35px rgba(0, 0, 0, .22),
+                0 0 24px color-mix(in srgb, var(--card-color) 13%, transparent);
+            transition: transform .25s ease, box-shadow .25s ease;
+        }
+
+        .model-card::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(135deg, var(--card-color) 0%, transparent 26%),
+                radial-gradient(circle at 82% 8%, color-mix(in srgb, var(--card-color) 15%, transparent), transparent 25%);
+            opacity: .20;
+            pointer-events: none;
+        }
+
+        .model-card:hover {
+            transform: translateY(-7px);
+            box-shadow:
+                inset 0 0 35px rgba(0, 0, 0, .18),
+                0 0 34px color-mix(in srgb, var(--card-color) 27%, transparent);
+        }
+
+        .green { --card-color: var(--green); }
+        .blue { --card-color: var(--cyan); }
+        .purple { --card-color: var(--purple); }
+        .yellow { --card-color: var(--yellow); }
+
+        .number {
+            color: var(--card-color);
+            font-size: 13px;
+            letter-spacing: 2px;
+        }
+
+        .number::after {
+            content: "";
+            display: block;
+            width: 25px;
+            height: 1px;
+            margin-top: 9px;
+            background: var(--card-color);
+        }
+
+        .model-icon {
+            height: 78px;
+            display: flex;
+            align-items: center;
+            color: var(--card-color);
+            margin-top: 3px;
+        }
+
+        .model-icon svg {
+            width: 76px;
+            height: 76px;
+            filter: drop-shadow(0 0 11px color-mix(in srgb, var(--card-color) 50%, transparent));
+        }
+
+        .model-card h2 {
+            position: relative;
+            margin-top: 8px;
+            font-size: 20px;
+            line-height: 1.18;
+        }
+
+        .model-card .description {
+            position: relative;
+            margin-top: 14px;
+            min-height: 68px;
+            color: #bdd2e1;
+            font-size: 13px;
+            line-height: 1.55;
+        }
+
+        .benefits {
+            position: relative;
+            margin-top: 13px;
+            min-height: 88px;
+            display: grid;
+            gap: 8px;
+            list-style: none;
+            color: #c7dce8;
+            font-size: 12.5px;
+        }
+
+        .benefits li::before {
+            content: "✦";
+            margin-right: 9px;
+            color: var(--card-color);
+        }
+
+        .sample {
+            position: relative;
+            margin-top: 16px;
+            padding: 13px 15px;
+            min-height: 83px;
+            border: 1px solid color-mix(in srgb, var(--card-color) 38%, transparent);
+            border-radius: 15px;
+            background: rgba(0, 11, 18, .38);
+        }
+
+        .sample-label {
+            color: #b7c9d5;
+            font-size: 11px;
+        }
+
+        .sample-title {
+            margin-top: 10px;
+            font-size: 12px;
+            color: #dceaf2;
+        }
+
+        .sample-value {
+            margin-top: 4px;
+            color: var(--card-color);
+            font-size: 22px;
+            font-weight: 800;
+            text-shadow: 0 0 15px color-mix(in srgb, var(--card-color) 32%, transparent);
+        }
+
+        .sample-badge {
+            float: right;
+            margin-top: -27px;
+            padding: 5px 11px;
+            border-radius: 999px;
+            border: 1px solid color-mix(in srgb, var(--card-color) 55%, transparent);
+            color: var(--card-color);
+            background: color-mix(in srgb, var(--card-color) 12%, transparent);
+            font-size: 10px;
+        }
+
+        .try-model {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            width: 100%;
+            margin-top: 17px;
+            padding: 12px;
+            border: 1px solid var(--card-color);
+            border-radius: 14px;
+            background: rgba(0, 15, 23, .54);
+            color: white;
+            font-weight: 700;
+            font-size: 13px;
+            cursor: pointer;
+            box-shadow: 0 0 16px color-mix(in srgb, var(--card-color) 15%, transparent);
+            transition: .25s ease;
+        }
+
+        .try-model span {
+            color: var(--card-color);
+            font-size: 21px;
+            line-height: 0;
+        }
+
+        .try-model:hover {
+            background: color-mix(in srgb, var(--card-color) 10%, transparent);
+            box-shadow: 0 0 27px color-mix(in srgb, var(--card-color) 30%, transparent);
+            transform: translateY(-2px);
+        }
+
+        /* FOOTER STRIP */
+        .bottom-strip {
+            margin: 31px 0 35px;
+            min-height: 103px;
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr 1fr 1.4fr;
+            align-items: center;
+            border: 1px solid rgba(52, 196, 212, .28);
+            border-radius: 17px;
+            background: rgba(0, 13, 21, .70);
+            backdrop-filter: blur(8px);
+        }
+
+        .strip-block {
+            min-height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+            padding: 0 22px;
+            border-right: 1px solid rgba(145, 220, 235, .24);
+        }
+
+        .strip-block:last-child {
+            border-right: 0;
+        }
+
+        .strip-icon {
+            color: var(--cyan);
+            font-size: 29px;
+        }
+
+        .strip-big {
+            font-size: 20px;
+            font-weight: 800;
+        }
+
+        .strip-small {
+            margin-top: 3px;
+            color: #b5cad8;
+            font-size: 11px;
+        }
+
+        .quote {
+            color: #c5dbe7;
+            font-style: italic;
+            line-height: 1.5;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .quote-line {
+            width: 40px;
+            height: 2px;
+            margin: 8px auto 0;
+            background: var(--green);
+        }
+
+        /* MOBILE */
+        @media (max-width: 1200px) {
+            .models-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .left-rail {
+                display: none;
+            }
+
+            .hero {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+        }
+
+        @media (max-width: 720px) {
+            .page {
+                width: min(100% - 24px, 1440px);
+            }
+
+            header {
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+
+            .top-right {
+                display: none;
+            }
+
+            .brand-name {
+                font-size: 17px;
+            }
+
+            .brand-tagline {
+                font-size: 9px;
+            }
+
+            .hero {
+                padding: 35px 8px 30px;
+            }
+
+            .eyebrow {
+                font-size: 10px;
+                letter-spacing: 5px;
+            }
+
+            .hero h1 {
+                font-size: 29px;
+            }
+
+            .models-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .model-card {
+                min-height: auto;
+            }
+
+            .bottom-strip {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .strip-block {
+                border-bottom: 1px solid rgba(145, 220, 235, .24);
+            }
+
+            .strip-block:nth-child(2n) {
+                border-right: 0;
+            }
+
+            .strip-block:last-child {
+                grid-column: 1 / -1;
+            }
+        }
+
+    .accuracy {
+      margin: 16px 0 14px;
+      padding: 12px 15px;
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: 14px;
+      background: rgba(255,255,255,0.045);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .accuracy span {
+      color: #a9bdd1;
+      font-size: 0.78rem;
+      font-weight: 600;
+    }
+
+    .accuracy strong {
+      color: #ffffff;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.15rem;
+      letter-spacing: 0.02em;
+    }
+
+
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      background: rgba(2, 12, 22, 0.20);
+      backdrop-filter: blur(1.2px);
+      -webkit-backdrop-filter: blur(1.2px);
+    }
+
+</style>
 </head>
 
 <body>
 
+<div class="page">
+
     <header>
-        <h1>EV Charging Station Intelligence Platform</h1>
-        <p>Machine Learning Models</p>
+        <a href="/" class="brand" aria-label="EV Intelligence Home">
+            <svg class="brand-leaf" viewBox="0 0 40 55" fill="none" aria-hidden="true">
+                <path d="M31 4C16 8 7 19 8 31C9 41 16 47 24 44C33 41 35 27 31 4Z"
+                      stroke="currentColor" stroke-width="3"/>
+                <path d="M7 51C13 35 21 23 32 12" stroke="currentColor" stroke-width="3"/>
+            </svg>
+
+            <div>
+                <div class="brand-name">EV INTELLIGENCE</div>
+                <div class="brand-tagline">DATA. INSIGHTS. A CLEANER TOMORROW.</div>
+            </div>
+        </a>
+
+        <div class="top-right">
+            <span class="leaf-mini">⌁</span>
+            <span>Cleaner Roads</span>
+            <span class="divider"></span>
+            <span>Greener Tomorrow</span>
+        </div>
     </header>
 
-    <main>
+    <div class="left-rail">
 
-        <section>
-            <h2>Available Models</h2>
 
-            <article>
-                <h3>1. Energy Consumption Prediction</h3>
-                <p>
-                    Predict EV energy consumption using vehicle, battery,
-                    distance, charging and environmental information.
-                </p>
-                <a href="{{ url_for('energy_consumption') }}">
-                    Energy Consumption Model
-                </a>
-            </article>
 
-            <br>
 
-            <article>
-                <h3>2. Battery Health Prediction</h3>
-                <p>
-                    Predict the estimated battery health percentage using
-                    relevant EV usage and battery-related features.
-                </p>
-                <a href="{{ url_for('battery_health') }}">
-                    Battery Health Model
-                </a>
-            </article>
 
-            <br>
+    </div>
 
-            <article>
-                <h3>3. Range Anxiety Prediction</h3>
-                <p>
-                    Predict range anxiety risk using driving, battery,
-                    charging and EV usage characteristics.
-                </p>
-                <a href="{{ url_for('anxiety') }}">
-                    Range Anxiety Model
-                </a>
-            </article>
+    <a href="/" class="back">← &nbsp; Back to Home</a>
 
-            <br>
+    <section class="hero" id="models">
+        <div class="eyebrow">Our AI Models</div>
 
-            <article>
-                <h3>4. Charging Station Requirement</h3>
-                <p>
-                    Analyze charging infrastructure requirements and support
-                    EV charging station planning.
-                </p>
-                <a href="{{ url_for('charging_station') }}">
-                    Charging Station Model
-                </a>
-            </article>
+        <h1>
+            TURNING DATA INTO<br>
+            <span>A CLEANER TOMORROW</span>
+        </h1>
 
-        </section>
+        <p>
+            Explore our machine learning models designed to solve real-world EV challenges.
+        </p>
+    </section>
 
-    </main>
+    <section class="models-grid">
 
-    <footer>
-        <p>EV Charging Station Intelligence Platform</p>
-    </footer>
+        <!-- 01: Battery Health -->
+        <article class="model-card green">
+            <div class="number">01</div>
+
+            <div class="model-icon">
+                <svg viewBox="0 0 80 80" fill="none" aria-hidden="true">
+                    <rect x="22" y="13" width="35" height="53" rx="7" stroke="currentColor" stroke-width="4"/>
+                    <path d="M32 8H47" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                    <path d="M39 27V42M32 35H46" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                    <path d="M13 57C13 57 16 52 21 52" stroke="currentColor" stroke-width="3"/>
+                </svg>
+            </div>
+
+            <h2>Battery Health Prediction</h2>
+
+            <p class="description">
+                Predict the health of EV batteries using real-world usage and charging parameters.
+            </p>
+
+            <ul class="benefits">
+                <li>Estimate battery health (SOH)</li>
+                <li>Identify early degradation</li>
+                <li>Support better maintenance</li>
+            </ul>
+
+            <div class="sample">
+                <div class="sample-label">Sample Output</div>
+                <div class="sample-title">Predicted Battery Health</div>
+                <div class="sample-value">87.4%</div>
+                <div class="sample-badge">Healthy</div>
+            </div>
+
+            <a class="try-model" href="/battery_health">
+                Try This Model <span>→</span>
+            </a>
+        </article>
+
+        <!-- 02: Energy Consumption -->
+        <article class="model-card blue">
+            <div class="number">02</div>
+
+            <div class="model-icon">
+                <svg viewBox="0 0 80 80" fill="none" aria-hidden="true">
+                    <path d="M45 6L20 43H37L31 74L60 32H43L45 6Z"
+                          stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+                    <path d="M55 61C64 50 70 48 77 45" stroke="currentColor" stroke-width="2" opacity=".7"/>
+                </svg>
+            </div>
+
+            <h2>Energy Consumption Prediction</h2>
+
+            <p class="description">
+                Estimate the energy consumption of EVs based on driving and environmental factors.
+            </p>
+
+            <ul class="benefits">
+                <li>Predict energy usage (kWh)</li>
+                <li>Optimize trip planning</li>
+                <li>Improve efficiency &amp; cost savings</li>
+            </ul>
+
+            <div class="sample">
+                <div class="sample-label">Sample Output</div>
+                <div class="sample-title">Predicted Energy Consumption</div>
+                <div class="sample-value">14.8 kWh</div>
+                <div class="sample-badge">Per 100 km</div>
+            </div>
+
+            <a class="try-model" href="/energy_consumption">
+                Try This Model <span>→</span>
+            </a>
+        </article>
+
+        <!-- 03: Charging Station -->
+        <article class="model-card purple">
+            <div class="number">03</div>
+
+            <div class="model-icon">
+                <svg viewBox="0 0 80 80" fill="none" aria-hidden="true">
+                    <rect x="12" y="17" width="32" height="43" rx="5"
+                          stroke="currentColor" stroke-width="4"/>
+                    <path d="M44 27H55C61 27 64 31 64 37V51"
+                          stroke="currentColor" stroke-width="4"/>
+                    <path d="M60 49L67 56L60 63" stroke="currentColor" stroke-width="4"/>
+                    <path d="M25 27H35M25 34H35" stroke="currentColor" stroke-width="3"/>
+                    <path d="M29 43V52L37 44H31L34 38" stroke="currentColor" stroke-width="3"/>
+                </svg>
+            </div>
+
+            <h2>Charging Station Requirement</h2>
+
+            <p class="description">
+                Predict the charging station requirement based on EV adoption and usage patterns.
+            </p>
+
+            <ul class="benefits">
+                <li>Analyze demand by region</li>
+                <li>Support infrastructure planning</li>
+                <li>Enable smarter city development</li>
+            </ul>
+
+            <div class="sample">
+                <div class="sample-label">Sample Output</div>
+                <div class="sample-title">Estimated Stations Required</div>
+                <div class="sample-value">124</div>
+                <div class="sample-badge">For Selected Region</div>
+            </div>
+
+            <a class="try-model" href="/charging_station">
+                Try This Model <span>→</span>
+            </a>
+        </article>
+
+        <!-- 04: Range Anxiety -->
+        <article class="model-card yellow">
+            <div class="number">04</div>
+
+            <div class="model-icon">
+                <svg viewBox="0 0 80 80" fill="none" aria-hidden="true">
+                    <path d="M14 54C18 35 29 24 42 24C55 24 66 35 70 54"
+                          stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                    <path d="M42 24V18" stroke="currentColor" stroke-width="4"/>
+                    <path d="M21 55L42 47L62 39" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                    <path d="M42 47L49 42" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                    <path d="M25 61H59" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                </svg>
+            </div>
+
+            <h2>Range Anxiety Prediction</h2>
+
+            <p class="description">
+                Predict the likelihood of range anxiety based on user, vehicle and trip parameters.
+            </p>
+
+            <ul class="benefits">
+                <li>Assess anxiety risk level</li>
+                <li>Understand key influencing factors</li>
+                <li>Enable better travel planning</li>
+            </ul>
+
+            <div class="sample">
+                <div class="sample-label">Sample Output</div>
+                <div class="sample-title">Predicted Risk Level</div>
+                <div class="sample-value">0.19</div>
+                <div class="sample-badge">Moderate Risk</div>
+            </div>
+
+            <a class="try-model" href="/anxiety">
+                Try This Model <span>→</span>
+            </a>
+        </article>
+
+    </section>
+
+    <section class="bottom-strip">
+        <div class="strip-block">
+            <div class="strip-icon">◈</div>
+            <div>
+                <div class="strip-big">DRIVING DATA</div>
+                <div class="strip-small">FOR A GREENER INDIA</div>
+            </div>
+        </div>
+
+        <div class="strip-block">
+            <div class="strip-icon">◉</div>
+            <div>
+                <div class="strip-big">4</div>
+                <div class="strip-small">ML MODELS</div>
+            </div>
+        </div>
+
+        <div class="strip-block">
+            <div class="strip-icon">▥</div>
+            <div>
+                <div class="strip-big">10K+</div>
+                <div class="strip-small">DATA RECORDS</div>
+            </div>
+        </div>
+
+        <div class="strip-block">
+            <div class="strip-icon">♧</div>
+            <div>
+                <div class="strip-big">Real-World</div>
+                <div class="strip-small">IMPACT</div>
+            </div>
+        </div>
+
+        <div class="strip-block">
+            <div class="quote">
+                “Smarter insights today.<br>
+                A cleaner tomorrow.”
+                <div class="quote-line"></div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<script>
+    // Subtle reveal animation when model cards enter the viewport.
+    const cards = document.querySelectorAll(".model-card");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12 });
+
+    cards.forEach((card) => {
+        card.style.opacity = "0";
+        card.style.transform = "translateY(18px)";
+        card.style.transition = "opacity .55s ease, transform .55s ease, box-shadow .25s ease";
+        observer.observe(card);
+    });
+</script>
 
 </body>
 </html>

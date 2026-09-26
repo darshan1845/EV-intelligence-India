@@ -4,10 +4,10 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 import pickle
-battery_health_model=pickle.load(open(r'C:\Users\HP\Documents\EV Project\EV Station Websiite\pickle files\battery_health.pkl', 'rb'))
-charging_station_model = pickle.load(open(r'C:\Users\HP\Documents\EV Project\EV Station Websiite\pickle files\ChargingStationRequirement.pkl', 'rb'))
+battery_health_model=pickle.load(open(r'pickle files/battery_health.pkl', 'rb'))
+charging_station_model = pickle.load(open(r'pickle files/ChargingStationRequirement.pkl', 'rb'))
 
-anxiety_model = pickle.load(open(r'C:\Project\EV station website\pickle files\anxiety.pkl', 'rb'))
+anxiety_model = pickle.load(open(r'pickle files/anxiety.pkl', 'rb'))
 
 # Home Page
 @app.route('/')
