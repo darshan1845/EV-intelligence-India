@@ -1,10 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Range Anxiety Prediction Result</title>
 </head>
+
 <body>
-    <h2>{{anxiety}}</h2>
+
+    <h1>Range Anxiety Prediction Result</h1>
+
+    <hr>
+
+    <h2>Prediction</h2>
+
+    <h1>{{ anxiety }}</h1>
+
+    <hr>
+
+    {% if anxiety == "High Risk of Range Anxiety" %}
+
+        <h2>What does this mean?</h2>
+
+        <p>
+            The model indicates a higher likelihood of range anxiety
+            based on the information provided.
+        </p>
+
+        <h3>Things to consider:</h3>
+
+        <ul>
+            <li>Plan your charging stops before starting a journey.</li>
+            <li>Check the estimated vehicle range before travelling.</li>
+            <li>Keep nearby public charging stations in mind.</li>
+            <li>Monitor battery level during longer journeys.</li>
+        </ul>
+
+    {% elif anxiety == "Low Risk of Range Anxiety" %}
+
+        <h2>What does this mean?</h2>
+
+        <p>
+            The model indicates a lower likelihood of range anxiety
+            based on the information provided.
+        </p>
+
+        <h3>Recommended practice:</h3>
+
+        <ul>
+            <li>Continue monitoring your battery level.</li>
+            <li>Keep your vehicle adequately charged before long trips.</li>
+            <li>Be aware of charging stations along unfamiliar routes.</li>
+        </ul>
+
+    {% endif %}
+
+    <hr>
+
+    <p>
+        <strong>Note:</strong>
+        This result is a machine learning prediction based on the
+        information provided. Actual range anxiety may vary depending
+        on driving conditions, traffic, weather, battery condition,
+        charging availability, and other factors.
+    </p>
+
+    <br>
+
+    <a href="/anxiety">
+        <button type="button">
+            Predict Again
+        </button>
+    </a>
+
+    <br><br>
+
+    <a href="/">
+        <button type="button">
+            Back to Home
+        </button>
+    </a>
+
 </body>
+
 </html>

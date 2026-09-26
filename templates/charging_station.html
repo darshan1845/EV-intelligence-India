@@ -16,11 +16,14 @@
         Public Charging Stations.
     </p>
 
-    <form action=" " method="POST">
+    <form action="" method="POST">
+
+        <!-- ================= STATE INFORMATION ================= -->
 
         <h2>State Information</h2>
 
         <label for="state">State Name:</label>
+
         <select name="State Name" id="state" required>
 
             <option value="">Select State</option>
@@ -32,9 +35,7 @@
             <option value="4">Bihar</option>
             <option value="5">Chandigarh</option>
             <option value="6">Chhattisgarh</option>
-            <option value="7">
-                Dadra and Nagar Haveli and Daman and Diu
-            </option>
+            <option value="7">Dadra and Nagar Haveli and Daman and Diu</option>
             <option value="8">Delhi</option>
             <option value="9">Goa</option>
             <option value="10">Gujarat</option>
@@ -50,7 +51,7 @@
             <option value="20">Maharashtra</option>
             <option value="21">Manipur</option>
             <option value="22">Meghalaya</option>
-            <option value="23m">Mizoram</option>
+            <option value="23">Mizoram</option>
             <option value="24">Nagaland</option>
             <option value="25">Odisha</option>
             <option value="26">Puducherry</option>
@@ -69,6 +70,8 @@
         <br><br>
 
 
+        <!-- ================= VEHICLE INFORMATION ================= -->
+
         <h2>Vehicle Information</h2>
 
         <label for="two_wheeler">Two Wheeler:</label>
@@ -77,10 +80,12 @@
             id="two_wheeler"
             name="Two Wheeler"
             min="0"
+            value="0"
             required
         >
 
         <br><br>
+
 
         <label for="three_wheeler">Three Wheeler:</label>
         <input
@@ -88,10 +93,12 @@
             id="three_wheeler"
             name="Three Wheeler"
             min="0"
+            value="0"
             required
         >
 
         <br><br>
+
 
         <label for="four_wheeler">Four Wheeler:</label>
         <input
@@ -99,10 +106,12 @@
             id="four_wheeler"
             name="Four Wheeler"
             min="0"
+            value="0"
             required
         >
 
         <br><br>
+
 
         <label for="goods_vehicles">Goods Vehicles:</label>
         <input
@@ -110,10 +119,12 @@
             id="goods_vehicles"
             name="Goods Vehicles"
             min="0"
+            value="0"
             required
         >
 
         <br><br>
+
 
         <label for="public_service">Public Service Vehicle:</label>
         <input
@@ -121,10 +132,12 @@
             id="public_service"
             name="Public Service Vehicle"
             min="0"
+            value="0"
             required
         >
 
         <br><br>
+
 
         <label for="special_category">Special Category Vehicles:</label>
         <input
@@ -132,10 +145,12 @@
             id="special_category"
             name="Special Category Vehicles"
             min="0"
+            value="0"
             required
         >
 
         <br><br>
+
 
         <label for="construction">Construction Equipment Vehicle:</label>
         <input
@@ -143,10 +158,12 @@
             id="construction"
             name="Construction Equipment Vehicle"
             min="0"
+            value="0"
             required
         >
 
         <br><br>
+
 
         <label for="other">Other:</label>
         <input
@@ -154,26 +171,33 @@
             id="other"
             name="Other"
             min="0"
+            value="0"
             required
         >
 
         <br><br>
 
 
+        <!-- ================= TOTAL INFORMATION ================= -->
+
         <h2>Total Information</h2>
 
         <label for="grand_total">Grand Total:</label>
+
         <input
             type="number"
             id="grand_total"
             name="Grand Total"
             min="0"
-            required
+            value="0"
+            readonly
         >
 
         <br><br>
 
+
         <label for="population">Total Population:</label>
+
         <input
             type="number"
             id="population"
@@ -184,11 +208,105 @@
 
         <br><br>
 
+
+        <!-- ================= SUBMIT ================= -->
+
         <button type="submit">
             Predict Charging Station Requirement
         </button>
 
     </form>
 
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        function calculateGrandTotal() {
+
+            // Get vehicle values
+            let twoWheeler =
+                Number(document.getElementById("two_wheeler").value) || 0;
+
+            let threeWheeler =
+                Number(document.getElementById("three_wheeler").value) || 0;
+
+            let fourWheeler =
+                Number(document.getElementById("four_wheeler").value) || 0;
+
+            let goodsVehicles =
+                Number(document.getElementById("goods_vehicles").value) || 0;
+
+            let publicService =
+                Number(document.getElementById("public_service").value) || 0;
+
+            let specialCategory =
+                Number(document.getElementById("special_category").value) || 0;
+
+            let construction =
+                Number(document.getElementById("construction").value) || 0;
+
+            let other =
+                Number(document.getElementById("other").value) || 0;
+
+
+            // Calculate Grand Total
+            let grandTotal =
+                twoWheeler +
+                threeWheeler +
+                fourWheeler +
+                goodsVehicles +
+                publicService +
+                specialCategory +
+                construction +
+                other;
+
+
+            // Display Grand Total
+            document.getElementById("grand_total").value = grandTotal;
+        }
+
+
+        // Automatically calculate when user enters vehicle information
+
+        document
+            .getElementById("two_wheeler")
+            .addEventListener("input", calculateGrandTotal);
+
+        document
+            .getElementById("three_wheeler")
+            .addEventListener("input", calculateGrandTotal);
+
+        document
+            .getElementById("four_wheeler")
+            .addEventListener("input", calculateGrandTotal);
+
+        document
+            .getElementById("goods_vehicles")
+            .addEventListener("input", calculateGrandTotal);
+
+        document
+            .getElementById("public_service")
+            .addEventListener("input", calculateGrandTotal);
+
+        document
+            .getElementById("special_category")
+            .addEventListener("input", calculateGrandTotal);
+
+        document
+            .getElementById("construction")
+            .addEventListener("input", calculateGrandTotal);
+
+        document
+            .getElementById("other")
+            .addEventListener("input", calculateGrandTotal);
+
+
+        // Calculate once when page loads
+        calculateGrandTotal();
+
+    </script>
+
 </body>
+
 </html>

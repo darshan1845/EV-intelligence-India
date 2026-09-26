@@ -1,5 +1,4 @@
-from ipaddress import v4_int_to_packed
-
+import pandas as pd
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
@@ -122,25 +121,111 @@ def battery_health():
     return render_template('result_battery_health.html',battery_health=battery_health_pred)
 
 
-@app.route('/charging_station',methods = ['GET', 'POST'])
+@app.route('/charging_station', methods=['GET', 'POST'])
 def charging_station():
+
     if request.method == 'GET':
         return render_template('charging_station.html')
-    elif request.method == 'POST':
-        v1 = int(request.form['State Name'])
-        v2 = int(request.form['Two Wheeler'])
-        v3 = int(request.form['Three Wheeler'])
-        v4 = int(request.form['Four Wheeler'])
-        v5 = int(request.form['Goods Vehicles'])
-        v6 = int(request.form['Public Service Vehicle'])
-        v7 = int(request.form['Special Category Vehicles'])
-        v8 = int(request.form['Construction Equipment Vehicle'])
-        v9 = int(request.form['Other'])
-        v10 = int(request.form['Grand Total'])
-        v11 = int(request.form['Total Population'])
 
-        charging_station_pred=charging_station_model.predict([[v1,v2,v3,v4,v5,v6,v7,v8,v9,v10,v11]])
-    return render_template('result_charging_station.html',charging_station=charging_station_pred)
+    elif request.method == 'POST':
+
+        # Get selected state as STRING
+        state_index = int(request.form['State Name'])
+
+        states = [
+            "Andaman and Nicobar Island",
+            "Andhra Pradesh",
+            "Arunachal Pradesh",
+            "Assam",
+            "Bihar",
+            "Chandigarh",
+            "Chhattisgarh",
+            "Dadra and Nagar Haveli and Daman and Diu",
+            "Delhi",
+            "Goa",
+            "Gujarat",
+            "Haryana",
+            "Himachal Pradesh",
+            "Jammu and Kashmir",
+            "Jharkhand",
+            "Karnataka",
+            "Kerala",
+            "Ladakh",
+            "Lakshadweep",
+            "Madhya Pradesh",
+            "Maharashtra",
+            "Manipur",
+            "Meghalaya",
+            "Mizoram",
+            "Nagaland",
+            "Odisha",
+            "Puducherry",
+            "Punjab",
+            "Rajasthan",
+            "Sikkim",
+            "Tamil Nadu",
+            "Telangana",
+            "Tripura",
+            "Uttar Pradesh",
+            "Uttarakhand",
+            "West Bengal"
+        ]
+
+        selected_state = states[state_index]
+
+        # Get numerical inputs
+        v1 = int(request.form['Two Wheeler'])
+        v2 = int(request.form['Three Wheeler'])
+        v3 = int(request.form['Four Wheeler'])
+        v4 = int(request.form['Goods Vehicles'])
+        v5 = int(request.form['Public Service Vehicle'])
+        v6 = int(request.form['Special Category Vehicles'])
+        v7 = int(request.form['Construction Equipment Vehicle'])
+        v8 = int(request.form['Other'])
+        v9 = int(request.form['Grand Total'])
+        v10 = int(request.form['Total Population'])
+
+        # Create dataframe with the 10 numerical features
+        input_data = pd.DataFrame([{
+            'Two Wheeler': v1,
+            'Three Wheeler': v2,
+            'Four Wheeler': v3,
+            'Goods Vehicles': v4,
+            'Public Service Vehicle': v5,
+            'Special Category Vehicles': v6,
+            'Construction Equipment Vehicle': v7,
+            'Other': v8,
+            'Grand Total': v9,
+            'Total Population': v10
+        }])
+
+        # Get the exact 46 columns used during model training
+        model_columns = charging_station_model.feature_names_in_
+
+        # Add all missing state columns with 0
+        for column in model_columns:
+            if column not in input_data.columns:
+                input_data[column] = 0
+
+        # Create the selected state's one-hot column
+        state_column = "State Name_" + selected_state
+
+        # Set selected state = 1
+        if state_column in input_data.columns:
+            input_data[state_column] = 1
+        else:
+            return f"State column not found: {state_column}"
+
+        # Arrange columns in exactly the same order as training
+        input_data = input_data[model_columns]
+
+        # Prediction
+        charging_station_pred = charging_station_model.predict(input_data)
+
+        return render_template(
+            'result_charging_station.html',
+            charging_station=charging_station_pred[0]
+        )
 
 
 if __name__ == '__main__':
