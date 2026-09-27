@@ -1,5 +1,8 @@
 import pandas as pd
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
+from google import genai
+from dotenv import load_dotenv
+import os
 
 app = Flask(__name__)
 import pickle
@@ -7,6 +10,11 @@ battery_health_model=pickle.load(open(r'pickle files/battery_health.pkl', 'rb'))
 charging_station_model = pickle.load(open(r'pickle files/ChargingStationRequirement.pkl', 'rb'))
 energy_consumption_model = pickle.load(open(r'pickle files/Energyconsumption.pkl', 'rb'))
 anxiety_model = pickle.load(open(r'pickle files/anxiety.pkl', 'rb'))
+
+load_dotenv()
+client = genai.Client(
+    api_key=os.getenv("GEMINI_API_KEY"))
+
 
 # Home Page
 @app.route('/')
@@ -31,6 +39,60 @@ def dashboards():
 def assistant():
     return render_template('EV_Assistant.html')
 
+@app.route('/ev-ai', methods=['POST'])
+def ev_ai():
+
+    data = request.get_json()
+
+    user_message = data.get('message', '').strip()
+
+    if user_message == '':
+        return jsonify({
+            'response': 'Please enter a question.'
+        })
+
+
+    try:
+
+        prompt = f"""
+You are a Smart EV Assistant for an Electric Vehicle intelligence website.
+
+Your role:
+- Act like a helpful, friendly human EV expert.
+- Answer questions about electric vehicles, batteries, charging stations,
+  charging, range, energy consumption, EV costs, and related topics.
+- Keep your language simple and natural.
+- Talk conversationally, as if you are having a normal chat with the user.
+- Do not sound robotic or overly formal.
+- Give accurate and practical answers.
+- Keep every response SHORT: maximum 2 to 5 lines.
+- Do not use long explanations, headings, or unnecessary bullet points.
+- If the user asks something unrelated to EVs, politely tell them that
+  you are primarily an EV Assistant.
+
+User's question:
+{user_message}
+"""
+
+        interaction = client.interactions.create(
+            model="gemini-3.8-flash",
+            input=prompt
+        )
+
+        ai_response = interaction.output_text
+
+        return jsonify({
+            'response': ai_response
+        })
+
+
+    except Exception as e:
+
+        print("Gemini Error:", e)
+
+        return jsonify({
+            'response': '⚠️ Sorry, I could not generate a response right now.'
+        }), 500
 
 # About Page
 @app.route('/about')
