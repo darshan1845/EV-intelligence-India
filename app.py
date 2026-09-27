@@ -5,7 +5,7 @@ app = Flask(__name__)
 import pickle
 battery_health_model=pickle.load(open(r'pickle files/battery_health.pkl', 'rb'))
 charging_station_model = pickle.load(open(r'pickle files/ChargingStationRequirement.pkl', 'rb'))
-
+energy_consumption_model = pickle.load(open(r'pickle files/Energyconsumption.pkl', 'rb'))
 anxiety_model = pickle.load(open(r'pickle files/anxiety.pkl', 'rb'))
 
 # Home Page
@@ -43,9 +43,30 @@ def about():
 def developers():
     return render_template('developers.html')
 
-@app.route('/energy-consumption')
+@app.route('/energy_consumption', methods = ['GET', 'POST'])
 def energy_consumption():
-    return render_template('energy_consumption.html')
+    if request.method == 'GET':
+       return render_template('energy_consumption.html')
+    elif request.method == 'POST':
+        v1 = int(request.form['vehicle_type'])
+        v2 = int(request.form['battery_capacity_kwh'])
+        v3 = int(request.form['battery_health_pct'])
+        v4 = int(request.form['distance_km'])
+        v5 = int(request.form['daily_trip_count'])
+        v6 = int(request.form['charging_frequency_per_week'])
+        v7 = int(request.form['charging_type'])
+        v8 = int(request.form['charging_station_distance_km'])
+        v9 = int(request.form['electricity_cost_per_kwh'])
+        v10 = int(request.form['weather_condition'])
+        v11 = float(request.form['traffic_density'])
+        v12 = int(request.form['user_income_level'])
+        v13 = int(request.form['range_km_estimated'])
+        v14 = int(request.form['range_anxiety_risk'])
+        v15 = int(request.form['effective_battery_capacity'])
+
+        energy_consumption_pred=energy_consumption_model.predict([[v1,v2,v3,v4,v5,v6,v7,v8,v9,v10,v11,v12,v13,v14,v15]])
+    return render_template('result_energy_consumption.html', energy_consumption=energy_consumption_pred[0])
+
 
 @app.route('/anxiety', methods = ['GET', 'POST'])
 def anxiety():
@@ -73,7 +94,7 @@ def anxiety():
             anxiety_pred = "High Risk of Range Anxiety"
         elif anxiety_pred == 0:
             anxiety_pred = "Low Risk of Range Anxiety"
-    return render_template('result_anxiety.html', anxiety=anxiety_pred)
+    return render_template('result_anxiety.html', anxiety=anxiety_pred[0])
 
 @app.route('/battery_health',methods = ['GET', 'POST'])
 def battery_health():
@@ -97,7 +118,7 @@ def battery_health():
         v15 = int(request.form['effective_battery_capacity'])
 
         battery_health_pred=battery_health_model.predict([[v1,v2,v3,v4,v5,v6,v7,v8,v9,v10,v11,v12,v13,v14,v15]])
-    return render_template('result_battery_health.html',battery_health=battery_health_pred[0])
+    return render_template('result_battery_health.html',battery_health=battery_health_pred)
 
 
 @app.route('/charging_station', methods=['GET', 'POST'])
