@@ -108,9 +108,7 @@ miniCards.forEach((card) => {
     card.addEventListener("mouseleave", () => {
 
         card.style.transform =
-            "perspective(600px)
-             rotateX(0deg)
-             rotateY(0deg)";
+            "perspective(600px) rotateX(0deg) rotateY(0deg)";
 
     });
 
