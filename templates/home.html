@@ -1,105 +1,724 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>EV Intelligence Platform</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/home.css') }}">
+
 </head>
+
 
 <body>
 
-    <h1>EV Intelligence Platform</h1>
 
-    <h2>Introduction</h2>
+<!-- =====================================================
+     BACKGROUND
+     ===================================================== -->
 
-    <p>
-        The EV Intelligence Platform is a data-driven platform designed
-        to provide insights into the electric vehicle ecosystem.
-    </p>
+<div class="page-background"></div>
 
-    <p>
-        It combines machine learning models, Indian EV infrastructure
-        dashboards and an AI-powered EV Assistant.
-    </p>
+<div class="background-overlay"></div>
 
-    <hr>
+<div class="background-vignette"></div>
 
-    <h2>Explore the Platform</h2>
 
-    <!-- Models -->
-    <section>
-        <h3>1. Models</h3>
 
-        <p>
-            Explore our machine learning models for electric vehicle
-            prediction and analysis.
-        </p>
+<!-- =====================================================
+     NAVBAR
+     ===================================================== -->
+
+<nav class="navbar">
+
+
+    <a href="/" class="brand">
+
+
+        <div class="brand-logo">
+
+            <svg viewBox="0 0 24 24"
+                 fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+
+                <path d="M13.2 2L5 13.2H11L10.2 22L19 10.5H13L13.2 2Z"
+                      fill="currentColor"/>
+
+            </svg>
+
+        </div>
+
+
+        <div class="brand-info">
+
+            <span class="brand-title">
+                EV INTELLIGENCE
+            </span>
+
+            <span class="brand-subtitle">
+                SMART MOBILITY PLATFORM
+            </span>
+
+        </div>
+
+
+    </a>
+
+
+
+    <div class="nav-links">
+
+        <a href="/" class="active">
+            Home
+        </a>
 
         <a href="{{ url_for('models') }}">
-            <button type="button">Explore Models</button>
+            Models
         </a>
-    </section>
-
-    <br>
-
-    <!-- Dashboards -->
-    <section>
-        <h3>2. Indian EV Infrastructure Dashboards</h3>
-
-        <p>
-            Explore dashboards containing insights about India's
-            EV infrastructure.
-        </p>
 
         <a href="{{ url_for('dashboards') }}">
-            <button type="button">View Dashboards</button>
+            Dashboard
         </a>
-    </section>
-
-    <br>
-
-    <!-- EV Assistant -->
-    <section>
-        <h3>3. EV Assistant</h3>
-
-        <p>
-            Get assistance and information related to electric vehicles.
-        </p>
 
         <a href="{{ url_for('assistant') }}">
-            <button type="button">Open EV Assistant</button>
+            AI Assistant
         </a>
-    </section>
-
-    <br>
-
-    <!-- About -->
-    <section>
-        <h3>4. About</h3>
-
-        <p>
-            Learn more about the project, its objectives and technologies.
-        </p>
 
         <a href="{{ url_for('about') }}">
-            <button type="button">About the Project</button>
+            About
         </a>
-    </section>
-
-    <br>
-
-    <!-- Developers -->
-    <section>
-        <h3>5. Developers</h3>
-
-        <p>
-            Meet the developers behind the EV Intelligence Platform.
-        </p>
 
         <a href="{{ url_for('developers') }}">
-            <button type="button">Meet the Developers</button>
+            Developers
         </a>
+
+    </div>
+
+
+</nav>
+
+
+
+<!-- =====================================================
+     MAIN
+     ===================================================== -->
+
+<main class="home-container">
+
+
+    <!-- =================================================
+         HERO
+         ================================================= -->
+
+    <section class="hero">
+
+
+        <!-- ================= HERO LEFT ================= -->
+
+        <div class="hero-left">
+
+
+            <div class="system-badge">
+
+                <span class="live-dot"></span>
+
+                EV INTELLIGENCE SYSTEM
+
+                <span class="badge-line"></span>
+
+                ONLINE
+
+            </div>
+
+
+            <h1>
+
+                Smarter Insights.
+
+                <span>
+                    Better Mobility.
+                </span>
+
+            </h1>
+
+
+            <p class="hero-description">
+
+                An intelligent platform that transforms electric
+                vehicle data into meaningful predictions,
+                infrastructure insights and AI-powered assistance.
+
+            </p>
+
+
+            <div class="hero-tags">
+
+                <span>
+                    <i></i>
+                    Machine Learning
+                </span>
+
+                <span>
+                    <i></i>
+                    Data Analytics
+                </span>
+
+                <span>
+                    <i></i>
+                    EV Intelligence
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             HERO RIGHT SIDE
+             ================================================= -->
+
+        <div class="hero-right">
+
+
+            <!-- =============================================
+                 TOP MINI CARDS
+                 ============================================= -->
+
+            <div class="mini-card-row">
+
+
+                <!-- ABOUT -->
+
+                <a href="{{ url_for('about') }}"
+                   class="mini-card about-card">
+
+
+                    <div class="mini-card-icon">
+
+                        <svg viewBox="0 0 24 24"
+                             fill="none"
+                             stroke="currentColor"
+                             stroke-width="1.7">
+
+                            <circle cx="12"
+                                    cy="12"
+                                    r="9"/>
+
+                            <path d="M12 10V16"/>
+
+                            <circle cx="12"
+                                    cy="7"
+                                    r=".7"
+                                    fill="currentColor"/>
+
+                        </svg>
+
+                    </div>
+
+
+                    <div class="mini-card-text">
+
+                        <span>
+                            PROJECT
+                        </span>
+
+                        <h3>
+                            About
+                        </h3>
+
+                    </div>
+
+
+                    <div class="mini-arrow">
+                        →
+                    </div>
+
+
+                </a>
+
+
+
+                <!-- DEVELOPERS -->
+
+                <a href="{{ url_for('developers') }}"
+                   class="mini-card developers-card">
+
+
+                    <div class="mini-card-icon">
+
+                        <svg viewBox="0 0 24 24"
+                             fill="none"
+                             stroke="currentColor"
+                             stroke-width="1.7">
+
+                            <circle cx="9"
+                                    cy="8"
+                                    r="3"/>
+
+                            <circle cx="17"
+                                    cy="9"
+                                    r="2.3"/>
+
+                            <path d="M3.5 19c.4-3.2
+                                     2.4-5 5.5-5
+                                     s5.1 1.8 5.5 5"/>
+
+                            <path d="M14.5 15
+                                     c2.7-.8 5 .7 5.5 4"/>
+
+                        </svg>
+
+                    </div>
+
+
+                    <div class="mini-card-text">
+
+                        <span>
+                            THE TEAM
+                        </span>
+
+                        <h3>
+                            Developers
+                        </h3>
+
+                    </div>
+
+
+                    <div class="mini-arrow">
+                        →
+                    </div>
+
+
+                </a>
+
+
+            </div>
+
+
+
+            <!-- =============================================
+                 SYSTEM STATUS
+                 ============================================= -->
+
+            <div class="hero-status">
+
+
+                <div class="status-orbit">
+
+                    <div class="orbit-ring"></div>
+
+                    <div class="orbit-core">
+
+                        <svg viewBox="0 0 24 24"
+                             fill="none">
+
+                            <path d="M13.2 2L5 13.2H11L10.2 22L19 10.5H13L13.2 2Z"
+                                  fill="currentColor"/>
+
+                        </svg>
+
+                    </div>
+
+                </div>
+
+
+                <div class="status-info">
+
+                    <span>
+                        PLATFORM STATUS
+                    </span>
+
+                    <strong>
+                        SYSTEM ONLINE
+                    </strong>
+
+                    <small>
+                        Intelligence modules ready
+                    </small>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
     </section>
 
+
+
+    <!-- =================================================
+         PLATFORM HEADER
+         ================================================= -->
+
+    <section class="platform-header">
+
+
+        <div>
+
+            <span class="eyebrow">
+                EXPLORE THE PLATFORM
+            </span>
+
+            <h2>
+                Your EV Intelligence Hub
+            </h2>
+
+        </div>
+
+
+        <div class="platform-indicator">
+
+            <span class="indicator-dot"></span>
+
+            03 CORE MODULES AVAILABLE
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =================================================
+         MAIN PLATFORM CARDS
+         ================================================= -->
+
+    <section class="platform-grid">
+
+
+        <!-- =================================================
+             MODELS
+             ================================================= -->
+
+        <a href="{{ url_for('models') }}"
+           class="platform-card models-card">
+
+
+            <div class="card-glow"></div>
+
+
+            <div class="card-header">
+
+
+                <div class="module-icon">
+
+                    <svg viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="1.7">
+
+                        <rect x="3"
+                              y="3"
+                              width="7"
+                              height="7"
+                              rx="1"/>
+
+                        <rect x="14"
+                              y="3"
+                              width="7"
+                              height="7"
+                              rx="1"/>
+
+                        <rect x="3"
+                              y="14"
+                              width="7"
+                              height="7"
+                              rx="1"/>
+
+                        <rect x="14"
+                              y="14"
+                              width="7"
+                              height="7"
+                              rx="1"/>
+
+                    </svg>
+
+                </div>
+
+
+                <span class="module-number">
+                    01
+                </span>
+
+
+            </div>
+
+
+            <div class="card-main">
+
+
+                <span class="module-label">
+                    MACHINE LEARNING
+                </span>
+
+
+                <h3>
+                    Prediction
+                    <span>
+                        Models
+                    </span>
+                </h3>
+
+
+                <p>
+
+                    Predict energy consumption, battery health,
+                    range anxiety and charging requirements.
+
+                </p>
+
+
+            </div>
+
+
+            <div class="card-bottom">
+
+                <span>
+                    Explore Models
+                </span>
+
+                <span class="card-arrow">
+                    →
+                </span>
+
+            </div>
+
+
+        </a>
+
+
+
+        <!-- =================================================
+             DASHBOARDS
+             ================================================= -->
+
+        <a href="{{ url_for('dashboards') }}"
+           class="platform-card dashboard-card">
+
+
+            <div class="card-glow"></div>
+
+
+            <div class="card-header">
+
+
+                <div class="module-icon">
+
+                    <svg viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="1.7">
+
+                        <path d="M4 19V9"/>
+                        <path d="M9 19V5"/>
+                        <path d="M14 19V11"/>
+                        <path d="M19 19V3"/>
+
+                        <path d="M3 21H21"/>
+
+                    </svg>
+
+                </div>
+
+
+                <span class="module-number">
+                    02
+                </span>
+
+
+            </div>
+
+
+            <div class="card-main">
+
+
+                <span class="module-label">
+                    DATA ANALYTICS
+                </span>
+
+
+                <h3>
+
+                    EV
+                    <span>
+                        Dashboards
+                    </span>
+
+                </h3>
+
+
+                <p>
+
+                    Explore interactive insights into India's
+                    EV ecosystem and charging infrastructure.
+
+                </p>
+
+
+            </div>
+
+
+            <div class="card-bottom">
+
+                <span>
+                    View Dashboards
+                </span>
+
+                <span class="card-arrow">
+                    →
+                </span>
+
+            </div>
+
+
+        </a>
+
+
+
+        <!-- =================================================
+             AI ASSISTANT
+             ================================================= -->
+
+        <a href="{{ url_for('assistant') }}"
+           class="platform-card assistant-card">
+
+
+            <div class="card-glow"></div>
+
+            <div class="assistant-orb"></div>
+
+
+            <div class="card-header">
+
+
+                <div class="module-icon">
+
+                    <svg viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="1.7">
+
+                        <path d="M12 3C7.6 3 4 6.1 4 10
+                                 c0 2.2 1.1 4.1 3 5.3V19
+                                 l3.1-1.8c.6.1 1.2.2 1.9.2
+                                 4.4 0 8-3.1 8-7.4S16.4 3 12 3Z"/>
+
+                        <path d="M8 10h.01"/>
+                        <path d="M12 10h.01"/>
+                        <path d="M16 10h.01"/>
+
+                    </svg>
+
+                </div>
+
+
+                <span class="module-number">
+                    03
+                </span>
+
+
+            </div>
+
+
+            <div class="card-main">
+
+
+                <span class="module-label ai-label">
+                    AI POWERED
+                </span>
+
+
+                <h3>
+
+                    EV
+                    <span>
+                        Assistant
+                    </span>
+
+                </h3>
+
+
+                <p>
+
+                    Your intelligent EV companion for questions,
+                    guidance and everyday electric mobility insights.
+
+                </p>
+
+
+            </div>
+
+
+            <div class="card-bottom">
+
+                <span>
+                    Talk to EV AI
+                </span>
+
+                <span class="card-arrow">
+                    →
+                </span>
+
+            </div>
+
+
+        </a>
+
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+     ===================================================== -->
+
+<footer class="footer">
+
+
+    <div class="footer-brand">
+
+        <span>
+            ⚡ EV INTELLIGENCE
+        </span>
+
+        <small>
+            DATA • AI • SUSTAINABLE MOBILITY
+        </small>
+
+    </div>
+
+
+    <div class="footer-status">
+
+        <span class="indicator-dot"></span>
+
+        SYSTEM ONLINE
+
+    </div>
+
+
+</footer>
+
+
+
+<script src="{{ url_for('static', filename='js/home.js') }}"></script>
+
+
 </body>
+
 </html>

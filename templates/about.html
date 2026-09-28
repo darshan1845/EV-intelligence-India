@@ -1,164 +1,781 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - EV Charging Station Intelligence Platform</title>
+
+    <title>About | EV Intelligence</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/about.css') }}">
 </head>
 
 <body>
 
-    <header>
-        <h1>About the Project</h1>
-        <p>EV Charging Station Intelligence Platform</p>
+    <!-- Background -->
+    <div class="page-background"></div>
+    <div class="background-overlay"></div>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="nav-brand">
+            <span class="brand-icon">⚡</span>
+            <div>
+                <span class="brand-title">EV INTELLIGENCE</span>
+                <span class="brand-subtitle">Smart Mobility Platform</span>
+            </div>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="/">Home</a>
+
+            <a href="/Models">Models</a>
+
+            <a href="/dashboard">Dashboard</a>
+
+            <a href="/developers">Developers</a>
+
+            <a href="/assistant">AI Assistant</a>
+
+            <a href="/about" class="active">About</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= HERO ================= -->
+
+    <header class="hero">
+
+        <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            EV DATA • AI • INTELLIGENCE
+        </div>
+
+        <h1>
+            About the
+            <span>EV Intelligence</span>
+            Platform
+        </h1>
+
+        <p>
+            A data-driven platform combining Machine Learning,
+            analytics and visualization to understand EV behavior,
+            battery performance and charging infrastructure.
+        </p>
+
+        <div class="hero-line"></div>
+
     </header>
 
-    <main>
 
-        <section>
-            <h2>About the Platform</h2>
+    <!-- ================= MAIN ================= -->
 
-            <p>
-                The EV Charging Station Intelligence Platform is a data-driven
-                system designed to analyze electric vehicle usage, battery
-                behavior, and charging infrastructure. The platform uses
-                Machine Learning, Data Analytics, and Visualization to generate
-                useful insights for EV users and charging infrastructure
-                planning.
-            </p>
+    <main class="content">
 
-            <p>
-                The system analyzes EV-related datasets and provides
-                predictions through multiple Machine Learning models. It also
-                supports charging station requirement analysis to help identify
-                areas where charging infrastructure may need further attention.
-            </p>
+
+        <!-- ================= PLATFORM ================= -->
+
+        <section class="glass-section reveal">
+
+            <div class="section-heading">
+
+                <span class="section-number">01</span>
+
+                <div>
+                    <span class="section-label">THE PLATFORM</span>
+                    <h2>Built to Understand Electric Mobility</h2>
+                </div>
+
+            </div>
+
+
+            <div class="platform-grid">
+
+                <div class="platform-text">
+
+                    <p>
+                        The EV Charging Station Intelligence Platform is a
+                        data-driven system designed to analyze electric
+                        vehicle usage, battery behavior, and charging
+                        infrastructure.
+                    </p>
+
+                    <p>
+                        The platform combines Machine Learning,
+                        Data Analytics and Visualization to generate
+                        useful insights for EV users and charging
+                        infrastructure planning.
+                    </p>
+
+                    <p>
+                        Multiple Machine Learning models analyze
+                        EV-related datasets and provide predictions
+                        for energy consumption, battery health,
+                        range anxiety and charging infrastructure
+                        requirements.
+                    </p>
+
+                </div>
+
+
+                <div class="platform-stats">
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon">🤖</div>
+
+                        <div>
+                            <strong>04</strong>
+                            <span>ML Models</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon">📊</div>
+
+                        <div>
+                            <strong>AI</strong>
+                            <span>Data Intelligence</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon">⚡</div>
+
+                        <div>
+                            <strong>EV</strong>
+                            <span>Mobility Focus</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon">📈</div>
+
+                        <div>
+                            <strong>BI</strong>
+                            <span>Interactive Analytics</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </section>
 
 
-        <section>
-            <h2>Project Objectives</h2>
+        <!-- ================= OBJECTIVES ================= -->
 
-            <ul>
-                <li>Predict EV energy consumption.</li>
-                <li>Estimate battery health.</li>
-                <li>Identify range anxiety risk.</li>
-                <li>Analyze charging station requirements.</li>
-                <li>Analyze EV charging infrastructure.</li>
-                <li>Provide data-driven insights for EV infrastructure planning.</li>
-            </ul>
+        <section class="section-block reveal">
+
+            <div class="section-heading">
+
+                <span class="section-number">02</span>
+
+                <div>
+                    <span class="section-label">PROJECT OBJECTIVES</span>
+                    <h2>What The Platform Solves</h2>
+                </div>
+
+            </div>
+
+
+            <div class="objective-grid">
+
+                <div class="objective-card">
+                    <span class="objective-icon">⚡</span>
+                    <h3>Energy Consumption</h3>
+                    <p>
+                        Predict EV energy consumption using
+                        vehicle, battery, distance and environmental
+                        characteristics.
+                    </p>
+                </div>
+
+
+                <div class="objective-card">
+                    <span class="objective-icon">🔋</span>
+                    <h3>Battery Health</h3>
+                    <p>
+                        Estimate battery health and understand
+                        battery-related performance patterns.
+                    </p>
+                </div>
+
+
+                <div class="objective-card">
+                    <span class="objective-icon">🧭</span>
+                    <h3>Range Anxiety</h3>
+                    <p>
+                        Identify potential range anxiety risk using
+                        EV usage, battery and charging characteristics.
+                    </p>
+                </div>
+
+
+                <div class="objective-card">
+                    <span class="objective-icon">🏗️</span>
+                    <h3>Infrastructure Planning</h3>
+                    <p>
+                        Analyze charging station requirements to
+                        support infrastructure planning.
+                    </p>
+                </div>
+
+
+                <div class="objective-card">
+                    <span class="objective-icon">📍</span>
+                    <h3>Charging Analysis</h3>
+                    <p>
+                        Analyze EV charging infrastructure and
+                        identify areas requiring further attention.
+                    </p>
+                </div>
+
+
+                <div class="objective-card">
+                    <span class="objective-icon">📊</span>
+                    <h3>Data-Driven Insights</h3>
+                    <p>
+                        Convert complex EV datasets into meaningful
+                        insights through analytics and visualization.
+                    </p>
+                </div>
+
+            </div>
+
         </section>
 
 
-        <section>
-            <h2>Machine Learning Models</h2>
+        <!-- ================= ML MODELS ================= -->
 
-            <ul>
-                <li>
-                    <strong>Energy Consumption Prediction</strong> -
-                    Predicts the energy consumed by an EV based on vehicle,
-                    battery, distance, charging and environmental features.
-                    <br>Accuracy: 81.05%
-                </li>
+        <section class="glass-section reveal">
 
-                <li>
-                    <strong>Battery Health Prediction</strong> -
-                    Estimates the health percentage of an EV battery.
-                    <br>Accuracy: 95.08%
-                </li>
+            <div class="section-heading">
 
-                <li>
-                    <strong>Range Anxiety Prediction</strong> -
-                    Predicts the risk of range anxiety based on EV usage,
-                    battery and charging-related characteristics.
-                    <br> Accuracy: 97.25%
-                </li>
+                <span class="section-number">03</span>
 
-                <li>
-                    <strong>Charging Station Requirement</strong> -
-                    Analyzes EV and infrastructure data to support charging
-                    station planning.
-                    <br>Accuracy: 78.16%
-                </li>
-            </ul>
+                <div>
+                    <span class="section-label">MACHINE LEARNING</span>
+                    <h2>Intelligence Behind The Platform</h2>
+                </div>
+
+            </div>
+
+
+            <div class="model-grid">
+
+
+                <!-- MODEL 1 -->
+
+                <div class="model-card">
+
+                    <div class="model-top">
+
+                        <div class="model-icon">⚡</div>
+
+                        <span class="model-number">MODEL 01</span>
+
+                    </div>
+
+                    <h3>Energy Consumption Prediction</h3>
+
+                    <p>
+                        Predicts the energy consumed by an EV based on
+                        vehicle, battery, distance, charging and
+                        environmental features.
+                    </p>
+
+                    <div class="accuracy">
+
+                        <span>Accuracy</span>
+
+                        <strong>81.05%</strong>
+
+                    </div>
+
+                    <div class="accuracy-bar">
+                        <span style="width:81.05%"></span>
+                    </div>
+
+                </div>
+
+
+                <!-- MODEL 2 -->
+
+                <div class="model-card">
+
+                    <div class="model-top">
+
+                        <div class="model-icon">🔋</div>
+
+                        <span class="model-number">MODEL 02</span>
+
+                    </div>
+
+                    <h3>Battery Health Prediction</h3>
+
+                    <p>
+                        Estimates the health percentage of an EV
+                        battery using relevant battery and usage
+                        characteristics.
+                    </p>
+
+                    <div class="accuracy">
+
+                        <span>Accuracy</span>
+
+                        <strong>95.08%</strong>
+
+                    </div>
+
+                    <div class="accuracy-bar">
+                        <span style="width:95.08%"></span>
+                    </div>
+
+                </div>
+
+
+                <!-- MODEL 3 -->
+
+                <div class="model-card">
+
+                    <div class="model-top">
+
+                        <div class="model-icon">🧭</div>
+
+                        <span class="model-number">MODEL 03</span>
+
+                    </div>
+
+                    <h3>Range Anxiety Prediction</h3>
+
+                    <p>
+                        Predicts range anxiety risk using EV usage,
+                        battery and charging-related characteristics.
+                    </p>
+
+                    <div class="accuracy">
+
+                        <span>Accuracy</span>
+
+                        <strong>97.25%</strong>
+
+                    </div>
+
+                    <div class="accuracy-bar">
+                        <span style="width:97.25%"></span>
+                    </div>
+
+                </div>
+
+
+                <!-- MODEL 4 -->
+
+                <div class="model-card">
+
+                    <div class="model-top">
+
+                        <div class="model-icon">🏗️</div>
+
+                        <span class="model-number">MODEL 04</span>
+
+                    </div>
+
+                    <h3>Charging Station Requirement</h3>
+
+                    <p>
+                        Analyzes EV and infrastructure data to support
+                        charging station planning and requirement analysis.
+                    </p>
+
+                    <div class="accuracy">
+
+                        <span>Accuracy</span>
+
+                        <strong>78.16%</strong>
+
+                    </div>
+
+                    <div class="accuracy-bar">
+                        <span style="width:78.16%"></span>
+                    </div>
+
+                </div>
+
+
+            </div>
+
         </section>
 
 
-        <section>
-            <h2>Technologies Used</h2>
+        <!-- ================= TECHNOLOGIES ================= -->
 
-            <ul>
-                <li>Python</li>
-                <li>Flask</li>
-                <li>Machine Learning</li>
-                <li>Scikit-learn</li>
-                <li>XGBoost</li>
-                <li>Pandas</li>
-                <li>NumPy</li>
-                <li>Matplotlib</li>
-                <li>Power BI</li>
-                <li>SQL</li>
-                <li>HTML</li>
-            </ul>
+        <section class="section-block reveal">
+
+            <div class="section-heading">
+
+                <span class="section-number">04</span>
+
+                <div>
+                    <span class="section-label">TECH STACK</span>
+                    <h2>Technologies Used</h2>
+                </div>
+
+            </div>
+
+
+            <div class="tech-container">
+
+                <span class="tech">Python</span>
+                <span class="tech">Flask</span>
+                <span class="tech">Machine Learning</span>
+                <span class="tech">Scikit-learn</span>
+                <span class="tech">XGBoost</span>
+                <span class="tech">Pandas</span>
+                <span class="tech">NumPy</span>
+                <span class="tech">Matplotlib</span>
+                <span class="tech">Power BI</span>
+                <span class="tech">SQL</span>
+                <span class="tech">HTML</span>
+
+            </div>
+
         </section>
 
 
-        <section>
-            <h2>Data Sources</h2>
+        <!-- ================= DATA ================= -->
 
-            <p>
-                The project uses cleaned and processed EV usage,
-                electric vehicle statistics, and charging station datasets.
-                These datasets are used for Machine Learning, infrastructure
-                analysis, and dashboard development.
-            </p>
+        <section class="glass-section reveal">
+
+            <div class="section-heading">
+
+                <span class="section-number">05</span>
+
+                <div>
+                    <span class="section-label">DATA FOUNDATION</span>
+                    <h2>Data Sources</h2>
+                </div>
+
+            </div>
+
+            <div class="data-content">
+
+                <div class="data-icon">
+                    🗄️
+                </div>
+
+                <p>
+                    The project uses cleaned and processed EV usage,
+                    electric vehicle statistics and charging station
+                    datasets. These datasets support Machine Learning,
+                    infrastructure analysis and dashboard development.
+                </p>
+
+            </div>
+
         </section>
 
 
-        <section>
-            <h2>System Workflow</h2>
+        <!-- ================= WORKFLOW ================= -->
 
-            <ol>
-                <li>Collect EV and charging infrastructure data.</li>
-                <li>Clean and preprocess the datasets.</li>
-                <li>Perform exploratory data analysis.</li>
-                <li>Engineer relevant features.</li>
-                <li>Train and evaluate Machine Learning models.</li>
-                <li>Save trained models for prediction.</li>
-                <li>Integrate the models with Flask.</li>
-                <li>Display predictions and insights through the web application.</li>
-            </ol>
+        <section class="section-block reveal">
+
+            <div class="section-heading">
+
+                <span class="section-number">06</span>
+
+                <div>
+                    <span class="section-label">PIPELINE</span>
+                    <h2>System Workflow</h2>
+                </div>
+
+            </div>
+
+
+            <div class="workflow">
+
+                <div class="workflow-line"></div>
+
+
+                <div class="workflow-step">
+
+                    <div class="step-number">01</div>
+
+                    <div class="step-content">
+
+                        <h3>Data Collection</h3>
+
+                        <p>
+                            Collect EV and charging infrastructure data.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="workflow-step">
+
+                    <div class="step-number">02</div>
+
+                    <div class="step-content">
+
+                        <h3>Data Preparation</h3>
+
+                        <p>
+                            Clean and preprocess the datasets.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="workflow-step">
+
+                    <div class="step-number">03</div>
+
+                    <div class="step-content">
+
+                        <h3>Exploratory Analysis</h3>
+
+                        <p>
+                            Explore patterns and relationships within
+                            the EV datasets.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="workflow-step">
+
+                    <div class="step-number">04</div>
+
+                    <div class="step-content">
+
+                        <h3>Feature Engineering</h3>
+
+                        <p>
+                            Engineer relevant features for prediction.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="workflow-step">
+
+                    <div class="step-number">05</div>
+
+                    <div class="step-content">
+
+                        <h3>Model Training</h3>
+
+                        <p>
+                            Train and evaluate Machine Learning models.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="workflow-step">
+
+                    <div class="step-number">06</div>
+
+                    <div class="step-content">
+
+                        <h3>Flask Integration</h3>
+
+                        <p>
+                            Integrate trained models into the web application.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="workflow-step">
+
+                    <div class="step-number">07</div>
+
+                    <div class="step-content">
+
+                        <h3>Prediction & Insights</h3>
+
+                        <p>
+                            Display predictions and insights through
+                            the platform.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </section>
 
 
-        <section>
-            <h2>Who Can Use This Platform?</h2>
+        <!-- ================= USERS ================= -->
 
-            <ul>
-                <li>EV infrastructure planners</li>
-                <li>Charging station operators</li>
-                <li>Government and urban planning authorities</li>
-                <li>EV users</li>
-                <li>Data analysts and researchers</li>
-            </ul>
+        <section class="glass-section reveal">
+
+            <div class="section-heading">
+
+                <span class="section-number">07</span>
+
+                <div>
+                    <span class="section-label">TARGET USERS</span>
+                    <h2>Who Can Use The Platform?</h2>
+                </div>
+
+            </div>
+
+
+            <div class="user-grid">
+
+                <div class="user-card">
+                    <span>🏗️</span>
+                    <h3>Infrastructure Planners</h3>
+                </div>
+
+                <div class="user-card">
+                    <span>🔌</span>
+                    <h3>Charging Operators</h3>
+                </div>
+
+                <div class="user-card">
+                    <span>🏛️</span>
+                    <h3>Government & Urban Planning</h3>
+                </div>
+
+                <div class="user-card">
+                    <span>🚗</span>
+                    <h3>EV Users</h3>
+                </div>
+
+                <div class="user-card">
+                    <span>🔬</span>
+                    <h3>Researchers</h3>
+                </div>
+
+                <div class="user-card">
+                    <span>📊</span>
+                    <h3>Data Analysts</h3>
+                </div>
+
+            </div>
+
         </section>
 
 
-        <section>
-            <h2>Future Scope</h2>
+        <!-- ================= FUTURE ================= -->
 
-            <ul>
-                <li>Real-time EV charging station data integration.</li>
-                <li>Interactive map-based station recommendations.</li>
-                <li>Real-time charging demand prediction.</li>
-                <li>Integration of weather and traffic data.</li>
-                <li>Advanced geospatial analysis for station placement.</li>
-                <li>Deployment of the platform on a cloud server.</li>
-            </ul>
+        <section class="future-section reveal">
+
+            <div class="future-glow"></div>
+
+            <div class="section-heading">
+
+                <span class="section-number">08</span>
+
+                <div>
+                    <span class="section-label">ROADMAP</span>
+                    <h2>Future Scope</h2>
+                </div>
+
+            </div>
+
+
+            <div class="future-grid">
+
+                <div class="future-item">
+                    <span>01</span>
+                    <p>Real-time EV charging station data integration.</p>
+                </div>
+
+                <div class="future-item">
+                    <span>02</span>
+                    <p>Interactive map-based station recommendations.</p>
+                </div>
+
+                <div class="future-item">
+                    <span>03</span>
+                    <p>Real-time charging demand prediction.</p>
+                </div>
+
+                <div class="future-item">
+                    <span>04</span>
+                    <p>Integration of weather and traffic data.</p>
+                </div>
+
+                <div class="future-item">
+                    <span>05</span>
+                    <p>Advanced geospatial analysis for station placement.</p>
+                </div>
+
+                <div class="future-item">
+                    <span>06</span>
+                    <p>Deployment of the platform on a cloud server.</p>
+                </div>
+
+            </div>
+
         </section>
+
 
     </main>
 
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-line"></div>
+
+        <div class="footer-content">
+
+            <div>
+                <span class="footer-brand">⚡ EV INTELLIGENCE</span>
+                <p>
+                    Data • Intelligence • Sustainable Mobility
+                </p>
+            </div>
+
+            <span class="footer-status">
+                <span class="status-dot"></span>
+                SYSTEM ONLINE
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <script src="{{ url_for('static', filename='js/about.js') }}"></script>
 
 </body>
 </html>

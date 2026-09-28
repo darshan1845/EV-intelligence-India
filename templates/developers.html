@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +7,10 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Developers - EV Intelligence System</title>
+    <title>Developers | EV Intelligence</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/developers.css') }}">
 
 </head>
 
@@ -16,395 +18,892 @@
 <body>
 
 
-    <!-- Navigation -->
+    <!-- ==============================
+         NAVIGATION
+    =============================== -->
 
-    <nav>
+    <nav class="navbar">
 
-        <a href="/">Home</a> |
+        <a href="/" class="brand">
 
-        <a href="/Models">Models</a> |
+            <div class="brand-icon">
+                ⚡
+            </div>
 
-        <a href="/dashboard">Dashboards</a> |
+            <div>
 
-        <a href="/developers">Developers</a> |
+                <strong>
+                    EV INTELLIGENCE
+                </strong>
 
-        <a href="/assistant">EV AI Assistant</a>
+                <small>
+                    DATA. INSIGHTS. A CLEANER TOMORROW.
+                </small>
+
+            </div>
+
+        </a>
+
+
+        <div class="nav-links">
+
+            <a href="/">
+                Home
+            </a>
+
+            <a href="/Models">
+                Models
+            </a>
+
+            <a href="/dashboard">
+                Dashboards
+            </a>
+
+            <a href="/developers" class="active">
+                Developers
+            </a>
+
+            <a href="/assistant">
+                AI Assistant
+            </a>
+
+        </div>
 
     </nav>
 
 
-    <hr>
+
+    <!-- ==============================
+         HERO
+    =============================== -->
+
+    <header class="hero">
+
+        <div class="eyebrow">
+            THE MINDS BEHIND THE PROJECT
+        </div>
 
 
-    <!-- Page Header -->
+        <h1>
 
-    <header>
+            Meet the
+            <span>Developers</span>
 
-        <h1>Meet the Developers</h1>
+        </h1>
+
 
         <p>
-            The EV Intelligence System is developed as a collaborative
-            project combining Data Science, Machine Learning,
-            Data Analytics and Web Development.
+
+            Two developers. One vision.
+            Building an intelligent EV ecosystem through
+            Data Science, Machine Learning, Analytics
+            and Web Technology.
+
         </p>
+
+
+        <div class="hero-line"></div>
 
     </header>
 
 
-    <hr>
 
+    <!-- ==============================
+         DEVELOPERS
+    =============================== -->
 
-    <!-- Developer 1 -->
+    <main>
 
-    <section>
 
-        <h2>Developer 1 — Darshan Murlidhar Patil</h2>
+        <section class="team">
 
-        <h3>Education</h3>
 
-        <p>
-            B.E. Information Technology
-            <br>
-            Sinhgad Institute of Technology, Lonavala
-            <br>
-            SPPU University
-            <br>
-            Graduation Year: 2027
-        </p>
+            <!-- ==========================
+                 DARSHAN
+            =========================== -->
 
+            <article class="developer-card tilt-card">
 
-        <h3>Domains</h3>
 
-        <ul>
+                <div class="developer-header">
 
-            <li>Data Science</li>
+                    <div class="developer-avatar">
+                        👨🏻‍💻
+                    </div>
 
-            <li>Machine Learning</li>
 
-            <li>Data Analytics</li>
+                    <div class="developer-name">
 
-            <li>Web Development</li>
+                        <h2>
+                            Darshan Murlidhar Patil
+                        </h2>
 
-        </ul>
+                        <p>
+                            DATA SCIENTIST • ML DEVELOPER
+                        </p>
 
+                    </div>
 
-        <h3>Role in Project</h3>
+                </div>
 
-        <ul>
 
-            <li>Data Scientist</li>
 
-            <li>Machine Learning Developer</li>
+                <!-- Education -->
 
-        </ul>
+                <div class="info-section">
 
+                    <div class="info-title">
+                        EDUCATION
+                    </div>
 
-        <h3>Skills</h3>
+                    <div class="education">
 
-        <ul>
+                        <strong>
+                            B.E. Information Technology
+                        </strong>
 
-            <li>Python</li>
+                        <br>
 
-            <li>SQL</li>
+                        Sinhgad Institute of Technology,
+                        Lonavala
 
-            <li>Pandas</li>
+                        <br>
 
-            <li>NumPy</li>
+                        SPPU University
 
-            <li>Flask</li>
+                        <br>
 
-            <li>Power BI</li>
+                        Graduation Year: 2027
 
-            <li>GenAI (Basic)</li>
+                    </div>
 
-            <li>HTML</li>
+                </div>
 
-            <li>CSS</li>
 
-            <li>JavaScript</li>
 
-        </ul>
+                <!-- Domains -->
 
+                <div class="info-section">
 
-        <h3>Models Developed</h3>
+                    <div class="info-title">
+                        DOMAINS
+                    </div>
 
-        <ul>
+                    <div class="tags">
 
-            <li>EV Range Anxiety Prediction Model</li>
+                        <span class="tag">
+                            Data Science
+                        </span>
 
-            <li>EV Charging Station Prediction Model</li>
+                        <span class="tag">
+                            Machine Learning
+                        </span>
 
-            <li>EV Energy Consumption Prediction Model</li>
+                        <span class="tag">
+                            Data Analytics
+                        </span>
 
-        </ul>
+                        <span class="tag">
+                            Web Development
+                        </span>
 
+                    </div>
 
-        <h3>Dashboards Created</h3>
+                </div>
 
-        <ul>
 
-            <li>EV Usage Analysis Dashboard</li>
 
-            <li>EV Charging Station Dashboard</li>
+                <!-- Roles -->
 
-            <li>EV Vehicle Analysis Dashboard</li>
+                <div class="info-section">
 
-        </ul>
+    <div class="info-title">
+        PROJECT ROLES
+    </div>
 
+    <div class="role-grid">
 
-        <h3>Major Contributions</h3>
+        <div class="role">
+            <span>📊</span>
+            Data Scientist
+        </div>
 
-        <ul>
+        <div class="role">
+            <span>🤖</span>
+            Machine Learning Developer
+        </div>
 
-            <li>Dataset preprocessing and cleaning</li>
+        <div class="role">
+            <span>🌐</span>
+            Web Developer
+        </div>
 
-            <li>Exploratory Data Analysis</li>
+        <div class="role">
+            <span>🎨</span>
+            Frontend Developer
+        </div>
 
-            <li>Feature preparation</li>
+    </div>
 
-            <li>Machine Learning model development</li>
+</div>
 
-            <li>Model integration with Flask</li>
 
-            <li>Power BI dashboard development</li>
 
-            <li>AI Assistant integration</li>
+                <!-- Skills -->
 
-        </ul>
+                <div class="info-section">
 
+                    <div class="info-title">
+                        SKILLS
+                    </div>
 
-        <h3>Profiles</h3>
+                    <div class="tags">
 
-        <p>
+                        <span class="tag">Python</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">NumPy</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">Power BI</span>
+                        <span class="tag">GenAI</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
 
-            <a href="https://github.com/darshan1845" target="_blank">
-                GitHub
-            </a>
+                    </div>
 
-            <br>
+                </div>
 
-            <a href="https://linkedin.com/in/darshanpatil1" target="_blank">
-                LinkedIn
-            </a>
 
-        </p>
 
-    </section>
+                <!-- Models -->
 
+                <div class="info-section">
 
-    <hr>
+                    <div class="info-title">
+                        MODELS DEVELOPED
+                    </div>
 
+                    <div class="project-list">
 
-    <!-- Developer 2 -->
+                        <div class="project-item">
+                            EV Range Anxiety Prediction
+                        </div>
 
-    <section>
+                        <div class="project-item">
+                            EV Charging Station Prediction
+                        </div>
 
-        <h2>Developer 2 — Chetna Kailas Patel</h2>
+                        <div class="project-item">
+                            EV Energy Consumption Prediction
+                        </div>
 
-        <h3>Education</h3>
+                    </div>
 
-        <p>
-            B.E. Computer Engineering
-            <br>
-            Sinhgad Institute of Technology, Lonavala
-            <br>
-            SPPU University
-            <br>
-            Graduation Year: 2027
-        </p>
+                </div>
 
 
-        <h3>Domains</h3>
 
-        <ul>
+                <!-- Dashboards -->
 
-            <li>Web Development</li>
+                <div class="info-section">
 
-            <li>Data Analytics</li>
+                    <div class="info-title">
+                        DASHBOARDS
+                    </div>
 
-            <li>Data Science</li>
+                    <div class="project-list">
 
-            <li>Machine Learning</li>
+                        <div class="project-item">
+                            Indian Station
+                        </div>
 
-        </ul>
 
 
-        <h3>Role in Project</h3>
+                    </div>
 
-        <ul>
+                </div>
 
-            <li>Web Developer</li>
 
-            <li>Frontend Developer</li>
 
-        </ul>
+                <!-- Contributions -->
 
+                <div class="info-section">
 
-        <h3>Skills</h3>
+                    <div class="info-title">
+                        MAJOR CONTRIBUTIONS
+                    </div>
 
-        <ul>
+                    <div class="contribution-list">
 
-            <li>HTML</li>
+                        <div class="contribution">
+                            Dataset preprocessing and cleaning
+                        </div>
 
-            <li>CSS</li>
+                        <div class="contribution">
+                            Exploratory Data Analysis
+                        </div>
 
-            <li>JavaScript</li>
+                        <div class="contribution">
+                            Feature preparation
+                        </div>
 
-            <li>Python</li>
+                        <div class="contribution">
+                            Machine Learning model development
+                        </div>
 
-            <li>Pandas</li>
+                        <div class="contribution">
+                            Model integration with Flask
+                        </div>
 
-            <li>NumPy</li>
+                        <div class="contribution">
+                            Power BI dashboard development
+                        </div>
 
-            <li>Flask</li>
+                        <div class="contribution">
+                            AI Assistant integration
+                        </div>
 
-            <li>Power BI</li>
+                    </div>
 
-            <li>Git & GitHub</li>
+                </div>
 
-            <li>Docker (Basic)</li>
 
-        </ul>
 
+                <!-- Profiles -->
 
-        <h3>Models Developed</h3>
+                <div class="info-section">
 
-        <ul>
+                    <div class="info-title">
+                        CONNECT
+                    </div>
 
-            <li>EV Charging Station Prediction Model</li>
+                    <div class="profiles">
 
-            <li>EV Cost Analysis Model</li>
+                        <a
+                            href="https://github.com/darshan1845"
+                            target="_blank"
+                            class="profile-btn">
 
-        </ul>
+                            ◈ GitHub
 
+                        </a>
 
-        <h3>Dashboards Created</h3>
 
-        <ul>
+                        <a
+                            href="https://linkedin.com/in/darshanpatil1"
+                            target="_blank"
+                            class="profile-btn">
 
-            <li>EV Charging Station Dashboard</li>
+                            in LinkedIn
 
-            <li>EV Analytics Dashboard</li>
+                        </a>
 
-        </ul>
+                    </div>
 
+                </div>
 
-        <h3>Major Contributions</h3>
 
-        <ul>
+            </article>
 
-            <li>Frontend website development</li>
 
-            <li>Web page design and implementation</li>
 
-            <li>Flask route integration</li>
+            <!-- ==========================
+                 CHETNA
+            =========================== -->
 
-            <li>Integration of Machine Learning models with website</li>
+            <article class="developer-card tilt-card">
 
-            <li>Dashboard integration</li>
 
-            <li>Project interface development</li>
+                <div class="developer-header">
 
-            <li>Project deployment support</li>
+                    <div class="developer-avatar">
+                        👩🏻‍💻
+                    </div>
 
-        </ul>
 
+                    <div class="developer-name">
 
-        <h3>Profiles</h3>
+                        <h2>
+                            Chetna Kailas Patel
+                        </h2>
 
-        <p>
+                        <p>
+                            DATA SCIENTIST • DATA ANALYST
+                        </p>
 
-            <a href="#" target="_blank">
-                GitHub
-            </a>
+                    </div>
 
-            <br>
+                </div>
 
-            <a href="#" target="_blank">
-                LinkedIn
-            </a>
 
-        </p>
 
-    </section>
+                <!-- Education -->
 
+                <div class="info-section">
 
-    <hr>
+                    <div class="info-title">
+                        EDUCATION
+                    </div>
 
+                    <div class="education">
 
-    <!-- Project Workflow -->
+                        <strong>
+                            B.E. Computer Engineering
+                        </strong>
 
-    <section>
+                        <br>
 
-        <h2>Project Development Workflow</h2>
+                        Sinhgad Institute of Technology,
+                        Lonavala
 
-        <ol>
+                        <br>
 
-            <li>
-                Data Collection and Preparation
-            </li>
+                        SPPU University
 
-            <li>
-                Data Cleaning and Preprocessing
-            </li>
+                        <br>
 
-            <li>
-                Exploratory Data Analysis
-            </li>
+                        Graduation Year: 2027
 
-            <li>
-                Machine Learning Model Development
-            </li>
+                    </div>
 
-            <li>
-                Model Evaluation
-            </li>
+                </div>
 
-            <li>
-                Flask Backend Integration
-            </li>
 
-            <li>
-                Frontend Development
-            </li>
 
-            <li>
-                Power BI Dashboard Integration
-            </li>
+                <!-- Domains -->
 
-            <li>
-                EV AI Assistant Integration
-            </li>
+                <div class="info-section">
 
-            <li>
-                Testing and Deployment
-            </li>
+                    <div class="info-title">
+                        DOMAINS
+                    </div>
 
-        </ol>
+                    <div class="tags">
 
-    </section>
+                        <span class="tag">
+                            Web Development
+                        </span>
 
+                        <span class="tag">
+                            Data Analytics
+                        </span>
 
-    <hr>
+                        <span class="tag">
+                            Data Science
+                        </span>
 
+                        <span class="tag">
+                            Machine Learning
+                        </span>
 
-    <!-- Footer -->
+                    </div>
+
+                </div>
+
+
+
+                <!-- Roles -->
+
+                <div class="info-section">
+
+    <div class="info-title">
+        PROJECT ROLES
+    </div>
+
+    <div class="role-grid">
+
+        <div class="role">
+            <span>📊</span>
+            Data Scientist
+        </div>
+
+        <div class="role">
+            <span>🤖</span>
+            Machine Learning Developer
+        </div>
+
+        <div class="role">
+            <span>🌐</span>
+            Web Developer
+        </div>
+
+        <div class="role">
+            <span>🎨</span>
+            Frontend Developer
+        </div>
+
+    </div>
+
+</div>
+
+
+
+                <!-- Skills -->
+
+                <div class="info-section">
+
+                    <div class="info-title">
+                        SKILLS
+                    </div>
+
+                    <div class="tags">
+
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">NumPy</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">Power BI</span>
+                        <span class="tag">Git & GitHub</span>
+                        <span class="tag">Docker</span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Models -->
+
+                <div class="info-section">
+
+                    <div class="info-title">
+                        MODELS DEVELOPED
+                    </div>
+
+                    <div class="project-list">
+
+                        <div class="project-item">
+                            EV Charging Station Prediction
+                        </div>
+
+                        <div class="project-item">
+                            EV Cost Analysis Model
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Dashboards -->
+
+                <div class="info-section">
+
+                    <div class="info-title">
+                        DASHBOARDS
+                    </div>
+
+                    <div class="project-list">
+
+                        <div class="project-item">
+                            EV Usage Dashboard
+                        </div>
+
+                        <div class="project-item">
+                            Vehicles & Stations Dashboard
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Contributions -->
+
+                <div class="info-section">
+
+                    <div class="info-title">
+                        MAJOR CONTRIBUTIONS
+                    </div>
+
+                    <div class="contribution-list">
+
+                        <div class="contribution">
+                            Frontend website development
+                        </div>
+
+                        <div class="contribution">
+                            Web page design and implementation
+                        </div>
+
+                        <div class="contribution">
+                            Flask route integration
+                        </div>
+
+                        <div class="contribution">
+                            Machine Learning model integration
+                        </div>
+
+                        <div class="contribution">
+                            Dashboard integration
+                        </div>
+
+                        <div class="contribution">
+                            Project interface development
+                        </div>
+
+                        <div class="contribution">
+                            Project deployment support
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Profiles -->
+
+                <div class="info-section">
+
+                    <div class="info-title">
+                        CONNECT
+                    </div>
+
+                    <div class="profiles">
+
+                        <a
+                            href="https://github.com/Chetnapatel09"
+                            target="_blank"
+                            class="profile-btn">
+
+                            ◈ GitHub
+
+                        </a>
+
+
+                        <a
+                            href="https://www.linkedin.com/in/chetna-patel-3s/"
+                            target="_blank"
+                            class="profile-btn">
+
+                            in LinkedIn
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </article>
+
+
+        </section>
+
+
+
+        <!-- ==============================
+             WORKFLOW
+        =============================== -->
+
+        <section class="workflow-wrapper">
+
+
+            <div class="workflow-heading">
+
+                <div class="eyebrow">
+                    FROM IDEA TO IMPLEMENTATION
+                </div>
+
+                <h2>
+                    How We Built It
+                </h2>
+
+                <p>
+                    A collaborative workflow bringing
+                    data, intelligence and design together.
+                </p>
+
+            </div>
+
+
+            <div class="workflow">
+
+
+                <div class="workflow-item">
+
+                    <div class="workflow-number">
+                        01
+                    </div>
+
+                    <p>
+                        Data Collection &
+                        Preparation
+                    </p>
+
+                </div>
+
+
+                <div class="workflow-item">
+
+                    <div class="workflow-number">
+                        02
+                    </div>
+
+                    <p>
+                        Data Cleaning &
+                        Analysis
+                    </p>
+
+                </div>
+
+
+                <div class="workflow-item">
+
+                    <div class="workflow-number">
+                        03
+                    </div>
+
+                    <p>
+                        ML Model
+                        Development
+                    </p>
+
+                </div>
+
+
+                <div class="workflow-item">
+
+                    <div class="workflow-number">
+                        04
+                    </div>
+
+                    <p>
+                        Flask &
+                        Frontend Integration
+                    </p>
+
+                </div>
+
+
+                <div class="workflow-item">
+
+                    <div class="workflow-number">
+                        05
+                    </div>
+
+                    <p>
+                        Testing &
+                        Deployment
+                    </p>
+
+                </div>
+
+
+                <div class="workflow-item">
+
+                    <div class="workflow-number">
+                        06
+                    </div>
+
+                    <p>
+                        Power BI
+                        Dashboards
+                    </p>
+
+                </div>
+
+
+                <div class="workflow-item">
+
+                    <div class="workflow-number">
+                        07
+                    </div>
+
+                    <p>
+                        AI Assistant
+                        Integration
+                    </p>
+
+                </div>
+
+
+                <div class="workflow-item">
+
+                    <div class="workflow-number">
+                        08
+                    </div>
+
+                    <p>
+                        UI/UX
+                        Refinement
+                    </p>
+
+                </div>
+
+
+                <div class="workflow-item">
+
+                    <div class="workflow-number">
+                        09
+                    </div>
+
+                    <p>
+                        Final
+                        Testing
+                    </p>
+
+                </div>
+
+
+                <div class="workflow-item">
+
+                    <div class="workflow-number">
+                        10
+                    </div>
+
+                    <p>
+                        EV Intelligence
+                        System
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ==============================
+         FOOTER
+    =============================== -->
 
     <footer>
 
-        <p>
-            © 2026 EV Intelligence System
-        </p>
+        <strong>
+            EV INTELLIGENCE
+        </strong>
 
-        <p>
-            Developed using Data Science, Machine Learning,
-            Data Analytics and Web Technologies.
-        </p>
+        <br>
+
+        Built with Data Science • Machine Learning •
+        Data Analytics • Web Development
+
+        <br>
+
+        © 2026 EV Intelligence System
 
     </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="{{ url_for('static', filename='js/developers.js') }}"></script>
 
 
 </body>
 
 </html>
-```

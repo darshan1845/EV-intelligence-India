@@ -2,143 +2,1234 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>EV AI Assistant</title>
+    <title>EV Buddy | EV AI Assistant</title>
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+
+            min-height: 100vh;
+
+            font-family: "Segoe UI", Arial, sans-serif;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(0, 12, 18, 0.12),
+                    rgba(0, 12, 18, 0.58)
+                ),
+                url("/static/images/Assistant_bg.png");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            color: white;
+
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            padding: 35px 5%;
+
+            overflow: hidden;
+        }
+
+
+        /* =========================================
+           BACKGROUND GLOW
+        ========================================= */
+
+        body::before {
+
+            content: "";
+
+            position: fixed;
+
+            width: 450px;
+            height: 450px;
+
+            right: 8%;
+            top: 15%;
+
+            background: rgba(0, 255, 190, 0.07);
+
+            filter: blur(100px);
+
+            border-radius: 50%;
+
+            pointer-events: none;
+        }
+
+
+        /* =========================================
+           CHAT WRAPPER
+        ========================================= */
+
+        .chat-container {
+
+            width: min(650px, 100%);
+
+            height: min(820px, 91vh);
+
+            display: flex;
+
+            flex-direction: column;
+
+            position: relative;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(4, 25, 31, 0.88),
+                    rgba(2, 15, 22, 0.78)
+                );
+
+            backdrop-filter: blur(22px);
+            -webkit-backdrop-filter: blur(22px);
+
+            border: 1px solid rgba(0, 255, 190, 0.28);
+
+            border-radius: 30px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 25px 80px rgba(0, 0, 0, 0.45),
+                0 0 35px rgba(0, 255, 190, 0.07);
+
+            animation: containerAppear 0.7s ease;
+        }
+
+
+        @keyframes containerAppear {
+
+            from {
+                opacity: 0;
+                transform: translateY(25px) scale(0.97);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+
+        /* =========================================
+           TOP GLOW
+        ========================================= */
+
+        .chat-container::before {
+
+            content: "";
+
+            position: absolute;
+
+            top: 0;
+            left: 15%;
+
+            width: 70%;
+            height: 2px;
+
+            background: linear-gradient(
+                90deg,
+                transparent,
+                #00ffb7,
+                #00d9ff,
+                #00ffb7,
+                transparent
+            );
+
+            box-shadow:
+                0 0 15px #00ffb7,
+                0 0 30px rgba(0, 255, 190, 0.5);
+
+            z-index: 5;
+        }
+
+
+        /* =========================================
+           HEADER
+        ========================================= */
+
+        .chat-header {
+
+            padding: 23px 27px 20px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(0, 255, 190, 0.06),
+                    rgba(0, 150, 200, 0.04)
+                );
+
+            border-bottom: 1px solid rgba(0, 255, 190, 0.12);
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 14px;
+        }
+
+
+        /* AI AVATAR */
+
+        .ai-avatar {
+
+            width: 52px;
+            height: 52px;
+
+            flex-shrink: 0;
+
+            border-radius: 17px;
+
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+
+            font-size: 27px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(0, 255, 190, 0.22),
+                    rgba(0, 150, 220, 0.20)
+                );
+
+            border: 1px solid rgba(0, 255, 190, 0.45);
+
+            box-shadow:
+                0 0 18px rgba(0, 255, 190, 0.15);
+
+            animation: avatarGlow 3s infinite ease-in-out;
+        }
+
+
+        @keyframes avatarGlow {
+
+            0%, 100% {
+                box-shadow:
+                    0 0 15px rgba(0, 255, 190, 0.12);
+            }
+
+            50% {
+                box-shadow:
+                    0 0 25px rgba(0, 255, 190, 0.28);
+            }
+        }
+
+
+        .header-info {
+
+            flex: 1;
+        }
+
+
+        .header-title {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 8px;
+        }
+
+
+        .header-title h1 {
+
+            font-size: 21px;
+
+            font-weight: 700;
+
+            letter-spacing: 0.2px;
+        }
+
+
+        .verified {
+
+            font-size: 12px;
+
+            color: #00ffb7;
+        }
+
+
+        .header-subtitle {
+
+            margin-top: 4px;
+
+            color: #91bdb8;
+
+            font-size: 12px;
+        }
+
+
+        /* ONLINE */
+
+        .online {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 6px;
+
+            padding: 7px 11px;
+
+            border-radius: 20px;
+
+            background: rgba(0, 255, 183, 0.07);
+
+            border: 1px solid rgba(0, 255, 183, 0.14);
+
+            color: #7fffd9;
+
+            font-size: 10px;
+
+            font-weight: 600;
+
+            letter-spacing: 0.7px;
+        }
+
+
+        .online-dot {
+
+            width: 7px;
+            height: 7px;
+
+            border-radius: 50%;
+
+            background: #00ffb7;
+
+            box-shadow: 0 0 8px #00ffb7;
+
+            animation: onlinePulse 1.8s infinite;
+        }
+
+
+        @keyframes onlinePulse {
+
+            0%, 100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.35;
+            }
+        }
+
+
+        /* =========================================
+           CHAT AREA
+        ========================================= */
+
+        .chat-box {
+
+            flex: 1;
+
+            overflow-y: auto;
+
+            padding: 25px 25px 15px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 15px;
+
+            scroll-behavior: smooth;
+        }
+
+
+        .chat-box::-webkit-scrollbar {
+
+            width: 5px;
+        }
+
+
+        .chat-box::-webkit-scrollbar-track {
+
+            background: transparent;
+        }
+
+
+        .chat-box::-webkit-scrollbar-thumb {
+
+            background: rgba(0, 255, 190, 0.22);
+
+            border-radius: 10px;
+        }
+
+
+        /* =========================================
+           WELCOME MESSAGE
+        ========================================= */
+
+        .welcome-message {
+
+            display: flex;
+
+            gap: 10px;
+
+            align-items: flex-start;
+
+            animation: messageAppear 0.5s ease;
+        }
+
+
+        .small-avatar {
+
+            width: 34px;
+            height: 34px;
+
+            flex-shrink: 0;
+
+            border-radius: 12px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            font-size: 17px;
+
+            background: rgba(0, 255, 190, 0.10);
+
+            border: 1px solid rgba(0, 255, 190, 0.25);
+        }
+
+
+        /* =========================================
+           MESSAGE
+        ========================================= */
+
+        .message {
+
+            max-width: 78%;
+
+            padding: 14px 17px;
+
+            font-size: 14px;
+
+            line-height: 1.6;
+
+            word-wrap: break-word;
+
+            animation: messageAppear 0.3s ease;
+        }
+
+
+        @keyframes messageAppear {
+
+            from {
+                opacity: 0;
+                transform: translateY(8px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+        /* BOT */
+
+        .bot-message {
+
+            align-self: flex-start;
+
+            color: #e5fff9;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(0, 255, 190, 0.105),
+                    rgba(0, 110, 150, 0.09)
+                );
+
+            border: 1px solid rgba(0, 255, 190, 0.19);
+
+            border-radius: 5px 18px 18px 18px;
+
+            box-shadow:
+                0 5px 20px rgba(0, 0, 0, 0.10);
+        }
+
+
+        /* USER */
+
+        .user-message {
+
+            align-self: flex-end;
+
+            color: white;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(0, 200, 255, 0.25),
+                    rgba(0, 110, 170, 0.17)
+                );
+
+            border: 1px solid rgba(0, 205, 255, 0.28);
+
+            border-radius: 18px 5px 18px 18px;
+
+            box-shadow:
+                0 5px 20px rgba(0, 130, 190, 0.07);
+        }
+
+
+        /* =========================================
+           QUICK QUESTIONS
+        ========================================= */
+
+        .quick-section {
+
+            margin-left: 44px;
+
+            animation: messageAppear 0.7s ease;
+        }
+
+
+        .quick-title {
+
+            color: #709f9b;
+
+            font-size: 11px;
+
+            margin-bottom: 9px;
+
+            letter-spacing: 0.4px;
+        }
+
+
+        .quick-buttons {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 7px;
+        }
+
+
+        .quick-btn {
+
+            border: 1px solid rgba(0, 255, 190, 0.20);
+
+            background: rgba(0, 255, 190, 0.045);
+
+            color: #a7e9dd;
+
+            padding: 8px 12px;
+
+            border-radius: 20px;
+
+            font-size: 11px;
+
+            cursor: pointer;
+
+            transition: all 0.2s ease;
+        }
+
+
+        .quick-btn:hover {
+
+            color: white;
+
+            border-color: rgba(0, 255, 190, 0.55);
+
+            background: rgba(0, 255, 190, 0.10);
+
+            box-shadow:
+                0 0 12px rgba(0, 255, 190, 0.10);
+
+            transform: translateY(-2px);
+        }
+
+
+        /* =========================================
+           TYPING INDICATOR
+        ========================================= */
+
+        .typing {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 5px;
+
+            padding: 4px 2px;
+        }
+
+
+        .typing span {
+
+            width: 6px;
+            height: 6px;
+
+            border-radius: 50%;
+
+            background: #00ffb7;
+
+            animation: typing 1.2s infinite;
+        }
+
+
+        .typing span:nth-child(2) {
+            animation-delay: 0.15s;
+        }
+
+
+        .typing span:nth-child(3) {
+            animation-delay: 0.30s;
+        }
+
+
+        @keyframes typing {
+
+            0%, 60%, 100% {
+                transform: translateY(0);
+                opacity: 0.35;
+            }
+
+            30% {
+                transform: translateY(-5px);
+                opacity: 1;
+            }
+        }
+
+
+        /* =========================================
+           INPUT
+        ========================================= */
+
+        .input-area {
+
+            padding: 14px 17px 17px;
+
+            background:
+                rgba(0, 15, 22, 0.70);
+
+            border-top: 1px solid rgba(0, 255, 190, 0.10);
+
+            display: flex;
+
+            gap: 9px;
+        }
+
+
+        .input-wrapper {
+
+            flex: 1;
+
+            display: flex;
+
+            align-items: center;
+
+            background: rgba(0, 38, 46, 0.70);
+
+            border: 1px solid rgba(0, 255, 190, 0.16);
+
+            border-radius: 17px;
+
+            transition: all 0.25s ease;
+        }
+
+
+        .input-wrapper:focus-within {
+
+            border-color: rgba(0, 255, 190, 0.45);
+
+            box-shadow:
+                0 0 18px rgba(0, 255, 190, 0.08);
+        }
+
+
+        .input-icon {
+
+            padding-left: 15px;
+
+            color: #57bfb0;
+
+            font-size: 16px;
+        }
+
+
+        .input-area input {
+
+            width: 100%;
+
+            height: 50px;
+
+            padding: 0 14px;
+
+            border: none;
+
+            outline: none;
+
+            background: transparent;
+
+            color: white;
+
+            font-size: 13px;
+        }
+
+
+        .input-area input::placeholder {
+
+            color: #638c88;
+        }
+
+
+        /* =========================================
+           SEND BUTTON
+        ========================================= */
+
+        .input-area button {
+
+            width: 52px;
+            height: 52px;
+
+            flex-shrink: 0;
+
+            border: 1px solid rgba(0, 255, 190, 0.50);
+
+            border-radius: 17px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #00dca5,
+                    #00a9c7
+                );
+
+            color: #00231f;
+
+            font-size: 19px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+            transition: all 0.25s ease;
+
+            box-shadow:
+                0 0 15px rgba(0, 255, 190, 0.12);
+        }
+
+
+        .input-area button:hover {
+
+            transform: translateY(-2px) scale(1.03);
+
+            box-shadow:
+                0 0 25px rgba(0, 255, 190, 0.28);
+        }
+
+
+        .input-area button:active {
+
+            transform: scale(0.94);
+        }
+
+
+        .input-area button:disabled {
+
+            opacity: 0.45;
+
+            cursor: not-allowed;
+
+            transform: none;
+
+            box-shadow: none;
+        }
+
+
+        /* =========================================
+           FOOTER NOTE
+        ========================================= */
+
+        .footer-note {
+
+            text-align: center;
+
+            color: #476c68;
+
+            font-size: 9px;
+
+            padding: 0 0 9px;
+
+            letter-spacing: 0.2px;
+        }
+
+
+        /* =========================================
+           MOBILE
+        ========================================= */
+
+        @media (max-width: 950px) {
+
+            body {
+
+                justify-content: center;
+
+                padding: 20px;
+
+                background-position: left center;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            body {
+
+                padding: 0;
+            }
+
+
+            .chat-container {
+
+                width: 100%;
+
+                height: 100vh;
+
+                max-height: none;
+
+                border-radius: 0;
+
+                border-left: none;
+
+                border-right: none;
+            }
+
+
+            .chat-header {
+
+                padding: 18px 17px;
+            }
+
+
+            .ai-avatar {
+
+                width: 45px;
+                height: 45px;
+
+                font-size: 23px;
+            }
+
+
+            .header-title h1 {
+
+                font-size: 18px;
+            }
+
+
+            .online {
+
+                display: none;
+            }
+
+
+            .chat-box {
+
+                padding: 20px 15px 10px;
+            }
+
+
+            .message {
+
+                max-width: 88%;
+
+                font-size: 13px;
+            }
+
+
+            .quick-section {
+
+                margin-left: 42px;
+            }
+
+
+            .input-area {
+
+                padding: 10px;
+            }
+
+
+            .input-area button {
+
+                width: 49px;
+                height: 49px;
+            }
+
+        }
+
+    </style>
+
 </head>
+
 
 <body>
 
+
     <div class="chat-container">
 
-        <!-- Header -->
+
+        <!-- =====================================
+             HEADER
+        ====================================== -->
+
         <div class="chat-header">
 
-            <h1>⚡ EV AI Assistant</h1>
 
-            <p>
-                Ask anything about Electric Vehicles, batteries,
-                charging & range.
-            </p>
-
-        </div>
+            <div class="ai-avatar">
+                🤖
+            </div>
 
 
-        <!-- Chat messages -->
-        <div class="chat-box" id="chatBox">
+            <div class="header-info">
 
-            <div class="message bot-message">
+                <div class="header-title">
 
-                👋 Hello! I'm your EV AI Assistant.
+                    <h1>EV Buddy</h1>
 
-                <br><br>
+                    <span class="verified">✦</span>
 
-                Ask me anything about electric vehicles,
-                charging stations, batteries, range,
-                energy consumption or EV costs.
+                </div>
+
+                <div class="header-subtitle">
+                    Your friendly AI companion for everything EV ⚡
+                </div>
 
             </div>
 
+
+            <div class="online">
+
+                <span class="online-dot"></span>
+
+                ONLINE
+
+            </div>
+
+
         </div>
 
 
-        <!-- Input -->
+
+        <!-- =====================================
+             CHAT
+        ====================================== -->
+
+        <div class="chat-box" id="chatBox">
+
+
+            <!-- Welcome -->
+
+            <div class="welcome-message">
+
+                <div class="small-avatar">
+                    🤖
+                </div>
+
+
+                <div class="message bot-message">
+
+                    Hey there! 👋
+
+                    <br><br>
+
+                    I'm <strong>EV Buddy</strong> — your AI companion
+                    for everything electric. ⚡🚗
+
+                    <br><br>
+
+                    Ask me about batteries, charging, range,
+                    energy consumption, EV costs or anything
+                    else you're curious about. 😄
+
+                </div>
+
+            </div>
+
+
+            <!-- Quick Questions -->
+
+            <div class="quick-section">
+
+                <div class="quick-title">
+                    TRY ASKING ME
+                </div>
+
+
+                <div class="quick-buttons">
+
+                    <button
+                        class="quick-btn"
+                        onclick="quickQuestion('How can I improve my EV battery health?')">
+                        🔋 Battery Health
+                    </button>
+
+
+                    <button
+                        class="quick-btn"
+                        onclick="quickQuestion('How long does it take to charge an EV?')">
+                        ⚡ Charging
+                    </button>
+
+
+                    <button
+                        class="quick-btn"
+                        onclick="quickQuestion('What factors affect EV range?')">
+                        🚗 EV Range
+                    </button>
+
+
+                    <button
+                        class="quick-btn"
+                        onclick="quickQuestion('Is owning an EV cheaper than a petrol car?')">
+                        💰 EV Cost
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =====================================
+             INPUT
+        ====================================== -->
+
         <div class="input-area">
 
-            <input
-                type="text"
-                name="userInput"
-                id="userInput"
-                placeholder="Ask something about EVs..."
-                autocomplete="off"
-            >
 
-            <button onclick="sendMessage()" id="sendButton">
-                Send
+            <div class="input-wrapper">
+
+                <div class="input-icon">
+                    ⚡
+                </div>
+
+
+                <input
+                    type="text"
+                    name="userInput"
+                    id="userInput"
+                    placeholder="Ask EV Buddy anything..."
+                    autocomplete="off"
+                >
+
+            </div>
+
+
+            <button
+                onclick="sendMessage()"
+                id="sendButton"
+                title="Send message">
+
+                ➤
+
             </button>
 
+
         </div>
+
+
+        <div class="footer-note">
+
+            AI-generated responses • EV Intelligence
+
+        </div>
+
 
     </div>
 
 
+
     <script>
+
+
+        /* =========================================
+           QUICK QUESTION
+        ========================================= */
+
+        function quickQuestion(question) {
+
+            const input =
+                document.getElementById("userInput");
+
+            input.value = question;
+
+            input.focus();
+
+        }
+
+
+
+        /* =========================================
+           SEND MESSAGE
+        ========================================= */
 
         function sendMessage() {
 
-            const input = document.getElementById("userInput");
 
-            const chatBox = document.getElementById("chatBox");
+            const input =
+                document.getElementById("userInput");
 
-            const sendButton = document.getElementById("sendButton");
 
-            const message = input.value.trim();
+            const chatBox =
+                document.getElementById("chatBox");
+
+
+            const sendButton =
+                document.getElementById("sendButton");
+
+
+            const message =
+                input.value.trim();
+
 
 
             // Don't send empty messages
+
             if (message === "") {
+
                 return;
+
             }
 
 
+
             // Display user's message
-            const userMessage = document.createElement("div");
 
-            userMessage.className = "message user-message";
+            const userMessage =
+                document.createElement("div");
 
-            userMessage.innerText = message;
 
-            chatBox.appendChild(userMessage);
+            userMessage.className =
+                "message user-message";
+
+
+            userMessage.innerText =
+                message;
+
+
+            chatBox.appendChild(
+                userMessage
+            );
+
 
 
             // Clear input
+
             input.value = "";
 
 
-            // Disable button while AI is processing
+
+            // Disable button
+
             sendButton.disabled = true;
 
 
-            // Show processing message
-            const loadingMessage = document.createElement("div");
 
-            loadingMessage.className = "message bot-message";
+            // Show typing animation
 
-            loadingMessage.id = "loadingMessage";
-
-            loadingMessage.innerText =
-                "⏳ Thinking... Please wait while I generate your answer.";
-
-            chatBox.appendChild(loadingMessage);
+            const loadingMessage =
+                document.createElement("div");
 
 
-            // Scroll to latest message
-            chatBox.scrollTop = chatBox.scrollHeight;
+            loadingMessage.className =
+                "message bot-message";
+
+
+            loadingMessage.id =
+                "loadingMessage";
+
+
+            loadingMessage.innerHTML = `
+
+                <div class="typing">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+            `;
+
+
+            chatBox.appendChild(
+                loadingMessage
+            );
+
+
+
+            // Scroll
+
+            chatBox.scrollTop =
+                chatBox.scrollHeight;
+
 
 
             // Send message to Flask
+
             fetch("/ev-ai", {
 
                 method: "POST",
 
                 headers: {
-                    "Content-Type": "application/json"
+
+                    "Content-Type":
+                        "application/json"
+
                 },
 
                 body: JSON.stringify({
+
                     message: message
+
                 })
 
             })
 
 
-            // Receive response from Flask
+            // Receive response
+
             .then(response => {
 
+
                 if (!response.ok) {
-                    throw new Error("Server error");
+
+                    throw new Error(
+                        "Server error"
+                    );
+
                 }
+
 
                 return response.json();
 
@@ -147,84 +1238,203 @@
 
             .then(data => {
 
-                // Remove loading message
+
+                // Remove typing
+
                 const loadingMessage =
-                    document.getElementById("loadingMessage");
+                    document.getElementById(
+                        "loadingMessage"
+                    );
+
 
                 if (loadingMessage) {
+
                     loadingMessage.remove();
+
                 }
 
 
-                // Display AI response
-                const botMessage = document.createElement("div");
 
-                botMessage.className = "message bot-message";
+                // Create response wrapper
 
-                botMessage.innerText = data.response;
-
-                chatBox.appendChild(botMessage);
+                const responseWrapper =
+                    document.createElement("div");
 
 
-                // Enable Send button
-                sendButton.disabled = false;
+                responseWrapper.className =
+                    "welcome-message";
 
 
-                // Scroll to latest message
-                chatBox.scrollTop = chatBox.scrollHeight;
+
+                // Avatar
+
+                const avatar =
+                    document.createElement("div");
+
+
+                avatar.className =
+                    "small-avatar";
+
+
+                avatar.innerText =
+                    "🤖";
+
+
+
+                // Message
+
+                const botMessage =
+                    document.createElement("div");
+
+
+                botMessage.className =
+                    "message bot-message";
+
+
+                botMessage.innerText =
+                    data.response;
+
+
+
+                responseWrapper.appendChild(
+                    avatar
+                );
+
+
+                responseWrapper.appendChild(
+                    botMessage
+                );
+
+
+                chatBox.appendChild(
+                    responseWrapper
+                );
+
+
+
+                // Enable send
+
+                sendButton.disabled =
+                    false;
+
+
+
+                // Scroll
+
+                chatBox.scrollTop =
+                    chatBox.scrollHeight;
 
             })
 
 
-            // Handle errors
+            // Error
+
             .catch(error => {
+
 
                 console.error(error);
 
 
-                // Remove loading message
+
                 const loadingMessage =
-                    document.getElementById("loadingMessage");
+                    document.getElementById(
+                        "loadingMessage"
+                    );
+
 
                 if (loadingMessage) {
+
                     loadingMessage.remove();
+
                 }
 
 
-                // Display error message
-                const errorMessage = document.createElement("div");
 
-                errorMessage.className = "message bot-message";
+                const errorWrapper =
+                    document.createElement("div");
+
+
+                errorWrapper.className =
+                    "welcome-message";
+
+
+
+                const avatar =
+                    document.createElement("div");
+
+
+                avatar.className =
+                    "small-avatar";
+
+
+                avatar.innerText =
+                    "🤖";
+
+
+
+                const errorMessage =
+                    document.createElement("div");
+
+
+                errorMessage.className =
+                    "message bot-message";
+
 
                 errorMessage.innerText =
-                    "⚠️ Something went wrong. Please try again.";
-
-                chatBox.appendChild(errorMessage);
+                    "Oops! 😅 Something went wrong. Please try again.";
 
 
-                // Enable Send button
-                sendButton.disabled = false;
+
+                errorWrapper.appendChild(
+                    avatar
+                );
+
+
+                errorWrapper.appendChild(
+                    errorMessage
+                );
+
+
+                chatBox.appendChild(
+                    errorWrapper
+                );
+
+
+
+                sendButton.disabled =
+                    false;
+
 
             });
+
 
         }
 
 
-        // Press Enter to send message
-        document.getElementById("userInput")
-            .addEventListener("keypress", function(event) {
 
-                if (event.key === "Enter") {
+        /* =========================================
+           ENTER TO SEND
+        ========================================= */
 
-                    sendMessage();
+        document
+            .getElementById("userInput")
+            .addEventListener(
+                "keypress",
+                function(event) {
+
+                    if (event.key === "Enter") {
+
+                        sendMessage();
+
+                    }
 
                 }
+            );
 
-            });
 
     </script>
+
 
 </body>
 
 </html>
-
