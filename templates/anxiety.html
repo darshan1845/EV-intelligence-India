@@ -2,6 +2,9 @@
 <html>
 <head>
     <title>EV Range Anxiety Prediction</title>
+
+    <link rel="stylesheet"
+      href="{{ url_for('static', filename='css/anxiety.css') }}">
 </head>
 
 <body>
@@ -134,34 +137,6 @@
     <output id="trafficValue">0.450</output>
 
     <p id="trafficCategory">Traffic Category: Medium Traffic</p>
-
-    <script>
-        const trafficSlider = document.getElementById("traffic_density");
-        const trafficValue = document.getElementById("trafficValue");
-        const trafficCategory = document.getElementById("trafficCategory");
-
-        function updateTrafficCategory() {
-
-            const value = parseFloat(trafficSlider.value);
-
-            trafficValue.textContent = value.toFixed(3);
-
-            if (value <= 0.333) {
-                trafficCategory.textContent = "Traffic Category: Low Traffic";
-            }
-            else if (value <= 0.666) {
-                trafficCategory.textContent = "Traffic Category: Medium Traffic";
-            }
-            else {
-                trafficCategory.textContent = "Traffic Category: High Traffic";
-            }
-        }
-
-        trafficSlider.addEventListener("input", updateTrafficCategory);
-
-        updateTrafficCategory();
-    </script>
-
     <br><br>
 
     <!-- Income Level -->
@@ -196,6 +171,8 @@
     <input type="submit" value="Predict">
 
 </form>
+
+<script src="{{ url_for('static', filename='js/anxiety.js') }}"></script>
 
 </body>
 </html>

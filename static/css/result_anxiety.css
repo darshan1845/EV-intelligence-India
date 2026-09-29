@@ -1,0 +1,496 @@
+/* ============================================================
+   EV INTELLIGENCE PLATFORM
+   RANGE ANXIETY - RESULT PAGE
+   ============================================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+
+    padding: 55px 20px;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    color: #f2ffff;
+
+    background: #050807;
+
+    overflow-x: hidden;
+}
+
+
+/* ============================================================
+   BACKGROUND IMAGE
+   ============================================================ */
+
+body::before {
+    content: "";
+
+    position: fixed;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            rgba(3, 10, 14, 0.72),
+            rgba(3, 10, 14, 0.82)
+        ),
+        url("/static/images/4_models.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    z-index: -2;
+}
+
+
+/* ============================================================
+   BACKGROUND GLOW
+   ============================================================ */
+
+body::after {
+    content: "";
+
+    position: fixed;
+
+    width: 450px;
+    height: 450px;
+
+    top: -180px;
+    right: -120px;
+
+    background: rgba(30, 190, 145, 0.08);
+
+    border-radius: 50%;
+
+    filter: blur(110px);
+
+    z-index: -1;
+
+    pointer-events: none;
+}
+
+
+/* ============================================================
+   MAIN PAGE TITLE
+   ============================================================ */
+
+body > h1:first-of-type {
+    max-width: 1000px;
+
+    margin: 0 auto 35px;
+
+    text-align: center;
+
+    font-size: 42px;
+    font-weight: 700;
+
+    letter-spacing: 0.3px;
+
+    color: #f4ffff;
+
+    text-shadow:
+        0 0 25px rgba(50, 200, 150, 0.12);
+}
+
+
+/* ============================================================
+   HORIZONTAL LINES
+   ============================================================ */
+
+hr {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 25px auto;
+
+    border: 0;
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.09);
+}
+
+
+/* ============================================================
+   SECTION HEADINGS
+   ============================================================ */
+
+body > h2,
+body > h3 {
+    max-width: 900px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body > h2 {
+    margin-top: 25px;
+    margin-bottom: 18px;
+
+    font-size: 25px;
+
+    color: #dceaea;
+
+    text-align: center;
+}
+
+
+/* ============================================================
+   PREDICTION RESULT
+   ============================================================ */
+
+body > h1:nth-of-type(2) {
+
+    width: fit-content;
+
+    max-width: 90%;
+
+    margin: 20px auto 30px;
+
+    padding: 18px 35px;
+
+    text-align: center;
+
+    font-size: 28px;
+
+    color: #d9aa22;
+
+    background:
+        rgba(8, 20, 19, 0.88);
+
+    border:
+        1px solid rgba(217, 170, 34, 0.35);
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.25);
+
+    animation: resultAppear 0.8s ease;
+}
+
+
+/* ============================================================
+   INFORMATION SECTION
+   ============================================================ */
+
+body > h3 {
+    font-size: 18px;
+
+    color: #d9aa22;
+
+    margin-top: 22px;
+    margin-bottom: 12px;
+}
+
+
+/* ============================================================
+   PARAGRAPHS
+   ============================================================ */
+
+body > p {
+    width: 90%;
+    max-width: 850px;
+
+    margin: 15px auto;
+
+    padding: 20px 25px;
+
+    color: #aebebe;
+
+    background:
+        rgba(8, 20, 19, 0.72);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 12px;
+
+    font-size: 14px;
+
+    line-height: 1.75;
+}
+
+
+/* ============================================================
+   LISTS
+   ============================================================ */
+
+body > ul {
+    width: 90%;
+    max-width: 850px;
+
+    margin: 0 auto 25px;
+
+    padding: 20px 30px 20px 48px;
+
+    color: #b7c6c5;
+
+    background:
+        rgba(8, 20, 19, 0.72);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 12px;
+}
+
+body > ul li {
+
+    margin: 10px 0;
+
+    padding-left: 5px;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+body > ul li::marker {
+    color: #d9aa22;
+}
+
+
+/* ============================================================
+   NOTE SECTION
+   ============================================================ */
+
+body > p:last-of-type {
+
+    margin-top: 30px;
+
+    color: #899b9a;
+
+    border-left:
+        3px solid #d9aa22;
+}
+
+body > p:last-of-type strong {
+    color: #d9aa22;
+}
+
+
+/* ============================================================
+   BUTTON CONTAINER LINKS
+   ============================================================ */
+
+body > a {
+
+    display: block;
+
+    width: fit-content;
+
+    margin: 18px auto;
+
+    text-decoration: none;
+}
+
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+
+body > a button {
+
+    min-width: 210px;
+
+    padding: 13px 25px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #d9aa22;
+
+    color: #111111;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+
+body > a button:hover {
+
+    background: #e5b632;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 30px rgba(217, 170, 34, 0.22);
+}
+
+
+body > a button:active {
+    transform: translateY(0);
+}
+
+
+/* ============================================================
+   SECONDARY BUTTON
+   ============================================================ */
+
+body > a:last-of-type button {
+
+    background: transparent;
+
+    color: #d9aa22;
+
+    border:
+        1px solid rgba(217, 170, 34, 0.55);
+}
+
+
+body > a:last-of-type button:hover {
+
+    background:
+        rgba(217, 170, 34, 0.08);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ============================================================
+   HIGH / LOW RISK STATES
+   Added automatically by JavaScript
+   ============================================================ */
+
+body.risk-high body > h1:nth-of-type(2) {
+    color: #ff9c8f;
+}
+
+body.risk-low body > h1:nth-of-type(2) {
+    color: #72d9a8;
+}
+
+
+/* ============================================================
+   PAGE ANIMATION
+   ============================================================ */
+
+body {
+    animation: pageAppear 0.7s ease;
+}
+
+
+@keyframes pageAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes resultAppear {
+
+    from {
+        opacity: 0;
+        transform: scale(0.95) translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+
+/* ============================================================
+   RESPONSIVE - TABLET
+   ============================================================ */
+
+@media (max-width: 800px) {
+
+    body {
+        padding: 45px 15px;
+    }
+
+    body > h1:first-of-type {
+        font-size: 34px;
+    }
+
+    body > h1:nth-of-type(2) {
+        font-size: 24px;
+    }
+
+    body > p,
+    body > ul {
+        width: 94%;
+    }
+}
+
+
+/* ============================================================
+   RESPONSIVE - MOBILE
+   ============================================================ */
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 35px 10px;
+    }
+
+    body > h1:first-of-type {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    body > h1:nth-of-type(2) {
+
+        max-width: 95%;
+
+        padding: 15px 18px;
+
+        font-size: 20px;
+    }
+
+    body > h2 {
+        font-size: 21px;
+    }
+
+    body > p,
+    body > ul {
+        width: 100%;
+
+        padding: 18px;
+
+        font-size: 13px;
+    }
+
+    body > ul {
+        padding-left: 35px;
+    }
+
+    body > a {
+        width: 90%;
+    }
+
+    body > a button {
+        width: 100%;
+    }
+}

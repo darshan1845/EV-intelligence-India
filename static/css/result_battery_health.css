@@ -1,0 +1,494 @@
+/* ============================================================
+   EV INTELLIGENCE PLATFORM
+   BATTERY HEALTH - RESULT PAGE
+   ============================================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    min-height: 100vh;
+
+    padding: 50px 20px;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    color: #f2ffff;
+
+    background: #050807;
+
+    overflow-x: hidden;
+}
+
+
+/* ============================================================
+   BACKGROUND
+   ============================================================ */
+
+body::before {
+
+    content: "";
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            rgba(3, 10, 14, 0.72),
+            rgba(3, 10, 14, 0.84)
+        ),
+        url("/static/images/4_models.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    z-index: -2;
+}
+
+
+/* ============================================================
+   BACKGROUND GLOW
+   ============================================================ */
+
+body::after {
+
+    content: "";
+
+    position: fixed;
+
+    width: 500px;
+    height: 500px;
+
+    top: -180px;
+    right: -150px;
+
+    background:
+        rgba(30, 190, 145, 0.08);
+
+    border-radius: 50%;
+
+    filter: blur(120px);
+
+    z-index: -1;
+
+    pointer-events: none;
+}
+
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+
+header {
+
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 0 auto 35px;
+
+    text-align: center;
+
+    animation: fadeDown 0.7s ease;
+}
+
+
+header h1 {
+
+    font-size: 34px;
+
+    font-weight: 700;
+
+    color: #f4ffff;
+
+    margin-bottom: 12px;
+}
+
+
+header h2 {
+
+    font-size: 25px;
+
+    font-weight: 600;
+
+    color: #d9aa22;
+}
+
+
+/* ============================================================
+   MAIN CONTAINER
+   ============================================================ */
+
+main {
+
+    width: 90%;
+    max-width: 950px;
+
+    margin: 0 auto;
+
+    padding: 35px 45px;
+
+    background:
+        rgba(7, 19, 19, 0.84);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.10);
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.40);
+
+    animation: mainAppear 0.8s ease;
+}
+
+
+/* ============================================================
+   SECTIONS
+   ============================================================ */
+
+main section {
+
+    padding: 25px 10px;
+
+    text-align: center;
+}
+
+
+main section h2 {
+
+    margin-bottom: 20px;
+
+    font-size: 23px;
+
+    color: #d9aa22;
+}
+
+
+main section h3 {
+
+    margin: 20px 0 12px;
+
+    font-size: 20px;
+
+    color: #e7eeee;
+}
+
+
+/* ============================================================
+   TEXT
+   ============================================================ */
+
+main section p {
+
+    max-width: 780px;
+
+    margin: 12px auto;
+
+    color: #aebebe;
+
+    font-size: 14px;
+
+    line-height: 1.75;
+}
+
+
+/* ============================================================
+   PREDICTION VALUE
+   ============================================================ */
+
+main section h1 {
+
+    width: fit-content;
+
+    min-width: 250px;
+
+    margin: 25px auto 10px;
+
+    padding: 20px 35px;
+
+    font-size: 38px;
+
+    font-weight: 700;
+
+    color: #d9aa22;
+
+    background:
+        rgba(217, 170, 34, 0.07);
+
+    border:
+        1px solid rgba(217, 170, 34, 0.35);
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.25);
+
+    animation: resultAppear 0.9s ease;
+}
+
+
+/* ============================================================
+   DIVIDERS
+   ============================================================ */
+
+hr {
+
+    border: 0;
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.09);
+
+    margin: 5px 0;
+}
+
+
+/* ============================================================
+   WHY BATTERY HEALTH MATTERS
+   ============================================================ */
+
+main ul {
+
+    max-width: 700px;
+
+    margin: 20px auto 5px;
+
+    padding: 20px 35px 20px 50px;
+
+    text-align: left;
+
+    background:
+        rgba(2, 10, 10, 0.55);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.07);
+
+    border-radius: 12px;
+}
+
+
+main ul li {
+
+    margin: 11px 0;
+
+    color: #b8c7c6;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+main ul li::marker {
+    color: #d9aa22;
+}
+
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+
+main > a {
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    margin: 15px 8px 5px;
+}
+
+
+main > a button {
+
+    min-width: 220px;
+
+    height: 46px;
+
+    padding: 0 25px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #d9aa22;
+
+    color: #111111;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+
+main > a button:hover {
+
+    background: #e5b632;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 30px rgba(217, 170, 34, 0.22);
+}
+
+
+main > a button:active {
+
+    transform: translateY(0);
+}
+
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+footer {
+
+    width: 90%;
+    max-width: 950px;
+
+    margin: 25px auto 0;
+
+    text-align: center;
+
+    color: #687a79;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+}
+
+
+footer hr {
+
+    margin-bottom: 15px;
+}
+
+
+/* ============================================================
+   ANIMATIONS
+   ============================================================ */
+
+@keyframes fadeDown {
+
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes mainAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes resultAppear {
+
+    from {
+        opacity: 0;
+        transform: scale(0.90);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 35px 12px;
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    header h2 {
+        font-size: 21px;
+    }
+
+    main {
+
+        width: 100%;
+
+        padding: 25px 18px;
+    }
+
+    main section h2 {
+        font-size: 21px;
+    }
+
+    main section h1 {
+
+        min-width: 0;
+
+        width: 90%;
+
+        font-size: 30px;
+
+        padding: 17px;
+    }
+
+    main ul {
+
+        padding-left: 35px;
+    }
+
+    main > a {
+
+        display: block;
+
+        margin: 12px 0;
+    }
+
+    main > a button {
+
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+}

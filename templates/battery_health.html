@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>Battery Health Prediction</title>
+    <link rel="stylesheet"
+      href="{{ url_for('static', filename='css/battery_health.css') }}">
 </head>
 
 <body>
@@ -196,6 +198,8 @@
     <input type="submit" value="Predict">
 
 </form>
+
+<script src="{{ url_for('static', filename='js/battery_health.js') }}"></script>
 
 </body>
 </html>
