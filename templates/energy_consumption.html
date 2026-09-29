@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EV Energy Consumption Prediction</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/energy_consumption.css') }}">
 </head>
 
 <body>
@@ -161,6 +163,8 @@
         <button type="submit">Predict Energy Consumption</button>
 
     </form>
+
+<script src="{{ url_for('static', filename='js/energy_consumption.js') }}"></script>
 
 </body>
 </html>

@@ -127,7 +127,7 @@ def energy_consumption():
         v15 = int(request.form['effective_battery_capacity'])
 
         energy_consumption_pred=energy_consumption_model.predict([[v1,v2,v3,v4,v5,v6,v7,v8,v9,v10,v11,v12,v13,v14,v15]])
-    return render_template('result_energy_consumption.html', energy_consumption=energy_consumption_pred[0])
+    return render_template('result_energy_consumption.html', energy_consumption=energy_consumption_pred)
 
 
 @app.route('/anxiety', methods = ['GET', 'POST'])

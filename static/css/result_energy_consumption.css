@@ -1,0 +1,589 @@
+/* =========================================================
+   ENERGY CONSUMPTION RESULT PAGE
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    color: #f2ffff;
+
+    background: #050807;
+
+    overflow-x: hidden;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================================================
+   BACKGROUND
+   ========================================================= */
+
+body::before {
+    content: "";
+
+    position: fixed;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            rgba(3, 10, 9, 0.76),
+            rgba(3, 10, 9, 0.91)
+        ),
+        url("/static/images/4_models.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    z-index: -2;
+}
+
+
+body::after {
+    content: "";
+
+    position: fixed;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(0, 255, 190, 0.10),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 85% 75%,
+            rgba(0, 180, 255, 0.08),
+            transparent 35%
+        );
+
+    z-index: -1;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+header {
+    width: 100%;
+
+    padding: 55px 20px 25px;
+
+    text-align: center;
+
+    animation: headerAppear 0.7s ease forwards;
+}
+
+
+header h1 {
+    font-size: 2rem;
+
+    font-weight: 700;
+
+    color: #ffffff;
+
+    letter-spacing: 0.5px;
+
+    text-shadow:
+        0 0 15px rgba(0, 255, 190, 0.18);
+}
+
+
+header h2 {
+    margin-top: 10px;
+
+    font-size: 1.3rem;
+
+    font-weight: 500;
+
+    color: #6fffe0;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+   ========================================================= */
+
+main {
+    width: 92%;
+    max-width: 1050px;
+
+    margin: 0 auto 55px;
+
+    padding: 42px 48px;
+
+    background: rgba(7, 18, 16, 0.80);
+
+    border: 1px solid rgba(0, 255, 190, 0.20);
+
+    border-radius: 22px;
+
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.45),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+
+    animation: mainAppear 0.8s ease forwards;
+}
+
+
+/* =========================================================
+   SECTIONS
+   ========================================================= */
+
+main section {
+    padding: 8px 5px 28px;
+
+    text-align: center;
+}
+
+
+main section h2 {
+    margin-bottom: 16px;
+
+    color: #6fffe0;
+
+    font-size: 1.35rem;
+
+    font-weight: 600;
+
+    letter-spacing: 0.3px;
+}
+
+
+main section p {
+    max-width: 850px;
+
+    margin: 0 auto 14px;
+
+    color: #bcd0cc;
+
+    font-size: 0.98rem;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   PREDICTION VALUE
+   ========================================================= */
+
+main section:first-child h1 {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: min(100%, 500px);
+
+    min-height: 120px;
+
+    margin: 25px auto 0;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(19, 58, 49, 0.85),
+            rgba(7, 28, 24, 0.90)
+        );
+
+    border: 1px solid rgba(66, 230, 194, 0.30);
+
+    color: #6fffe0;
+
+    font-size: 3.5rem;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    text-shadow:
+        0 0 20px rgba(66, 230, 194, 0.22);
+
+    box-shadow:
+        0 0 35px rgba(0, 255, 190, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+
+    animation: resultAppear 0.9s ease forwards;
+}
+
+
+/* =========================================================
+   HORIZONTAL LINE
+   ========================================================= */
+
+main hr {
+    border: none;
+
+    border-top:
+        1px solid rgba(100, 180, 170, 0.18);
+
+    margin: 8px 0 28px;
+}
+
+
+/* =========================================================
+   LIST
+   ========================================================= */
+
+main section ul {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    padding: 0;
+
+    list-style: none;
+
+    text-align: left;
+}
+
+
+main section li {
+    position: relative;
+
+    margin-bottom: 12px;
+
+    padding: 12px 15px 12px 38px;
+
+    color: #c7d9d5;
+
+    background: rgba(7, 27, 23, 0.58);
+
+    border: 1px solid rgba(100, 180, 170, 0.10);
+
+    border-radius: 9px;
+
+    line-height: 1.5;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease;
+}
+
+
+main section li::before {
+    content: "✓";
+
+    position: absolute;
+
+    left: 14px;
+    top: 12px;
+
+    color: #5cefd1;
+
+    font-weight: 700;
+}
+
+
+main section li:hover {
+    transform: translateX(4px);
+
+    background: rgba(13, 42, 36, 0.75);
+
+    border-color:
+        rgba(66, 230, 194, 0.22);
+}
+
+
+/* =========================================================
+   IMPORTANT INSIGHT SECTION
+   ========================================================= */
+
+main section:nth-of-type(4) {
+    padding-bottom: 15px;
+}
+
+
+main section:nth-of-type(4) p {
+    padding: 18px 20px;
+
+    background:
+        rgba(66, 230, 194, 0.06);
+
+    border:
+        1px solid rgba(66, 230, 194, 0.14);
+
+    border-radius: 12px;
+}
+
+
+/* =========================================================
+   BUTTON CONTAINER
+   ========================================================= */
+
+main > a {
+    display: block;
+
+    width: fit-content;
+
+    margin: 12px auto;
+
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+main > a button {
+    min-width: 230px;
+
+    height: 50px;
+
+    padding: 0 25px;
+
+    border-radius: 11px;
+
+    border: 1px solid rgba(66, 230, 194, 0.32);
+
+    background: rgba(8, 25, 22, 0.85);
+
+    color: #dffff8;
+
+    font-family: inherit;
+
+    font-size: 0.95rem;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+main > a:first-of-type button {
+    background:
+        linear-gradient(
+            135deg,
+            #59f5d1,
+            #29c9a8
+        );
+
+    color: #03100d;
+
+    border: none;
+}
+
+
+main > a button:hover {
+    transform: translateY(-3px);
+
+    border-color: #5cefd1;
+
+    box-shadow:
+        0 10px 25px rgba(0, 255, 190, 0.15);
+}
+
+
+main > a:first-of-type button:hover {
+    filter: brightness(1.07);
+
+    box-shadow:
+        0 12px 30px rgba(30, 220, 180, 0.25);
+}
+
+
+main > a button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+    width: 100%;
+
+    padding: 25px 20px 35px;
+
+    text-align: center;
+
+    color: #718984;
+
+    font-size: 0.82rem;
+
+    line-height: 1.7;
+}
+
+
+footer p {
+    margin: 2px 0;
+}
+
+
+/* =========================================================
+   ANIMATIONS
+   ========================================================= */
+
+@keyframes headerAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes mainAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes resultAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 750px) {
+
+    header {
+        padding-top: 35px;
+    }
+
+    header h1 {
+        font-size: 1.65rem;
+    }
+
+    header h2 {
+        font-size: 1.15rem;
+    }
+
+    main {
+        width: 94%;
+
+        padding: 32px 28px;
+    }
+
+    main section:first-child h1 {
+        font-size: 3rem;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 500px) {
+
+    header {
+        padding-top: 28px;
+    }
+
+    header h1 {
+        font-size: 1.35rem;
+    }
+
+    header h2 {
+        font-size: 1rem;
+    }
+
+    main {
+        width: 94%;
+
+        padding: 26px 18px;
+
+        border-radius: 17px;
+    }
+
+    main section h2 {
+        font-size: 1.15rem;
+    }
+
+    main section p {
+        font-size: 0.88rem;
+
+        line-height: 1.7;
+    }
+
+    main section:first-child h1 {
+        min-height: 100px;
+
+        font-size: 2.5rem;
+
+        border-radius: 16px;
+    }
+
+    main section ul {
+        width: 100%;
+    }
+
+    main section li {
+        font-size: 0.88rem;
+    }
+
+    main > a {
+        width: 90%;
+    }
+
+    main > a button {
+        width: 100%;
+
+        min-width: 0;
+    }
+
+    footer {
+        font-size: 0.76rem;
+    }
+}

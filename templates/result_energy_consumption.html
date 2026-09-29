@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Energy Consumption Prediction Result</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/result_energy_consumption.css') }}">
 </head>
 
 <body>
@@ -71,7 +73,7 @@
 
         <br>
 
-        <a href="/energy-consumption">
+        <a href="/energy_consumption">
             <button type="button">Make Another Prediction</button>
         </a>
 
@@ -85,6 +87,8 @@
         <p>EV Charging Station Intelligence Platform</p>
         <p>Machine Learning Based Energy Consumption Prediction</p>
     </footer>
+
+<script src="{{ url_for('static', filename='js/result_energy_consumption.js') }}"></script>
 
 </body>
 </html>

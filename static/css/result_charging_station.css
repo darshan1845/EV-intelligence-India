@@ -1,0 +1,366 @@
+/* =========================================================
+   CHARGING STATION RESULT PAGE
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    color: #f2ffff;
+
+    background: #050807;
+
+    overflow-x: hidden;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* =========================================================
+   BACKGROUND
+   ========================================================= */
+
+body::before {
+    content: "";
+
+    position: fixed;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            rgba(3, 10, 9, 0.76),
+            rgba(3, 10, 9, 0.90)
+        ),
+        url("/static/images/4_models.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    z-index: -2;
+}
+
+body::after {
+    content: "";
+
+    position: fixed;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(0, 255, 190, 0.10),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 85% 75%,
+            rgba(0, 180, 255, 0.08),
+            transparent 35%
+        );
+
+    z-index: -1;
+
+    pointer-events: none;
+}
+
+/* =========================================================
+   MAIN TITLE
+   ========================================================= */
+
+body > h1 {
+    width: 90%;
+    max-width: 1000px;
+
+    margin-top: 55px;
+    margin-bottom: 25px;
+
+    text-align: center;
+
+    font-size: 2.4rem;
+    font-weight: 700;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 0 15px rgba(0, 255, 190, 0.22);
+}
+
+/* =========================================================
+   MAIN RESULT CONTAINER
+   ========================================================= */
+
+body > h1,
+body > hr,
+body > h2,
+body > p,
+body > br,
+body > a {
+    position: relative;
+    z-index: 1;
+}
+
+/* =========================================================
+   RESULT SECTION
+   ========================================================= */
+
+body > h2 {
+    width: 90%;
+    max-width: 900px;
+
+    text-align: center;
+
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+    color: #6fffe0;
+
+    font-size: 1.25rem;
+}
+
+/* =========================================================
+   PREDICTED NUMBER
+   ========================================================= */
+
+body > h2 + h1 {
+    width: 90%;
+    max-width: 500px;
+
+    margin: 10px auto 25px;
+
+    padding: 30px 25px;
+
+    text-align: center;
+
+    font-size: 4rem;
+    font-weight: 800;
+
+    color: #6fffe0;
+
+    background: rgba(8, 27, 23, 0.82);
+
+    border: 1px solid rgba(66, 230, 194, 0.28);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 0 35px rgba(0, 255, 190, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+
+    animation: resultAppear 0.8s ease forwards;
+}
+
+/* =========================================================
+   HORIZONTAL LINES
+   ========================================================= */
+
+body > hr {
+    width: 88%;
+    max-width: 950px;
+
+    margin: 20px auto;
+
+    border: none;
+
+    border-top:
+        1px solid rgba(100, 180, 170, 0.18);
+}
+
+/* =========================================================
+   DESCRIPTION TEXT
+   ========================================================= */
+
+body > p {
+    width: 90%;
+    max-width: 850px;
+
+    margin: 10px auto 25px;
+
+    text-align: center;
+
+    color: #bcd0cc;
+
+    font-size: 1rem;
+
+    line-height: 1.8;
+}
+
+body > p strong {
+    color: #6fffe0;
+
+    font-weight: 700;
+}
+
+/* =========================================================
+   EXPLANATION SECTION
+   ========================================================= */
+
+body > h2:nth-of-type(2) {
+    margin-top: 20px;
+}
+
+/* =========================================================
+   BUTTON LINKS
+   ========================================================= */
+
+body > a {
+    text-decoration: none;
+
+    margin-top: 8px;
+}
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+body > a button {
+    min-width: 220px;
+    height: 50px;
+
+    padding: 0 25px;
+
+    border: 1px solid rgba(66, 230, 194, 0.35);
+
+    border-radius: 11px;
+
+    background: rgba(8, 25, 22, 0.85);
+
+    color: #dffff8;
+
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+body > a button:hover {
+    transform: translateY(-3px);
+
+    background: rgba(26, 68, 59, 0.90);
+
+    border-color: #5cefd1;
+
+    box-shadow:
+        0 10px 25px rgba(0, 255, 190, 0.15);
+}
+
+body > a button:active {
+    transform: translateY(0);
+}
+
+/* First button */
+
+body > a:nth-of-type(1) button {
+    background: linear-gradient(
+        135deg,
+        #59f5d1,
+        #29c9a8
+    );
+
+    color: #03100d;
+
+    border: none;
+}
+
+/* =========================================================
+   ANIMATIONS
+   ========================================================= */
+
+@keyframes resultAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    body > h1 {
+        font-size: 2rem;
+        margin-top: 35px;
+    }
+
+    body > h2 {
+        font-size: 1.1rem;
+    }
+
+    body > h2 + h1 {
+        font-size: 3.2rem;
+    }
+
+    body > p {
+        font-size: 0.92rem;
+    }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 500px) {
+
+    body > h1 {
+        font-size: 1.65rem;
+        margin-top: 30px;
+    }
+
+    body > h2 {
+        font-size: 1rem;
+    }
+
+    body > h2 + h1 {
+        width: 85%;
+
+        padding: 25px 15px;
+
+        font-size: 2.7rem;
+
+        border-radius: 16px;
+    }
+
+    body > p {
+        width: 86%;
+
+        font-size: 0.88rem;
+
+        line-height: 1.7;
+    }
+
+    body > a {
+        width: 85%;
+    }
+
+    body > a button {
+        width: 100%;
+        min-width: 0;
+    }
+}

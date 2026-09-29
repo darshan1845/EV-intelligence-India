@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charging Station Requirement Prediction</title>
+    <link rel="stylesheet"
+      href="{{ url_for('static', filename='css/charging_station.css') }}">
 </head>
 
 <body>
@@ -218,94 +220,7 @@
     </form>
 
 
-    <!-- ================= JAVASCRIPT ================= -->
-
-    <script>
-
-        function calculateGrandTotal() {
-
-            // Get vehicle values
-            let twoWheeler =
-                Number(document.getElementById("two_wheeler").value) || 0;
-
-            let threeWheeler =
-                Number(document.getElementById("three_wheeler").value) || 0;
-
-            let fourWheeler =
-                Number(document.getElementById("four_wheeler").value) || 0;
-
-            let goodsVehicles =
-                Number(document.getElementById("goods_vehicles").value) || 0;
-
-            let publicService =
-                Number(document.getElementById("public_service").value) || 0;
-
-            let specialCategory =
-                Number(document.getElementById("special_category").value) || 0;
-
-            let construction =
-                Number(document.getElementById("construction").value) || 0;
-
-            let other =
-                Number(document.getElementById("other").value) || 0;
-
-
-            // Calculate Grand Total
-            let grandTotal =
-                twoWheeler +
-                threeWheeler +
-                fourWheeler +
-                goodsVehicles +
-                publicService +
-                specialCategory +
-                construction +
-                other;
-
-
-            // Display Grand Total
-            document.getElementById("grand_total").value = grandTotal;
-        }
-
-
-        // Automatically calculate when user enters vehicle information
-
-        document
-            .getElementById("two_wheeler")
-            .addEventListener("input", calculateGrandTotal);
-
-        document
-            .getElementById("three_wheeler")
-            .addEventListener("input", calculateGrandTotal);
-
-        document
-            .getElementById("four_wheeler")
-            .addEventListener("input", calculateGrandTotal);
-
-        document
-            .getElementById("goods_vehicles")
-            .addEventListener("input", calculateGrandTotal);
-
-        document
-            .getElementById("public_service")
-            .addEventListener("input", calculateGrandTotal);
-
-        document
-            .getElementById("special_category")
-            .addEventListener("input", calculateGrandTotal);
-
-        document
-            .getElementById("construction")
-            .addEventListener("input", calculateGrandTotal);
-
-        document
-            .getElementById("other")
-            .addEventListener("input", calculateGrandTotal);
-
-
-        // Calculate once when page loads
-        calculateGrandTotal();
-
-    </script>
+<script src="{{ url_for('static', filename='js/charging_station.js') }}"></script>
 
 </body>
 
