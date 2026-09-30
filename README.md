@@ -4,16 +4,6 @@
 
 An AI-powered Electric Vehicle (EV) analytics and prediction platform that brings together machine-learning models, interactive Power BI dashboards, and a Gemini-powered EV Assistant in one web application.
 
----
-
-## 📸 Website Screenshots
-<img width="1883" height="907" alt="Screenshot 2026-10-01 021611" src="https://github.com/user-attachments/assets/68e30f05-4996-49b3-940a-8f79bf32d918" />
-<img width="1885" height="912" alt="Screenshot 2026-10-01 021558" src="https://github.com/user-attachments/assets/fa34060b-6fbb-47b5-86d8-32ea48c4e269" />
-<img width="1912" height="903" alt="Screenshot 2026-10-01 021522" src="https://github.com/user-attachments/assets/6b8c4148-2f88-4368-bf87-769826d311d1" />
-<img width="1886" height="903" alt="Screenshot 2026-10-01 021447" src="https://github.com/user-attachments/assets/24928247-213b-4505-b25b-b4797c0e15a0" />
-<img width="1897" height="916" alt="Screenshot 2026-10-01 021413" src="https://github.com/user-attachments/assets/1e5f01f5-d40a-4a44-b746-d5e2c8c24cf4" />
-<img width="1886" height="900" alt="Screenshot 2026-10-01 021200" src="https://github.com/user-attachments/assets/75698ecc-67ce-49ce-a514-6a59c3421bce" />
-
 ## 🌍 Overview
 
 Electric mobility is growing, making it increasingly useful to understand EV usage, battery condition, driving-range concerns, energy consumption, and charging-infrastructure requirements.
@@ -112,6 +102,18 @@ Configure the Gemini API key as an environment variable on the hosting platform.
 The exact dependency list should match the project's current `requirements.txt`.
 
 ---
+## 📸 Website Screenshots
+<img width="628" height="300" alt="Screenshot 2026-10-01 021200" src="https://github.com/user-attachments/assets/341cec51-c129-4a65-afab-aae98c2733ae" />
+
+<img width="632" height="305" alt="Screenshot 2026-10-01 021413" src="https://github.com/user-attachments/assets/038b82ab-b67c-4058-ad95-6264324bf4f4" />
+
+<img width="628" height="301" alt="Screenshot 2026-10-01 021447" src="https://github.com/user-attachments/assets/4ba38cf6-b31d-434a-9204-e2af5178721c" />
+
+<img width="637" height="301" alt="Screenshot 2026-10-01 021522" src="https://github.com/user-attachments/assets/43baa787-9ef0-4ad3-9f3e-67902c636f21" />
+
+<img width="628" height="304" alt="Screenshot 2026-10-01 021558" src="https://github.com/user-attachments/assets/deee29b9-445e-4457-a31f-82ff53bef9d1" />
+
+<img width="627" height="302" alt="Screenshot 2026-10-01 021611" src="https://github.com/user-attachments/assets/24e8ad5a-1009-40b7-8066-e528b987c93a" />
 
 ## 🏗️ High-Level Architecture
 
