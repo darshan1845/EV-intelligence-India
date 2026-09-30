@@ -1,10 +1,252 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title> Dashboards</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EV Intelligence | Dashboards</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/dashboards.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
+
+    <!-- Background overlays -->
+    <div class="background-overlay"></div>
+    <div class="ambient-glow glow-one"></div>
+    <div class="ambient-glow glow-two"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="/" class="brand">
+            <span class="brand-icon">
+                <i class="fa-solid fa-bolt"></i>
+            </span>
+            <span>EV<span class="brand-highlight"> INTELLIGENCE</span></span>
+        </a>
+
+        <a href="/" class="back-button">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Back to Home</span>
+        </a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-container">
+
+        <section class="hero-section">
+            <div class="eyebrow">
+                <span class="live-dot"></span>
+                DATA VISUALIZATION HUB
+            </div>
+
+            <h1>
+                Explore EV <span class="gradient-text">Dashboards</span>
+            </h1>
+
+            <p class="hero-description">
+                Transform electric mobility data into meaningful insights.
+                Explore India's EV infrastructure, adoption trends,
+                and battery performance through interactive dashboards.
+            </p>
+
+            <div class="hero-divider">
+                <span></span>
+                <i class="fa-solid fa-chart-line"></i>
+                <span></span>
+            </div>
+        </section>
+
+        <!-- Three Dashboard Cards -->
+        <section class="dashboard-grid">
+
+            <!-- Dashboard 1 -->
+            <article class="dashboard-card card-green">
+
+                <div class="card-top">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-charging-station"></i>
+                    </div>
+
+                    <span class="card-number">01 / 03</span>
+                </div>
+
+                <div class="card-category">
+                    <span class="category-dot"></span>
+                    INFRASTRUCTURE
+                </div>
+
+                <h2>Vehicles & Stations</h2>
+
+                <p class="card-description">
+                    Discover the distribution of public EV charging
+                    stations across Indian states and union territories.
+                    Explore regional infrastructure coverage and
+                    charging accessibility.
+                </p>
+
+                <div class="card-tags">
+                    <span>Charging Stations</span>
+                    <span>India</span>
+                </div>
+
+                <div class="card-bottom">
+                    <div class="card-type">
+                        <i class="fa-solid fa-chart-pie"></i>
+                        <span>Infrastructure Analytics</span>
+                    </div>
+
+                    <!-- ADD YOUR FIRST DASHBOARD URL HERE -->
+                    <a href="{{ url_for('vehiclesandstations') }}"
+   class="explore-button">
+
+    <span>Explore Dashboard</span>
+    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+</a>
+                </div>
+
+                <div class="card-decoration decoration-green"></div>
+            </article>
+
+            <!-- Dashboard 2 -->
+            <article class="dashboard-card card-blue">
+
+                <div class="card-top">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-car-side"></i>
+                    </div>
+
+                    <span class="card-number">02 / 03</span>
+                </div>
+
+                <div class="card-category">
+                    <span class="category-dot"></span>
+                    MOBILITY & ADOPTION
+                </div>
+
+                <h2>Indian Stations</h2>
+
+                <p class="card-description">
+                    Analyze electric vehicle categories, usage patterns,
+                    travel distances, charging frequency, and regional
+                    EV adoption indicators to understand electric
+                    mobility trends.
+                </p>
+
+                <div class="card-tags">
+                    <span>Vehicle Analytics</span>
+                    <span>Usage Trends</span>
+                </div>
+
+                <div class="card-bottom">
+                    <div class="card-type">
+                        <i class="fa-solid fa-chart-column"></i>
+                        <span>Mobility Analytics</span>
+                    </div>
+
+                    <!-- ADD YOUR SECOND DASHBOARD URL HERE -->
+                    <a href="{{ url_for('india_stations') }}"
+   class="explore-button">
+
+    <span>Explore Dashboard</span>
+    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+</a>
+                </div>
+
+                <div class="card-decoration decoration-blue"></div>
+            </article>
+
+            <!-- Dashboard 3 -->
+            <article class="dashboard-card card-purple">
+
+                <div class="card-top">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-battery-three-quarters"></i>
+                    </div>
+
+                    <span class="card-number">03 / 03</span>
+                </div>
+
+                <div class="card-category">
+                    <span class="category-dot"></span>
+                    ENERGY & PERFORMANCE
+                </div>
+
+                <h2>EV Usage</h2>
+
+                <p class="card-description">
+                    Investigate battery health, energy consumption,
+                    charging behavior, electricity costs, and
+                    performance indicators to better understand
+                    electric vehicle efficiency.
+                </p>
+
+                <div class="card-tags">
+                    <span>Battery Health</span>
+                    <span>Energy Usage</span>
+                </div>
+
+                <div class="card-bottom">
+                    <div class="card-type">
+                        <i class="fa-solid fa-bolt"></i>
+                        <span>Energy Analytics</span>
+                    </div>
+
+                    <!-- ADD YOUR THIRD DASHBOARD URL HERE -->
+                    <a href="{{ url_for('EV_usage_DB') }}"
+   class="explore-button">
+
+    <span>Explore Dashboard</span>
+    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+</a>
+                </div>
+
+                <div class="card-decoration decoration-purple"></div>
+            </article>
+
+        </section>
+
+        <!-- Bottom Information -->
+        <section class="info-panel">
+            <div class="info-icon">
+                <i class="fa-solid fa-lightbulb"></i>
+            </div>
+
+            <div class="info-content">
+                <h3>Data-driven electric mobility</h3>
+                <p>
+                    Explore interactive visualizations to understand
+                    EV trends and uncover insights for smarter
+                    electric mobility planning.
+                </p>
+            </div>
+
+            <div class="info-badge">
+                <i class="fa-solid fa-chart-line"></i>
+                ANALYTICS
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <span class="footer-brand">EV INTELLIGENCE</span>
+        <span class="footer-separator">|</span>
+        Intelligent Analytics for Electric Mobility
+        <span class="footer-year">© 2026</span>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/dashboards.js') }}"></script>
 
 </body>
 </html>

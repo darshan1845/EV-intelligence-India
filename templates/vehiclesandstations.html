@@ -1,0 +1,697 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vehicles & Stations | EV Intelligence</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        :root {
+            --green: #35e6b2;
+            --blue: #65a5ff;
+            --background: #080d17;
+            --text: #f3f7ff;
+            --muted: #96a5ba;
+            --border: rgba(255, 255, 255, 0.09);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+            background: var(--background);
+        }
+
+        /* BACKGROUND */
+
+        .background {
+            position: fixed;
+            inset: 0;
+            z-index: -2;
+
+            background:
+                linear-gradient(
+                    120deg,
+                    rgba(5, 11, 21, 0.96),
+                    rgba(7, 18, 30, 0.88)
+                ),
+                url("/static/images/background.png");
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .ambient-glow {
+            position: fixed;
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            filter: blur(130px);
+            opacity: 0.10;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .glow-green {
+            background: var(--green);
+            top: -180px;
+            left: 10%;
+        }
+
+        .glow-blue {
+            background: #3478ff;
+            right: -180px;
+            bottom: 0;
+        }
+
+        /* NAVBAR */
+
+        .navbar {
+            height: 72px;
+            min-height: 72px;
+            padding: 0 35px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+
+            background: rgba(8, 14, 25, 0.88);
+            border-bottom: 1px solid var(--border);
+
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+
+            color: var(--text);
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 800;
+            letter-spacing: -0.4px;
+            white-space: nowrap;
+        }
+
+        .brand-icon {
+            width: 38px;
+            height: 38px;
+
+            display: grid;
+            place-items: center;
+
+            color: #06150f;
+            background: var(--green);
+            border-radius: 11px;
+
+            box-shadow: 0 0 22px rgba(53, 230, 178, 0.17);
+        }
+
+        .brand-highlight {
+            color: var(--green);
+        }
+
+        .nav-center {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            color: #c5d0e1;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .nav-center i {
+            color: var(--green);
+            font-size: 14px;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+
+            min-height: 38px;
+            padding: 0 14px;
+
+            color: #d7e0ef;
+            background: rgba(255, 255, 255, 0.035);
+            border: 1px solid var(--border);
+            border-radius: 9px;
+
+            font-family: inherit;
+            font-size: 11px;
+            font-weight: 600;
+            text-decoration: none;
+
+            cursor: pointer;
+            transition: 0.25s ease;
+        }
+
+        .nav-button:hover {
+            color: var(--green);
+            border-color: rgba(53, 230, 178, 0.5);
+            background: rgba(53, 230, 178, 0.07);
+        }
+
+        .nav-button.primary {
+            color: #07150f;
+            background: var(--green);
+            border-color: var(--green);
+        }
+
+        .nav-button.primary:hover {
+            filter: brightness(1.1);
+            color: #07150f;
+        }
+
+        /* DASHBOARD HEADER */
+
+        .dashboard-heading {
+            min-height: 91px;
+            padding: 17px 35px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+
+            border-bottom: 1px solid rgba(255, 255, 255, 0.055);
+            background: rgba(9, 16, 28, 0.58);
+        }
+
+        .heading-left {
+            min-width: 0;
+        }
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 9px;
+
+            margin-bottom: 8px;
+
+            color: #7888a0;
+            font-size: 10px;
+        }
+
+        .breadcrumb a {
+            color: #a6b4c8;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--green);
+        }
+
+        .breadcrumb i {
+            font-size: 8px;
+        }
+
+        .heading-title {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .heading-title h1 {
+            font-size: 21px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .heading-title h1 span {
+            color: var(--green);
+        }
+
+        .report-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+
+            padding: 6px 9px;
+
+            color: var(--green);
+            background: rgba(53, 230, 178, 0.07);
+            border: 1px solid rgba(53, 230, 178, 0.16);
+            border-radius: 6px;
+
+            font-size: 9px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .report-badge .dot {
+            width: 6px;
+            height: 6px;
+            background: var(--green);
+            border-radius: 50%;
+        }
+
+        .heading-description {
+            margin-top: 6px;
+            color: var(--muted);
+            font-size: 10px;
+            line-height: 1.6;
+        }
+
+        .heading-right {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .report-info {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+
+            padding: 10px 13px;
+
+            border: 1px solid var(--border);
+            background: rgba(255, 255, 255, 0.025);
+            border-radius: 9px;
+        }
+
+        .report-info > i {
+            color: var(--blue);
+            font-size: 17px;
+        }
+
+        .report-info strong {
+            display: block;
+            font-size: 10px;
+            font-weight: 600;
+        }
+
+        .report-info span {
+            display: block;
+            margin-top: 4px;
+            color: var(--muted);
+            font-size: 9px;
+        }
+
+        /* POWER BI REPORT */
+
+        .dashboard-container {
+            flex: 1;
+            min-height: 0;
+            min-width: 0;
+
+            display: flex;
+            flex-direction: column;
+
+            padding: 12px 18px 14px;
+        }
+
+        .dashboard-frame {
+            flex: 1;
+            min-height: 0;
+            min-width: 0;
+
+            position: relative;
+            overflow: hidden;
+
+            background: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 12px;
+
+            box-shadow:
+                0 15px 45px rgba(0, 0, 0, 0.22),
+                0 0 35px rgba(53, 230, 178, 0.025);
+        }
+
+        .dashboard-frame iframe {
+            display: block;
+            width: 100%;
+            height: 100%;
+            min-height: 0;
+
+            border: none;
+            outline: none;
+        }
+
+        /* FOOTER */
+
+        .footer {
+            height: 32px;
+            min-height: 32px;
+            padding: 0 25px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+
+            color: #718098;
+            background: rgba(7, 12, 22, 0.82);
+            border-top: 1px solid rgba(255, 255, 255, 0.055);
+
+            font-size: 9px;
+        }
+
+        .footer-brand {
+            color: var(--green);
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .footer-left,
+        .footer-right {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+        }
+
+        .footer-right i {
+            color: var(--green);
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 900px) {
+            .navbar {
+                padding: 0 20px;
+            }
+
+            .dashboard-heading {
+                padding: 15px 22px;
+            }
+
+            .heading-title h1 {
+                font-size: 18px;
+            }
+
+            .report-info {
+                display: none;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .navbar {
+                height: 62px;
+                min-height: 62px;
+                padding: 0 12px;
+            }
+
+            .brand {
+                font-size: 12px;
+                gap: 7px;
+            }
+
+            .brand-icon {
+                width: 31px;
+                height: 31px;
+                border-radius: 9px;
+            }
+
+            .nav-center {
+                display: none;
+            }
+
+            .nav-button {
+                min-height: 34px;
+                padding: 0 9px;
+                gap: 6px;
+                font-size: 10px;
+            }
+
+            .dashboard-heading {
+                min-height: 83px;
+                padding: 12px 14px;
+            }
+
+            .heading-title {
+                gap: 7px;
+            }
+
+            .heading-title h1 {
+                font-size: 16px;
+            }
+
+            .heading-description {
+                font-size: 9px;
+            }
+
+            .report-badge {
+                padding: 5px 7px;
+                font-size: 8px;
+            }
+
+            .dashboard-container {
+                padding: 8px;
+            }
+
+            .dashboard-frame {
+                border-radius: 8px;
+            }
+
+            .footer {
+                padding: 0 10px;
+                font-size: 8px;
+            }
+
+            .footer-right {
+                display: none;
+            }
+        }
+
+        @media (max-height: 600px) {
+            .navbar {
+                height: 55px;
+                min-height: 55px;
+            }
+
+            .dashboard-heading {
+                min-height: 69px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+            }
+
+            .heading-description {
+                display: none;
+            }
+
+            .dashboard-container {
+                padding-top: 7px;
+                padding-bottom: 7px;
+            }
+
+            .footer {
+                height: 25px;
+                min-height: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="background"></div>
+    <div class="ambient-glow glow-green"></div>
+    <div class="ambient-glow glow-blue"></div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+
+        <a href="/" class="brand">
+            <span class="brand-icon">
+                <i class="fa-solid fa-bolt"></i>
+            </span>
+
+            <span>
+                EV<span class="brand-highlight"> INTELLIGENCE</span>
+            </span>
+        </a>
+
+        <div class="nav-center">
+            <i class="fa-solid fa-chart-pie"></i>
+            <span>Vehicle & Infrastructure Analytics</span>
+        </div>
+
+        <div class="nav-actions">
+
+            <a href="{{ url_for('dashboards') }}" class="nav-button">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span>All Dashboards</span>
+            </a>
+
+            <button class="nav-button primary"
+                    id="fullscreenButton"
+                    type="button">
+                <i class="fa-solid fa-expand"></i>
+                <span>Fullscreen</span>
+            </button>
+
+        </div>
+
+    </nav>
+
+    <!-- REPORT HEADER -->
+    <section class="dashboard-heading">
+
+        <div class="heading-left">
+
+            <div class="breadcrumb">
+                <a href="/">Home</a>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="{{ url_for('dashboards') }}">Dashboards</a>
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>Vehicles & Stations</span>
+            </div>
+
+            <div class="heading-title">
+
+                <h1>
+                    Vehicles <span>& Stations</span>
+                </h1>
+
+                <div class="report-badge">
+                    <span class="dot"></span>
+                    POWER BI REPORT
+                </div>
+
+            </div>
+
+            <p class="heading-description">
+                Explore vehicle data and charging infrastructure insights.
+            </p>
+
+        </div>
+
+        <div class="heading-right">
+
+            <div class="report-info">
+                <i class="fa-solid fa-car-side"></i>
+
+                <div>
+                    <strong>Mobility Analytics</strong>
+                    <span>Vehicles & Charging Network</span>
+                </div>
+            </div>
+
+            <button class="nav-button"
+                    id="reloadButton"
+                    type="button"
+                    title="Reload dashboard">
+                <i class="fa-solid fa-rotate-right"></i>
+                <span>Reload</span>
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- FULL-SCREEN DASHBOARD AREA -->
+    <main class="dashboard-container">
+
+        <div class="dashboard-frame" id="dashboardFrame">
+
+            <iframe
+                id="powerBIReport"
+                title="Vehicles and Stations Power BI Dashboard"
+                src="https://app.powerbi.com/view?r=eyJrIjoiNDAzODEyZTktOWJjZS00OTg4LTgzZjYtMzQ2N2JkNmY2N2QzIiwidCI6ImEyY2JmYWI3LTk5ZjctNDQ3YS04ZmRlLTYwYmNkOTI3ZWMyMiJ9"
+                allowfullscreen="true"
+                loading="eager">
+            </iframe>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-left">
+            <span class="footer-brand">EV INTELLIGENCE</span>
+            <span>© 2026</span>
+            <span>•</span>
+            <span>Vehicles & Stations Analytics</span>
+        </div>
+
+        <div class="footer-right">
+            <i class="fa-solid fa-bolt"></i>
+            <span>Data-driven electric mobility</span>
+        </div>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        const reportFrame = document.getElementById("powerBIReport");
+        const fullscreenButton = document.getElementById("fullscreenButton");
+        const reloadButton = document.getElementById("reloadButton");
+        const dashboardFrame = document.getElementById("dashboardFrame");
+
+        // Reload the embedded Power BI report.
+        reloadButton.addEventListener("click", function () {
+            reportFrame.src = reportFrame.src;
+        });
+
+        // Toggle fullscreen for the dashboard container.
+        fullscreenButton.addEventListener("click", async function () {
+            try {
+                if (!document.fullscreenElement) {
+                    await dashboardFrame.requestFullscreen();
+                } else {
+                    await document.exitFullscreen();
+                }
+            } catch (error) {
+                console.error("Fullscreen could not be activated:", error);
+            }
+        });
+
+        // Update the fullscreen button appearance.
+        document.addEventListener("fullscreenchange", function () {
+            const icon = fullscreenButton.querySelector("i");
+            const label = fullscreenButton.querySelector("span");
+
+            if (document.fullscreenElement) {
+                icon.className = "fa-solid fa-compress";
+                label.textContent = "Exit Fullscreen";
+            } else {
+                icon.className = "fa-solid fa-expand";
+                label.textContent = "Fullscreen";
+            }
+        });
+    </script>
+
+</body>
+</html>

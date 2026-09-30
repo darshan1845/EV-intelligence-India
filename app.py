@@ -33,6 +33,17 @@ def models():
 def dashboards():
     return render_template('dashboards.html')
 
+@app.route('/EV_usage_DB')
+def EV_usage_DB():
+    return render_template('EV_usage_DB.html')
+
+@app.route('/indian_stations_DB')
+def india_stations():
+    return render_template('indian_stations_DB.html')
+
+@app.route('/vehiclesandstations')
+def vehiclesandstations():
+    return render_template('vehiclesandstations.html')
 
 # EV Assistant Page
 @app.route('/assistant')
@@ -156,7 +167,7 @@ def anxiety():
             anxiety_pred = "High Risk of Range Anxiety"
         elif anxiety_pred == 0:
             anxiety_pred = "Low Risk of Range Anxiety"
-    return render_template('result_anxiety.html', anxiety=anxiety_pred[0])
+    return render_template('result_anxiety.html', anxiety=anxiety_pred)
 
 @app.route('/battery_health',methods = ['GET', 'POST'])
 def battery_health():

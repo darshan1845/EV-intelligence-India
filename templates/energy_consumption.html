@@ -149,8 +149,11 @@
         <label for="range_anxiety_risk">
             Range Anxiety:
         </label>
-        <input type="number" id="range_anxiety_risk"
-               name="range_anxiety_risk" step="any" required>
+        <select name="range_anxiety_risk" id="range_anxiety_risk" required>
+            <option value="" hidden>Select Range Anxiety Risk</option>
+            <option value="0">No </option>
+            <option value="1">Yes</option>
+        </select>
         <br><br>
 
         <label for="effective_battery_capacity">
